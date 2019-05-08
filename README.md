@@ -50,7 +50,6 @@ It is simpler to have a single order file representing the entirety of the main 
 
 - Take the order file provided by the program chairs. Technically, we should be using the extracted file `data/order/papers_order`. However, this file does not contain the themes for the poster sessions. Therefore, we need to start with the order file provided by the PCs which does contain this information. Let's denote this file as M.
 
-- For each of the extracted files `data/order/industry_order`, `data/order/demos_order`, and `data/order/srw_order`, manually take each paper entry in that order file and add it to M in the right time slot. Since the START IDs for the various components of the main conference are usuall independent, add a suffix, e.g. `-demo`, `-srw`, `industry`, etc., after the paper ID to prevent any accidental overlaps.
+- For each of the extracted files `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`, manually take each paper entry in that order file and add it to M in the right time slot. Since the START IDs for the various components of the main conference are usuall independent, add a suffix, e.g. `-demo`, `-srw`, `industry`, `-tutorial` etc., after the paper ID to prevent any accidental overlaps.
 
-This combined order file was then saved as `data/order/manually_combined_order`. This file now supersedes `data/order/papers_order`, `data/order/industry_order`, `data/order/demos_order`, and `data/order/srw_order`. Any changes needed should be made directly to this file.
-[pub_chair_files.png]: 
+This combined order file was then saved as `data/order/manually_combined_order`. This file now supersedes `data/order/papers_order`, `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`. Any changes needed should be made directly to this file.
