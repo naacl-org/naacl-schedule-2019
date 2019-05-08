@@ -1,0 +1,251 @@
+* Thursday, June 6, 2019
++ 09:00--09:15 Welcome / Opening Remarks
+! 09:15--10:30 Invited Talk: Task-Independent Sentence Understanding %by Sam Bowman
++ 10:30--11:00 Coffee
++ 11:00--12:30 Tasks 1, 2 and 3 # %room TBD
+30   # SemEval 2019 Task 1: Cross-lingual Semantic Parsing with UCCA
+249   # HLT@SUDA at SemEval 2019 Task 1: UCCA Graph Parsing as Constituent Tree Parsing
+269   # SemEval-2019 Task 2: Unsupervised Lexical Frame Induction
+207   # Neural GRANNy at SemEval 2019 Task 2: A combined approach for better modeling of semantic relationships in semantic frame induction
+272   # SemEval-2019 Task 3: EmoContext Contextual Emotion Detection in Text
+215   # ANA at SemEval-2019 Task 3: Contextual Emotion detection in Conversations through hierarchical LSTMs and BERT
++ 12:30--14:00 Lunch
++ 14:00--15:30 Tasks 5 and 6 # %room TBD
+271   # SemEval-2019 Task 5: Multilingual Detection of Hate Speech Against Immigrants and Women in Twitter
+229   # Atalaya at SemEval 2019 Task 5: Robust Embeddings for Tweet Classification
+253   # FERMI at SemEval-2019 Task 5: Using Sentence embeddings to Identify Hate Speech Against Immigrants and Women in Twitter
+275   # SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval)
+185   # NULI at SemEval-2019 Task 6: Transfer Learning for Offensive Language Detection using Bidirectional Transformers
++ 15:30--16:00 Coffee
++ 16:00--16:30 Discussion
++ 16:30--17:30 Poster Session # %room TBD
+243   # CUNY-PKU Parser at SemEval-2019 Task 1: Cross-Lingual Semantic Parsing with UCCA
+175   # DANGNT@UIT.VNU-HCM at SemEval 2019 Task 1: Graph Transformation System from Stanford Basic Dependencies to Universal Conceptual Cognitive Annotation (UCCA)
+196   # GCN-Sem at SemEval-2019 Task 1: Semantic Parsing using Graph Convolutional and Recurrent Neural Networks
+87   # MaskParse@Deskin at SemEval-2019 Task 1: Cross-lingual UCCA Semantic Parsing using Recursive Masked Sequence Tagging
+43   # T__pa at SemEval-2019 Task1: (Almost) feature-free Semantic Parsing
+233   # UC Davis at SemEval-2019 Task 1: DAG Semantic Parsing with Attention-based Decoder
+128   # HHMM at SemEval-2019 Task 2: Unsupervised Frame Induction using Contextualized Word Embeddings
+121   # L2F/INESC-ID at SemEval-2019 Task 2: Unsupervised Lexical Semantic Frame Induction using Contextualized Word Representations
+182   # BrainEE at SemEval-2019 Task 3: Ensembling Linear Classifiers for Emotion Prediction
+171   # CAiRE_HKUST at SemEval-2019 Task 3: Hierarchical Attention for Dialogue Emotion Classification
+31   # CECL at SemEval-2019 Task 3: Using Surface Learning for Detecting Emotion in Textual Conversations
+23   # CLaC Lab at SemEval-2019 Task 3: Contextual Emotion Detection Using a Combination of Neural Networks and SVM
+199   # CLARK at SemEval-2019 Task 3: Exploring the Role of Context to Identify Emotion in a Short Conversation
+142   # CLP at SemEval-2019 Task 3: Multi-Encoder in Hierarchical Attention Networks for Contextual Emotion Detection
+188   # CoAStaL at SemEval-2019 Task 3: Affect Classification in Dialogue using Attentive BiLSTMs
+191   # ConSSED at SemEval-2019 Task 3: Configurable Semantic and Sentiment Emotion Detector
+37   # CX-ST-RNM at SemEval-2019 Task 3: Fusion of Recurrent Neural Networks Based on Contextualized and Static Word Representations for Contextual Emotion Detection
+149   # Domain Adaptation with feature embeddings for Contextual Emotion Analysis
+172   # E-LSTM at SemEval-2019 Task 3: Semantic and Sentimental Features Retention for Emotion Detection in Text
+38   # ELiRF-UPV at SemEval-2019 Task 3: Snapshot Ensemble of Hierarchical Convolutional Neural Networks for Contextual Emotion Detection
+210   # EmoDet at SemEval-2019 Task 3: Emotion Detection in Text using Deep Learning
+56   # EMOMINER at SemEval-2019 Task 3: A Stacked BiLSTM Architecture for Contextual Emotion Detection in Text
+114   # EmoSense at SemEval-2019 Task 3: Bidirectional LSTM Network for Contextual Emotion Detection in Textual Conversations
+117   # EPITA-ADAPT at SemEval-2019 Task 3: Detecting emotions in textual conversations using deep learning models combination
+46   # Figure Eight at SemEval-2019 Task 3: Ensemble of Transfer Learning Methods for Contextual Emotion Detection
+51   # GenSMT at SemEval-2019 Task 3: Contextual Emotion Detection in tweets using multi task generic approach
+220   # GWU NLP Lab at SemEval-2019 Task 3 :EmoContext: Effectiveness ofContextual Information in Models for Emotion Detection inSentence-level at Multi-genre Corpus
+183   # IIT Gandhinagar at SemEval-2019 Task 3: Contextual Emotion Detection Using Deep Learning
+227   # KGPChamps at SemEval-2019 Task 3: A deep learning approach to detect emotions in the dialog utterances.
+52   # KSU at SemEval-2019 Task 3: Hybrid Features for Emotion Recognition in Textual Conversation
+57   # LIRMM-Advanse at SemEval-2019 Task 3: Attentive Conversation Modeling for Emotion Detection and Classification
+240   # MILAB at SemEval-2019 Task 3: Multi-View Turn-by-Turn Model for Context-Aware Sentiment Analysis
+50   # MoonGrad at SemEval'19 Task 3: Ensemble BiRNNs for Contextual Emotion Detection in Dialogues
+136   # NELEC at SemEval-2019 Task 3: Think Twice Before Going Deep
+241   # NL-FIIT at SemEval-2019 Task 3: Emotion Detection From Conversational Triplets Using Hierarchical Encoders
+135   # NTUA-ISLab at SemEval-2019 Task 3: Determining emotions in contextual conversations with deep learning
+17   # ntuer at SemEval-2019 Task 3: Emotion Classification with Word and Sentence Representations in RCNN
+170   # PKUSE at SemEval-2019 Task 3: Emotion Detection with Emotion-Oriented Neural Attention Network
+115   # Podlab at SemEval-2019 Task 3: The Importance of Being Shallow
+205   # SCIA at SemEval-2019 Task 3: Sentiment Analysis in Textual Conversations Using Deep Learning
+39   # Sentim at SemEval-2019 Task 3: Convolutional Neural Networks For Sentiment in Conversations
+59   # SINAI at SemEval-2019 Task 3: Using affective features for emotion classification in textual conversations
+54   # SNU IDS at SemEval-2019 Task 3: Addressing Training-Test Class Distribution Mismatch in Conversational Classification
+138   # SSN_NLP at SemEval-2019 Task 3: Contextual Emotion Identification from Textual Conversation using Seq2Seq Deep Neural Network
+81   # SWAP at SemEval-2019 Task 3: Emotion detection in conversations through Tweets, CNN and LSTM deep neural networks
+99   # SymantoResearch at SemEval-2019 Task 3: Combined Neural Models for Emotion Classification in Human-Chatbot Conversations
+112   # TDBot at SemEval-2019 Task 3: Context Aware Emotion Detection Using A Conditioned Classification Approach
+58   # THU_NGN at SemEval-2019 Task 3: Dialog Emotion Classification using Attentional LSTM-CNN
+90   # THU-HCSI at SemEval-2019 Task 3: Hierarchical Ensemble Classification of Contextual Emotion in Conversation
+258   # TokyoTech_NLP at SemEval-2019 Task 3: Emotion-related Symbols in Emotion Detection
+212   # UAIC at SemEval-2019 Task 3: Extracting Much from Little
+13   # YUN-HPCC at SemEval-2019 Task 3: Multi-Step Ensemble Neural Network for Sentiment Analysis in Textual Conversation
+184   # {KDEH}at{E}val at {S}em{E}val-2019 Task 5: {A} Neural Network Model for Detecting Hate Speech in Twitter
+206   # ABARUAH at SemEval-2019 Task 5 : Bi-directional LSTM for Hate Speech Detection
+64   # Amobee at SemEval-2019 Tasks 5 and 6: Multiple Choice CNN Over Contextual Embedding
+118   # CIC at SemEval-2019 Task 5: Simple Yet Very Efficient Approach to Hate Speech Detection, Aggressive Behavior Detection, and Target Classification in Twitter
+194   # CiTIUS-COLE at SemEval-2019 Task 5: Combining Linguistic Features to Identify Hate Speech Against Immigrants and Women on Multilingual Tweets
+92   # Grunn2019 at SemEval-2019 Task 5: Shared Task on Multilingual Detection of Hate
+80   # GSI-UPM at SemEval-2019 Task 5: Semantic Similarity and Word Embeddings for Multilingual Detection of Hate Speech Against Immigrants and Women on Twitter
+55   # HATEMINER at SemEval-2019 Task 5: Hate speech detection against Immigrants and Women in Twitter using a Multinomial Naive Bayes Classifier
+162   # HATERecognizer at SemEval-2019 Task 5: Using Features and Neural Networks to Face Hate Recognition
+214   # GL at SemEval-2019 Task 5: Identifying hateful tweets with a deep learning approach.
+41   # INF-HatEval at SemEval-2019 Task 5 - Convolutional Neural Networks for Hate Speech Detection Against Women and Immigrants on Twitter
+49   # JCTDHS at SemEval-2019 Task 5: Detection of Hate Speech in Tweets using Deep Learning Methods, Character N-gram Features, and Preprocessing Methods
+85   # Know-Center at SemEval-2019 Task 5: Multilingual Hate Speech Detection on Twitter using CNNs
+96   # LT3 at SemEval-2019 Task 5: Multilingual Detection of Hate Speech Against Immigrants and Women in Twitter (hatEval)
+146   # ltl.uni-due at SemEval-2019 Task 5: Simple but Effective Lexico-Semantic Features for Detecting Hate Speech in Twitter
+221   # MineriaUNAM at SemEval-2019 Task 5: Detecting Hate Speech in Twitter using Multiple Features in a Combinatorial Framework
+226   # MITRE at SemEval-2019 Task 5: Transfer Learning for Multilingual Hate Speech Detection
+204   # Multilingual Hate Speech Detection on Twitter with MUSE and ELMo Embeddings
+94   # Saagie at Semeval-2019 Task 5: From Universal Text Embeddings and Classical Features to Domain-specific Text Classification
+60   # SINAI at SemEval-2019 Task 5: Ensemble learning to detect hate speech against inmigrants and women in English and Spanish tweets
+40   # SINAI-DL at SemEval-2019 Task 5: Recurrent networks and data augmentation by paraphrasing
+251   # sthruggle at SemEval-2019 Task 5: An Ensemble Approach to Hate Speech Detection
+208   # The binary trio at SemEval-2018 Task 5: Multitarget Hate Speech Detection in Tweets
+174   # The Titans at SemEval-2019 Task 5: Detection of hate speech against immigrants and women in Twitter
+102   # TuEval at SemEval-2019 Task 5: LSTM Approach to Hate Speech Detection in English and Spanish
+65   # Tw-StAR at SemEval-2019 Task 5: N-gram embeddings for Hate Speech Detection in Multilingual Tweets
+144   # UA at SemEval 2019 Task 5: Setting A Strong Linear Baseline for Hate Speech Detection
+197   # UNBNLP at SemEval-2019 Task 5 and 6: Using Language Models to Detect Hate Speech and Offensive Language
+27   # UTFPR at SemEval-2019 Task 5: Hate Speech Identification with Recurrent Neural Networks
+100   # Vista.ue at SemEval-2019 Task 5: Single Multilingual Hate Speech Detection Model
+120   # YNU NLP at SemEval-2019 Task 5: Attention and Capsule Ensemble for Identifying Hate Speech
+151   # YNU_ DYX at SemEval-2019 Task 5: A Stacked BiGRU Model Based on Capsule Network in Detection of Hate
+193   # Amrita School of Engineering - CSE at SemEval-2019 Task 6: Manipulating Attention with Temporal Convolutional Neural Network for Offense Identification and Classification
+71   # bhanodaig at SemEval-2019 Task 6: Categorizing Offensive Language in social media
+165   # BNU-HKBU UIC NLP Team 2 at SemEval-2019 Task 6: Detecting Offensive Language Using BERT model
+53   # CAMsterdam at SemEval-2019 Task 6: Neural and graph-based feature extraction for the identification of offensive tweets
+84   # CN-HIT-MI.T at SemEval-2019 Task 6: Offensive Language Identification Based on BiLSTM with Double Attention
+180   # ConvAI at SemEval-2019 Task 6: Offensive Language Identification and Categorization with Perspective and BERT
+209   # DA-LD-Hildesheim at SemEval-2019 Task 6: Tracking Offensive Content with Deep Learning using Shallow Representation
+181   # DeepAnalyzer at SemEval-2019 Task 6: A deep learning-based ensemble method for identifying offensive tweets
+218   # Detecting Offensive language using Neural Networks
+34   # Duluth at SemEval-2019 Task 6: Lexical Approaches to Identify and Categorize Offensive Tweets
+219   # Emad at SemEval-2019 Task 6: Offensive Language Identification using Traditional Machine Learning and Deep Learning approaches
+83   # Embeddia at SemEval-2019 Task 6: Detecting Hate with Neural Network and Transfer Learning Approaches
+247   # Fermi at SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media using Sentence Embeddings
+104   # Ghmerti at SemEval-2019 Task 6: A Deep Word- and Character-based Approach to Offensive Language Identification
+176   # HAD-T__bingen at SemEval-2019 Task 6: Deep Learning Analysis of Offensive Language on Twitter: Identification and Categorization
+187   # HHU at SemEval-2019 Task 6: Context Does Matter - Tackling Offensive Language Identification and Categorization with ELMo
+246   # Hope at SemEval-2019 Task 6: Mining social media language to discover offensive language
+124   # INGEOTEC at SemEval-2019 Task 5 and Task 6: A Genetic Programming Approach for Text Classification
+48   # JCTICOL at SemEval-2019 Task 6: Classifying Offensive Language in Social Media using Deep Learning Methods, Word/Character N-gram Features, and Preprocessing Methods
+116   # jhan014 at SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media
+255   # JTML at SemEval-2019 Task 6: Offensive Tweets Identification using Convolutional Neural Networks
+133   # JU_ETCE_17_21 at SemEval-2019 Task 6: Efficient Machine Learning and Neural Network Approaches for Identifying and Categorizing Offensive Language in Tweets
+250   # KMI-Coling at SemEval-2019 Task 6: Exploring N-grams for Offensive Language detection
+129   # LaSTUS/TALN at SemEval-2019 Task 6: Identification and Categorization of Offensive Language in Social Media with Attention-based Bi-LSTM model
+93   # LTL-UDE at SemEval-2019 Task 6: BERT and Two-Vote Classification for Categorizing Offensiveness
+257   # MIDAS at SemEval-2019 Task 6: Identifying Offensive Posts and Targeted Offense from Twitter
+213   # Nikolov-Radivchev at SemEval-2019 Task 6: Offensive Tweet Classification with BERT and Ensembles
+228   # NIT_Agartala_NLP_Team at SemEval-2019 Task 6: An Ensemble Approach to Identifying and Categorizing Offensive Language in Twitter Social Media Corpora
+195   # NLP@UIOWA at SemEval-2019 Task 6: Classifying the Crass using Multi-windowed CNNs
+73   # NLPR@SRPOL at SemEval-2019 Task 6 and Task 5: Linguistically enhanced deep learning offensive sentence classifier
+42   # nlpUP at SemEval-2019 Task 6: A Deep Neural Language Model for Offensive Language Detection
+108   # Pardeep at SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media using Deep Learning
+61   # SINAI at SemEval-2019 Task 6: Incorporating lexicon knowledge into SVM learning to identify and categorize offensive language in social media
+143   # SSN_NLP at SemEval-2019 Task 6: Offensive Language Identification in Social Media using Traditional and Deep Machine Learning Approaches
+98   # Stop PropagHate at SemEval-2019 Tasks 5 and 6: Are abusive language classification results reproducible?
+178   # TECHSSN at SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Tweets using Deep Neural Networks
+166   # The Titans at SemEval-2019 Task 6: Offensive Language Identification, Categorization and Target Identification
+97   # T__KaSt at SemEval-2019 Task 6: Something Old, Something Neu(ral): Traditional and Neural Approaches to Offensive Text Classification
+150   # TUVD team at SemEval-2019 Task 6: Offense Target Identification
+237   # UBC-NLP at SemEval-2019 Task 6: Ensemble Learning of Offensive Content With Enhanced Training Data
+107   # UHH-LT at SemEval-2019 Task 6: Supervised vs. Unsupervised Transfer Learning for Offensive Language Detection
+119   # UM-IU@LING at SemEval-2019 Task 6: Identifying Offensive Tweets Using BERT and SVMs
+200   # USF at SemEval-2019 Task 6: Offensive Language Detection Using LSTM With Word Embeddings
+26   # UTFPR at SemEval-2019 Task 6: Relying on Compositionality to Find Offense
+201   # UVA Wahoos at SemEval-2019 Task 6: Hate Speech Identification using Ensemble Machine Learning
+173   # YNU-HPCC at SemEval-2019 Task 6: Identifying and Categorising Offensive Language on Twitter
+79   # YNUWB at SemEval-2019 Task 6: K-max pooling CNN with average meta-embedding for identifying offensive language
+103   # Zeyad at SemEval-2019 Task 6: That___s Offensive! An All-Out Search For An Ensemble To Identify And Categorize Offense in Tweets.
+* Friday, June 7, 2019
++ 09:00--09:30 SemEval 2020 Tasks
++ 09:30--10:30 State of SemEval Discussion
++ 10:30--11:00 Coffee
++ 11:00--12:30 Tasks 4, 7 and 8 # %room TBD
+270   # SemEval-2019 Task 4: Hyperpartisan News Detection
+130   # Team Bertha von Suttner at SemEval-2019 Task 4: Hyperpartisan News Detection using ELMo Sentence Representation Convolutional Network
+273   # SemEval-2019 Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours
+239   # eventAI at SemEval-2019 Task 7: Rumor Detection on Social Media by Exploiting Content, User Credibility and Propagation Information
+268   # SemEval-2019 Task 8: Fact Checking in Community Question Answering Forums
+177   # AUTOHOME-ORCA at SemEval-2019 Task 8: Application of BERT for Fact-Checking in Community Forums
++ 12:30--14:00 Lunch
++ 14:00--15:30 Tasks 9, 10 and 12 # %room TBD
+276   # SemEval-2019 Task 9: Suggestion Mining from Online Reviews and Forums
+69   # m_y at SemEval2019 Task 9: Exploring BERT for Suggestion Mining
+266   # SemEval-2019 Task 10: Math Question Answering
+68   # AiFu at SemEval-2019 Task 10: A Symbolic and Sub-symbolic Integrated System for SAT Math Question Answering
+274   # SemEval-2019 Task 12: Toponym Resolution in Scientific Papers
+254   # DM_NLP at SemEval-2018 Task 12: A Pipeline System for Toponym Resolution
++ 15:30--16:00 Coffee
++ 16:00--16:30 Discussion
++ 16:30--17:30 Poster Session # %room TBD
+111   # Brenda Starr at SemEval-2019 Task 4: Hyperpartisan News Detection
+113   # Cardiff University at SemEval-2019 Task 4: Linguistic Features for Hyperpartisan News Detection
+123   # Clark Kent at SemEval-2019 Task 4: Stylometric Insights into Hyperpartisan News Detection
+29   # Dick-Preston and Morbo at SemEval-2019 Task 4: Transfer Learning for Hyperpartisan News Detection
+86   # Doris Martin at SemEval-2019 Task 4: Hyperpartisan News Detection with Generic Semi-supervised Features
+232   # Duluth at SemEval-2019 Task 4: The Pioquinto Manterola Hyperpartisan News Detector
+264   # Fermi at SemEval-2019 Task 4: The sarah-jane-smith Hyperpartisan News Detector
+109   # Harvey Mudd College at SemEval-2019 Task 4: The Carl Kolchak Hyperpartisan News Detector
+101   # Harvey Mudd College at SemEval-2019 Task 4: The Clint Buchanan Hyperpartisan News Detector
+110   # Harvey Mudd College at SemEval-2019 Task 4: The D.X. Beaumont Hyperpartisan News Detector
+236   # NLP@UIT at SemEval-2019 Task 4: The Paparazzo Hyperpartisan News Detector
+223   # Orwellian-times at SemEval-2019 Task 4: A Stylistic and Content-based Classifier
+190   # Rouletabille at SemEval-2019 Task 4: Neural Network Baseline for Identification of Hyperpartisan Publishers
+234   # Spider-Jerusalem at SemEval-2019 Task 4: Hyperpartisan News Detection
+125   # Steve Martin at SemEval-2019 Task 4: Ensemble Learning Model for Detecting Hyperpartisan News
+248   # TakeLab at SemEval-2019 Task 4: Hyperpartisan News Detection
+198   # Team Fernando-Pessa at SemEval-2019 Task 4: Back to Basics in Hyperpartisan News Detection
+82   # Team Harry Friberg at SemEval-2019 Task 4: Identifying Hyperpartisan News through Editorially Defined Metatopics
+244   # Team Howard Beale at SemEval-2019 Task 4: Hyperpartisan News Detection with BERT
+259   # Team Jack Ryder at SemEval-2019 Task 4: Using BERT Representations for Detecting Hyperpartisan News
+211   # Team Kermit-the-frog at SemEval-2019 Task 4: Bias Detection Through Sentiment Analysis and Simple Linguistic Features
+134   # Team Kit Kittredge at SemEval-2019 Task 4
+252   # Team Ned Leeds at SemEval-2019 Task 4: Exploring Language Indicators of Hyperpartisan Reporting
+75   # Team Peter Brinkmann at SemEval-2019 Task 4: Detecting Biased News Articles Using Convolutional Neural Networks
+126   # Team Peter-Parker at SemEval-2019 Task 4: BERT-Based Method in Hyperpartisan News Detection
+231   # Team QCRI-MIT at SemEval-2019 Task 4: Propaganda Analysis Meets Hyperpartisan News Detection
+192   # Team Xenophilius Lovegood at SemEval-2019 Task 4: Hyperpartisanship Classification using Convolutional Neural Networks
+127   # Team yeon-zi at SemEval-2019 Task 4: Hyperpartisan News Detection by De-noising Weakly-labeled Data
+70   # The Sally Smedley Hyperpartisan News Detector at SemEval-2019 Task 4
+72   # Tintin at SemEval-2019 Task 4: Detecting Hyperpartisan News Article with only Simple Tokens
+88   # Tom Jumbo-Grumbo at SemEval-2019 Task 4: Hyperpartisan News Detection with GloVe vectors and SVM
+238   # UBC-NLP at SemEval-2019 Task 4: Hyperpartisan News Detection With Attention-Based Bi-LSTMs
+74   # Vernon-fenwick at SemEval-2019 Task 4: Hyperpartisan News Detection using Lexical and Semantic Features
+256   # AndrejJan at SemEval-2019 Task 7: A Fusion Approach for Exploring the Key Factors pertaining to Rumour Analysis
+168   # BLCU_NLP at SemEval-2019 Task 7: An Inference Chain-based GPT Model for Rumour Evaluation
+106   # BUT-FIT at SemEval-2019 Task 7: Determining the Rumour Stance with Pre-Trained Deep Bidirectional Transformers
+203   # CLEARumor at SemEval-2019 Task 7: ConvoLving ELMo Against Rumors
+216   # Columbia at SemEval-2019 Task 7: Multi-task Learning for Stance Classification and Rumour Verification
+242   # GWU NLP at SemEval-2019 Task 7: Hybrid Pipeline for Rumour Veracity and Stance Classification on Social Media
+91   # SINAI-DL at RumorEval 2019: data augmentation and temporal expressions
+131   # UPV-28-UNITO at SemEval 2019 Task 7: Exploiting Post___s Nesting and Syntax Information for Rumor Stance Classification
+167   # BLCU_NLP at SemEval-2019 Task 8: A Contextual Knowledge-enhanced GPT Model for Fact Checking
+147   # CodeForTheChange at SemEval-2019 Task 8: Skip-Thoughts for Fact Checking in Community Question Answering
+179   # ColumbiaNLP at SemEval-2019 Task 8: The Answer is Language Model Fine-tuning
+76   # DOMLIN at SemEval-2019 Task 8: Automated Fact Checking exploiting Ratings in Community Question Answering Forums
+148   # DUTH at SemEval-2019 Task 8:Part-Of-Speech Features for Question Classification
+245   # Fermi at SemEval-2019 Task 8: An elementary but effective approach to Question Discernment in Community QA Forums
+137   # SolomonLab at SemEval-2019 Task 8: Question Factuality and Answer Veracity Prediction in Community Forums
+95   # TMLab SRPOL at SemEval-2019 Task 8: Fact Checking in Community Question Answering Forums
+153   # TueFact at SemEval 2019 Task 8: Fact checking in community question answering forums: context matters
+132   # YNU-HPCC at SemEval-2019 Task 8: Using A LSTM-Attention Model for Fact-Checking in Community Forums
+35   # DBMS-KU at SemEval-2019 Task 9: Exploring Machine Learning Approaches in Classifying Text as Suggestion or Non-Suggestion
+33   # DS at SemEval-2019 Task 9: From Suggestion Mining with neural networks to adversarial cross-domain classification
+22   # Hybrid RNN at SemEval-2019 Task 9: Blending Information Sources for Domain-Independent Suggestion Mining
+158   # INRIA at SemEval-2019 Task 9: Suggestion Mining Using SVM with Handcrafted Features
+265   # Lijunyi at SemEval-2019 Task 9: An attention-based LSTM and ensemble of different models for suggestion mining from online reviews and forums
+28   # MIDAS at SemEval-2019 Task 9: Suggestion Mining from Online Reviews using ULMFit
+19   # NL-FIIT at SemEval-2019 Task 9: Neural Model Ensemble for Suggestion Mining
+21   # NTUA-ISLab at SemEval-2019 Task 9: Mining Suggestions in the wild
+263   # OleNet at SemEval-2019 Task 9 BERT based Multi-Perspective Models for Suggestion Mining
+186   # SSN-SPARKS at SemEval-2019 Task 9: Mining Suggestions from Online Reviews using Deep Learning Techniques on Augmented Data
+267   # Suggestion Miner at SemEval-2018 Task 9: Suggestion Detection in Online Forum using Word Graph
+20   # Team Taurus at SemEval-2019 Task 9: Expert-informed pattern recognition for suggestion mining
+36   # ThisIsCompetition at SemEval-2019 Task 9:BERT is unstable for out-of-domain samples
+32   # WUT at SemEval-2019 Task 9: Domain-Adversarial Neural Networks for Domain Adaptation in Suggestion Mining
+44   # Yimmon at SemEval-2019 Task 9: Suggestion Mining with Hybrid Augmented Approaches
+141   # YNU_DYX at SemEval-2019 Task 9: A Stacked BiLSTM for Suggestion Mining Classification
+230   # YNU-HPCC at SemEval-2019 Task 9: Using a BERT and CNN-BiLSTM-GRU Model for Suggestion Mining
+24   # Zoho at SemEval-2019 Task 9: Semi-supervised Domain Adaptation using Tri-training for Suggestion Mining
+47   # ZQM at SemEval-2019 Task9: A Single Layer CNN Based on Pre-trained Model for Suggestion Mining
+217   # ProblemSolver at SemEval-2019 Task 10: Sequence-to-Sequence Learning and Expression Trees
+89   # RGCL-WLV at SemEval-2019 Task 12: Toponym Detection
+139   # THU_NGN at SemEval-2019 Task 12: Toponym Detection and Disambiguation on Scientific Papers
+122   # UNH at SemEval-2019 Task 12: Toponym Resolution in Scientific Papers
+67   # UniMelb at SemEval-2019 Task 12: Multi-model combination for toponym resolution
+235   # University of Arizona at SemEval-2019 Task 12: Deep-Affix Named Entity Recognition of Geolocation Entities

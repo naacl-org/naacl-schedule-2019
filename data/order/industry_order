@@ -1,0 +1,35 @@
+* Monday, June 3, 2019
++ 13:00--14:30 Careers in NLP Panel (Nicollet Grand Ballroom)
+* Tuesday, June 4, 2019
++ 09:00--10:30 Session 4E (Industry): Real World Challenges (Greenway)
+4036 09:00--09:18  # Enabling Real-time Neural IME with Incremental Vocabulary Selection
+4075 09:18--09:36  # Locale-agnostic Universal Domain Classification Model in Spoken Language Understanding
+4055 09:36--09:54  # Practical Semantic Parsing for Spoken Language Understanding
+4116 09:54--10:12  # Fast Prototyping a Dialogue Comprehension System for Nurse-Patient Conversations on Symptom Monitoring
+4015 10:12--10:30  # Graph Convolution for Multimodal Information Extraction from Visually Rich Documents
++ 15:30--17:00 Session 6E (Industry): Deployed Systems (Nicollet D)
+4023 15:30--15:48  # Diversifying Reply Suggestions using a Matching-Conditional Variational Autoencoder
+4031 15:48--16:06  # Goal-Oriented End-to-End Conversational Models with Profile Features in a Real-World Setting
+4052 16:06--16:24  # Detecting Customer Complaint Escalation with Recurrent Neural Networks and Manually-Engineered Features
+4098 16:24--16:42  # Multi-Modal Generative Adversarial Network for Short Product Title Generation in Mobile E-Commerce
+4120 16:42--17:00  # A Case Study on Neural Headline Generation for Editing Support
+* Wednesday, June 5, 2019
++ 15:30--16:30 Session 9F: Industry Posters (Hyatt Exhibit Hall)
+4109  # Neural Lexicons for Slot Tagging in Spoken Language Understanding
+4010  # Active Learning for New Domains in Natural Language Understanding
+4090  # Scaling Multi-Domain Dialogue State Tracking via Query Reformulation
+4101  # Are the tools up to the task? An evaluation of commercial dialog tools in developing conversational enterprise-grade dialog systems
+4063  # Development and Deployment of a Large-Scale Dialog-based Intelligent Tutoring System
+4022  # Learning When Not to Answer: A Ternary Reward Structure for Reinforcement Learning based Question Answering
+4131  # Extraction of Message Sequence Charts from Software Use-Case Descriptions
+4117  # Improving Knowledge Base Construction from Robust Infobox Extraction
+4100  # A k-Nearest Neighbor Approach towards Multi-level Sequence Labeling
+4082  # Train One Get One Free: Partially Supervised Neural Network for Bug Report Duplicate Detection and Clustering
+4083  # Robust Semantic Parsing with Adversarial Learning for Domain Generalization
+4017  # TOI-CNN: A Solution of Information Extraction on Chinese Insurance Policy
+4006  # Cross-lingual Transfer Learning for Japanese Named Entity Recognition
+4003  # Neural Text Normalization with Subword Units
+4025  # Audio De-identification - a new entity recognition task
+4054  # In Other News: A Bi-style Text-to-speech Model for Synthesizing Newscaster Voice with Limited Data
+4058  # Generate, Filter, and Rank: Grammaticality Classification for Production-Ready NLG Systems
+4002  # Content-based Dwell Time Engagement Prediction Model for News Articles

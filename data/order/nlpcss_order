@@ -1,0 +1,33 @@
+* Thursday, June 6, 2019
++ 9:00--10:30 Session 1
+! 9:00--9:45 Invited Talk 1: Using Computational Social Science to Understand the "Social Science of Computing" %by Brent Hecht
+! 9:45--10:30 Invited Talk 2: From Words To People And Back Again %by Rada Mihalcea
++ 10:30--11:00 Coffee Break
++ 11:00--12:30 Session 2: Poster Session
+5 11:00--12:30  # Not My President: How Names and Titles Frame Political Figures
+6 11:00--12:30  # Identification, Interpretability, and Bayesian Word Embeddings
+#7 11:00--12:30  # Simple dynamic word embeddings for mapping perceptions in the public sphere
+13 11:00--12:30  # Tweet Classification without the Tweet: An Empirical Examination of User versus Document Attributes
+14 11:00--12:30  # Geolocating Political Events in Text
+#16 11:00--12:30  # Uphill from here: Sentiment patterns in videos from left- and right-wing YouTube news channels
+27 11:00--12:30  # Neural Network Prediction of Censorable Language
+# Paper 32 not shown in the order (it is marked hidden in the schedule)
+# Paper 33 not shown in the order (it is marked hidden in the schedule)
+35 11:00--12:30  # Modeling performance differences on cognitive tests using LSTMs and skip-thought vectors trained on reported media consumption.
+#26 11:00--12:30  # Modeling Behavioral Aspects of Social Media Discourse for Moral Classification
+#15 11:00--12:30  # A Sociolinguistic Study of Online Echo Chambers on Twitter
+#25 11:00--12:30  # Stance Classification, Outcome Prediction, and Impact Assessment: NLP Tasks for Studying Group Decision-Making
+#20 11:00--12:30  # Using time series and natural language processing to identify viral moments in the 2016 U.S. Presidential Debate
++ 12:30--14:00 Lunch break
++ 14:00--15:30 Session 3:  Spotlight Paper Session
+20 14:00--14:15 # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # Using time series and natural language processing to identify viral moments in the 2016 U.S. Presidential Debate
+25 14:15--14:30 # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # Stance Classification, Outcome Prediction, and Impact Assessment: NLP Tasks for Studying Group Decision-Making
+15 14:30--14:45 # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # A Sociolinguistic Study of Online Echo Chambers on Twitter
+16 14:45--15:00 # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # Uphill from here: Sentiment patterns in videos from left- and right-wing YouTube news channels
+7 15:00--15:15 # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # Simple dynamic word embeddings for mapping perceptions in the public sphere
+26 15:15--15:30 # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # Modeling Behavioral Aspects of Social Media Discourse for Moral Classification
++ 15:30--16:00 Afternoon coffee break
++ 16:00--17:45 Session 4
+! 16:00--16:45 Invited Talk 3:  Subtle Differences in Other Varieties of English: Implications for language-related research and technology %by Lisa Green
+! 16:45--17:15 Invited Talk 4: Treasure Trove or Pandora's Box? Investigating Unstructured User-Generated Data from Online Support Communities %by Lana Yarosh
+! 17:15--17:30 Closing remarks and wrap-up %by Organizers
