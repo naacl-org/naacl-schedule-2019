@@ -30,7 +30,7 @@ Although most of the process for producing the data files needed for the schedul
 
 The automated extraction uses `scripts/extract_data.py`. This script extracts the relevant files from the data files that are provided by the NAACL 2019 pub chairs. The pub chairs provided a directory on Google Drive containing the following files:
 
-<img src="pub_chairs_files.png" width="800">
+<img src="google_drive.png" width="800">
 
 Assuming that directory has been downloaded to a path contained in the environment variable `$INPUTDIR`, this script should be run as follows:
 
