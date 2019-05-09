@@ -23,7 +23,7 @@
 ! 9:00--9:30 Land Acknowledgments, Opening Remarks and Janyce Weibe and Richard Kittredge Remembrances # %room Nicollet Grand Ballroom
 
 = Session 1
-! 9:30--10:30 Keynote 1: Arvind Narayanan "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning" # %room Nicollet Grand Ballroom %chair1 TBD
+! 9:30--10:30 Keynote 1: Arvind Narayanan "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning" # %room Nicollet Grand Ballroom
   
 ! 10:30--11:00 Coffee Break
 
@@ -113,7 +113,7 @@
 2085 16:00--16:15    # 
 2308 16:15--16:30    # 
 
-= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B+C % chair1 Preslav Nakov
+= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B+C %chair1 Preslav Nakov
 640 15:00--15:15    # 
 1172 15:15--15:30    # 
 1450 15:30--15:45    # 
@@ -430,7 +430,7 @@
 
 ! 12:30--14:00 Lunch Break
 
-! 14:00--15:00 Keynote 2: Rada Mihalcea "When the Computers Spot the Lie (and People Don’t)" # %room Nicollet Grand Ballroom %chair1 TBD
+! 14:00--15:00 Keynote 2: Rada Mihalcea "When the Computers Spot the Lie (and People Don’t)" # %room Nicollet Grand Ballroom
 ! 15:00--15:30 Coffee Break
 
 + 15:30--17:00 Oral sessions (long papers) and Posters (long and short papers)
@@ -515,11 +515,11 @@
 13-demo   # 
 
 * Wednesday, June 5, 2019
-! 9:00--10:00  Keynote 3: Kieran Snyder "Leaving the Lab: Building NLP Applications that Real People can Use" # %room Nicollet Grand Ballroom %chair1 TBD
+! 9:00--10:00  Keynote 3: Kieran Snyder "Leaving the Lab: Building NLP Applications that Real People can Use" # %room Nicollet Grand Ballroom
 ! 10:00--10:30 Coffee Break
 + 10:30--12:00 Oral sessions (long papers) and Posters (long and short papers)
 
-= Session 7A: Question Answering # %room Greenway %chair Alessandro Moschitti
+= Session 7A: Question Answering # %room Greenway %chair1 Alessandro Moschitti
 734 10:30--10:48    # 
 1626 10:48--11:06    # 
 1770 11:06--11:24    # 
@@ -717,7 +717,7 @@
 
 ! 16:30--16:45  Short Break
 
-= Best Paper Session # %room Nicollet Grand Ballroom %chair1 TBD
+= Best Paper Session # %room Nicollet Grand Ballroom %chair1
 440 16:45--17:03    #   
 610 17:03--17:21    #   
 1458 17:21--17:39    #   
