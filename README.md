@@ -48,7 +48,7 @@ This will create a `data` directory at the same level as the `scripts` directory
 
 The following manual steps are also required.
 
-#### Combined Order File
+#### 1. Combined Order File
 
 It is simpler to have a single order file representing the entirety of the main conference including main track papers, industry track papers, demo papers, and SRW papers. Since such a file was not provided for NAACL 2019, I had to manually create it. To do so, I did the following:
 
@@ -58,7 +58,7 @@ It is simpler to have a single order file representing the entirety of the main 
 
 This combined order file was then saved as `data/order/manually_combined_order`. This file now supersedes `data/order/papers_order`, `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`. Any changes needed should be made directly to this file.
 
-#### Combined Mapping File
+#### 2. Combined Mapping File
 
 It's also equally convenient to have a single `id_map.txt` file for the entire main conference event. To do this, we start with `data/mapping/papers_id_map.txt` and the manually add in the entries from `data/mapping/industry_id_map.txt`, `data/mapping/demos_id_map.txt`, `data/mapping/tutorials2019_id_map.txt`, and `data/mapping/srw_id_map.txt`. You will need to modify the START IDs from each mapping file to have the same suffixes as in the previous section (e.g., `-demo` for the demo IDs, etc.) so as to make lookup easier.
 
