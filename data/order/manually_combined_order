@@ -20,7 +20,7 @@
 ! 18:00--20:00 Welcome Reception (Nicollet Ballroom)
 
 * Monday, June 3, 2019
-! 9:00--9:30 Land Acknowledgments, Opening Remarks and Janyce Weibe Remembrance # %room Nicollet Grand Ballroom
+! 9:00--9:30 Land Acknowledgments, Opening Remarks and Janyce Weibe and Richard Kittredge Remembrances # %room Nicollet Grand Ballroom
 
 = Session 1
 ! 9:30--10:30 Keynote 1: Arvind Narayanan "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning" # %room Nicollet Grand Ballroom %chair1 TBD
@@ -44,10 +44,10 @@
 
 = Session 1C: Generation # %room Northstar A %chair1 Wei Xu
 132 11:00--11:18 #
-296 12:12--12:30 #
+1498 11:18--11:36 #
 886 11:36--11:54 #
 1182 11:54--12:12 #
-1498 11:18--11:36 #
+296 12:12--12:30 #
 
 = Session 1D: Tagging, Chunking, Syntax \& Parsing # %room Greenway %chair1 Roi Reichart
 333 11:00--11:18    # 
@@ -56,7 +56,7 @@
 1005 11:54--12:12    # 
 2066 12:12--12:30    # 
 
-= Session 1E: Theory \& Formalisms # %room Nicollet D %chair1 Valia Kordoni
+= Session 1E: Theory \& Formalisms # %room Nicollet D %chair1 Ryan Cotterell
 1478 11:00--11:18    # 
 1683 11:18--11:36    # 
 1730 11:36--11:54    # 
@@ -104,7 +104,7 @@
 ! 12:30--13:00 Grab your lunch break
 ! 13:00--14:30 Careers in NLP Panel # %room Nicollet Grand Ballroom 
 ! 14:30--15:00 Coffee Break
-+ 15:00--16:30 Oral sessions (short papers) and Posters (long and short papers)
++ 15:00--16:30 Oral sessions (short papers), Posters (long and short papers), and Demos
 = Session 2A: Dialogue \& Discourse # %room Northstar A %chair1 Ellen Riloff
 1589 15:00--15:15    # 
 1658 15:15--15:30    # 
@@ -113,7 +113,7 @@
 2085 16:00--16:15    # 
 2308 16:15--16:30    # 
 
-= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B+C % chair1 Saif Mohammad
+= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B+C % chair1 Preslav Nakov
 640 15:00--15:15    # 
 1172 15:15--15:30    # 
 1450 15:30--15:45    # 
@@ -129,7 +129,7 @@
 334 16:00--16:15 #
 22-srw 16:15--16:30  # 
 
-= Session 2D: Summarization \& Information Retrieval # %room Nicollet A %chair1 TBD
+= Session 2D: Summarization \& Information Retrieval # %room Nicollet A %chair1 Michael J. Paul
 790 15:00--15:15    # 
 1346 15:15--15:30    # 
 1638 15:30--15:45    # 
@@ -137,7 +137,7 @@
 2310 16:00--16:15    # 
 14-srw 16:15--16:30  # 
 
-= Session 2E: Tagging, Chunking, Syntax \& Parsing # %room Greenway %chair1 TBD
+= Session 2E: Tagging, Chunking, Syntax \& Parsing # %room Greenway %chair1 Joel Tetreault
 110 15:00--15:15    # 
 704 15:15--15:30    # 
 1081 15:30--15:45    # 
@@ -145,7 +145,7 @@
 1969 16:00--16:15    # 
 44-srw 16:15--16:30  # 
 
-= Session 2F: Information Extraction, Generation  \& Semantics (Posters) # %room Hyatt Exhibit Hall
+= Session 2F: Information Extraction, Generation  \& Semantics (Posters \& Demos) # %room Hyatt Exhibit Hall
 
 @ Information Extraction
 126    # 
@@ -327,7 +327,7 @@
 1885    # 
 2412    # 
 
-@ Machine Tranlsation
+@ Machine Translation
 1242    # 
 1633    # 
 1657    # 
@@ -344,8 +344,8 @@
 2216    # 
 
 ! 10:30--11:00 Coffee Break
-+ 11:00--12:30 Oral Sessions (short papers) and Posters (long and short papers)
-= Session 5A: Multilingual NLP # %room Nicollet D %chair1 Ryan Cotterell
++ 11:00--12:30 Oral Sessions (short papers), Posters (long and short papers), and Demos
+= Session 5A: Multilingual NLP # %room Nicollet D %chair1 Valia Kordoni
 495 11:00--11:15    # 
 1331 11:15--11:30    # 
 1338 11:30--11:45    # 
@@ -353,7 +353,7 @@
 1520 12:00--12:15    # 
 1668 12:15--12:30    # 
 
-= Session 5B: Machine Translation # %room Nicollet B+C %chair1 Preslav Nakov
+= Session 5B: Machine Translation # %room Nicollet B+C %chair1 Daisuke Kawahara
 325 11:00--11:15    # 
 1534 11:15--11:30    # 
 1614 11:30--11:45    # 
@@ -369,7 +369,7 @@
 1815 12:00--12:15    # 
 2454 12:15--12:30    # 
 
-= Session 5D: Text Analysis  # %room Northstar A %chair1 Michael J. Paul
+= Session 5D: Text Analysis  # %room Northstar A %chair1 Saif Mohammad
 590 11:00--11:15    # 
 2379 11:15--11:30    # 
 1603 11:30--11:45    # 
@@ -383,7 +383,7 @@
 1456 11:30--11:45    # 
 1951 11:45--12:00    # 
 
-= Session 5F: Information Retrieval, Generation, Question Answering \& Syntax (Posters) # %room Hyatt Exhibit Hall
+= Session 5F: Information Retrieval, Generation, Question Answering \& Syntax (Posters\& Demos) # %room Hyatt Exhibit Hall
 @ Information Retrieval
 117    # 
 242    # 
@@ -470,7 +470,7 @@
 4098-industry 16:24--16:42  # 
 4120-industry 16:42--17:00  # 
 
-= Session 6F: Phonology \& Morphology, Speech and Text Mining (Posters) # %room Hyatt Exhibit Hall 
+= Session 6F: Phonology \& Morphology, Speech and Text Mining (Posters \& Demos) # %room Hyatt Exhibit Hall 
 @ Phonology \& Morphology
 201    # 
 265    # 
@@ -539,7 +539,7 @@
 1011 11:06--11:24    # 
 1374 11:24--11:42    # 
 1447 11:42--12:00    # 
-= Session 7D: Machine Translation # %room Northstar A %chair1 Daisuke Kawahara
+= Session 7D: Machine Translation # %room Northstar A %chair1 Colin Cherry
 896 10:30--10:48    # 
 1183 10:48--11:06    # 
 1819 11:06--11:24    # 
@@ -591,7 +591,7 @@
 
 ! 12:00--12:30 Grab your lunch break
 
-! 12:30--13:30   NAACL Business Meeting
+! 12:30--13:30   NAACL Business Meeting # %room Nicollet B+C 
 + 13:30--15:00 Oral Sessions (long papers) and Posters (long and short papers)
 = Session 8A: Discourse  # %room Northstar A %chair1 Vincent Ng
 145 13:30--13:48    # 
@@ -664,7 +664,7 @@
 2199    # 
 
 ! 15:00--15:30  Coffee Break
-+ 15:30--16:30 Oral Sessions (short papers)
++ 15:30--16:30 Oral Sessions (short papers) and Posters (Industry track)
 = Session 9A: Question Answering # %room Greenway %chair1 Mo Yu
 713 15:30--15:45    # 
 1355 15:45--16:00    # 
