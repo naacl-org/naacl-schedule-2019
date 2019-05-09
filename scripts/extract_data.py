@@ -86,8 +86,9 @@ def main():
 
     # make sure we have the expected number of files
     assert len(list(xml_dir.glob('*.xml'))) == 3
-    assert len(list(order_dir.glob('*_order'))) == num_tarballs
-    assert len(list(mapping_dir.glob('*_id_map.txt'))) == num_tarballs
+    # we need to add 1 for the manual files
+    assert len(list(order_dir.glob('*_order'))) == num_tarballs + 1
+    assert len(list(mapping_dir.glob('*_id_map.txt'))) == num_tarballs + 1
 
     # delete the extracted directory
     rmtree(args.output_dir / 'data')
