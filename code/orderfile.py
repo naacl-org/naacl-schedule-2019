@@ -628,6 +628,7 @@ class Item(object):
             return cls(real_id,
                        'tutorial',
                        track='main',
+                       title='',
                        authors='',
                        location=metadata_dict.get('room', '').strip(),
                        start=start_time,
