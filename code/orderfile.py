@@ -357,8 +357,8 @@ class SessionGroup(object):
         super(SessionGroup, self).__init__()
         self.title = title
         self.sessions = []
-        self.start_time = start_time
-        self.end_time = end_time
+        self.start = start_time
+        self.end = end_time
 
     @classmethod
     def fromstring(cls, session_group_string):
@@ -399,8 +399,8 @@ class SessionGroup(object):
         self.sessions.append(session)
 
     def __repr__(self):
-        return 'SessionGroup {}--{} <{}>'.format(self.start_time,
-                                                 self.end_time,
+        return 'SessionGroup {}--{} <{}>'.format(self.start,
+                                                 self.end,
                                                  self.title)
 
 
