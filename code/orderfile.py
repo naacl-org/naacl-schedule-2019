@@ -601,11 +601,16 @@ class Item(object):
          end_time,
          metadata_string) = item_regex_match_object.groups()
         if containing_session_type == 'poster':
+            if '-' in item_id:
+                real_id, id_type = item_id.split('-')
+                item_id = real_id
+            else:
+                id_type = 'main'
             return cls(item_id,
                        'poster',
                        topic='',
                        title='',
-                       track='main',
+                       track=id_type,
                        authors='')
         elif (containing_session_type == 'paper' or
                 containing_session_type == 'best_paper'):
