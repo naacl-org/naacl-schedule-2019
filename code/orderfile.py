@@ -111,7 +111,7 @@ class Agenda(object):
             # add it to the active session group
             # if any (unless it's a plenary/break session);
             if (current_session_group and
-                    current_session.type_ not in ['plenary', 'break']):
+                    current_session.type not in ['plenary', 'break']):
                     current_session_group.add(current_session)
 
             # otherwise add it to the active day
@@ -251,7 +251,7 @@ class Agenda(object):
                     # that this is where the topic starts
                     # and then remove the active topics since
                     # we are done with it
-                    if current_item and current_item.type_ == 'poster':
+                    if current_item and current_item.type == 'poster':
                         current_item.topic = current_poster_topic
                         current_poster_topic = None
 
@@ -269,7 +269,7 @@ class Agenda(object):
 
                     # make this new item the currently active one
                     matchobj = Item._regexp.match(line)
-                    current_item = Item.fromstring(matchobj, current_session.type_)
+                    current_item = Item.fromstring(matchobj, current_session.type)
 
             # after we are done iterating through the
             # lines in the file, we may still have some
@@ -426,7 +426,7 @@ class Session(object):
         super(Session, self).__init__()
         self.id_ = session_id
         self.title = title
-        self.type_ = type
+        self.type = type
         self.location = location
         self.chair = chair
         self.start = start_time
@@ -437,7 +437,7 @@ class Session(object):
         out = 'Session '
         if self.start:
             out += '{}--{} '.format(self.start, self.end)
-        attrs = ['type={}'.format(self.type_)]
+        attrs = ['type={}'.format(self.type)]
         if self.id_:
             attrs.append('id={}'.format(self.id_))
         if self.title:
@@ -529,7 +529,7 @@ class Item(object):
     order file. There are three main item types:
     papers, posters, and tutorials. Demo, SRW, and
     Industry items are all considered papers.
-    An Item is defined by an ID, the `type_` attribute
+    An Item is defined by an ID, the `type` attribute
     ("paper", "poster", or "tutorial"), a title, authors,
     a track ("demos", "srw", or "industry"), a location
     (if any), a start time (if any), and an end time
@@ -541,15 +541,15 @@ class Item(object):
     def __init__(self, id_, type, **kwargs):
         super(Item, self).__init__()
         self.id_ = id_
-        self.type_ = type
+        self.type = type
         for key, value in kwargs.items():
             self.__setattr__(key, value)
 
     def __repr__(self):
-        out = '{} <id={}, track={}'.format(self.type_.title(),
+        out = '{} <id={}, track={}'.format(self.type.title(),
                                            self.id_,
                                            self.track)
-        if self.type_ == 'poster' and self.topic:
+        if self.type == 'poster' and self.topic:
             out += ', topic={}>'.format(self.topic)
         else:
             out += '>'
