@@ -64,6 +64,8 @@ It's also equally convenient to have a single `id_map.txt` file for the entire m
 
 ### Parsing the Order File
 
+**IMPORTANT**: Every single item in the order file being parsed must be in chronological order for the parsing below to work. This should not be an issue since the name "order file" indicates that this assumption is already being met.
+
 The module `code/orderfile.py` is an object-oriented parser for \*ACL-style conference order files. It parses the order file to create an `Agenda` object which is a collection of `Day` objects which in turn contain either `Session` or `SessionGroup` objects. `Session` objects are used to represent conference session where as `SessionGroup` objects are used for a group of parallel track sessions. Therefore, a `SessionGroup` object also contains `Session` objects. Each `Session` object also contains `Item` objects which refer to presentation items (papers/posters/tutorials). 
 
 This module is meant to be used with a complete order file, e.g., the manually combined order file described abovee and contained in `data/order/manually_combined_order`. A Python session illustrating the use of this module is shown below:
@@ -120,4 +122,6 @@ Items in a session in a session group:
 ```
 
 For more details on how this module works, run `import orderfile; help(orderfile)` at a Python prompt and examine the comprehensive comments
-in the source code.
+in the source code. One important thing to note is that since the order file
+is already in chronological order, we don't really need to do much sorting
+in the code. We can simply iterate over `Agenda.days` and then iterate over `Day.contents` since things will already in chronological order. Even the session groups contain the parallel tracks in the right order. 
