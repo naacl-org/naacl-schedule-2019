@@ -45,11 +45,11 @@ class Agenda(object):
         super(Agenda, self).__init__()
         self.days = []
 
-    def update_states(self,
-                      current_tuple,
-                      save_session=True,
-                      save_group=True,
-                      save_day=True):
+    def save_states(self,
+                    current_tuple,
+                    save_session=True,
+                    save_group=True,
+                    save_day=True):
         """
         A method run when we transition to a new state
         in the state machine we are using to keep track
@@ -153,10 +153,10 @@ class Agenda(object):
 
                     # update the various pending states
                     if current_day:
-                        self.update_states((current_day,
-                                            current_session_group,
-                                            current_session,
-                                            current_item))
+                        self.save_states((current_day,
+                                          current_session_group,
+                                          current_session,
+                                          current_item))
 
                     # once the update is finished; no sessions
                     # and session groups can be active for the
@@ -172,10 +172,10 @@ class Agenda(object):
                 elif line.startswith('! '):
 
                     # update the various pending states
-                    self.update_states((current_day,
-                                        current_session_group,
-                                        current_session,
-                                        current_item), save_day=False)
+                    self.save_states((current_day,
+                                      current_session_group,
+                                      current_session,
+                                      current_item), save_day=False)
 
                     # make it so that there is no group active anymore
                     # since session groups cannot span plenary sessions
@@ -188,10 +188,10 @@ class Agenda(object):
                 # if we encounter a new session group ...
                 elif line.startswith('+ '):
 
-                    self.update_states((current_day,
-                                        current_session_group,
-                                        current_session,
-                                        current_item), save_day=False)
+                    self.save_states((current_day,
+                                      current_session_group,
+                                      current_session,
+                                      current_item), save_day=False)
 
                     # there is no longer an active session
                     # or an active item
@@ -208,12 +208,12 @@ class Agenda(object):
                     # update states but do not yet save
                     # the currently active session group
                     # since we may still be in it
-                    self.update_states((current_day,
-                                        current_session_group,
-                                        current_session,
-                                        current_item),
-                                       save_day=False,
-                                       save_group=False)
+                    self.save_states((current_day,
+                                      current_session_group,
+                                      current_session,
+                                      current_item),
+                                     save_day=False,
+                                     save_group=False)
 
                     current_item = None
 
@@ -227,13 +227,13 @@ class Agenda(object):
                     # but do not yet save the day, the session
                     # group or the session since we are still
                     # in them
-                    self.update_states((current_day,
-                                        current_session_group,
-                                        current_session,
-                                        current_item),
-                                       save_day=False,
-                                       save_group=False,
-                                       save_session=False)
+                    self.save_states((current_day,
+                                      current_session_group,
+                                      current_session,
+                                      current_item),
+                                     save_day=False,
+                                     save_group=False,
+                                     save_session=False)
 
                     # save the topic to greedily attach to
                     # the next poster we see, which should
@@ -259,13 +259,13 @@ class Agenda(object):
                     # but do not yet save the day, the session
                     # group or the session since we may still
                     # be in them
-                    self.update_states((current_day,
-                                        current_session_group,
-                                        current_session,
-                                        current_item),
-                                       save_session=False,
-                                       save_day=False,
-                                       save_group=False)
+                    self.save_states((current_day,
+                                      current_session_group,
+                                      current_session,
+                                      current_item),
+                                     save_session=False,
+                                     save_day=False,
+                                     save_group=False)
 
                     # make this new item the currently active one
                     matchobj = Item._regexp.match(line)
@@ -275,10 +275,10 @@ class Agenda(object):
             # lines in the file, we may still have some
             # pending items, sessions, groups, and days
             # to take care of before we are done
-            self.update_states((current_day,
-                                current_session_group,
-                                current_session,
-                                current_item))
+            self.save_states((current_day,
+                              current_session_group,
+                              current_session,
+                              current_item))
 
             # now we are really done and so we can
             # nullify the current pointers since
