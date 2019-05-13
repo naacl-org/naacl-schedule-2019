@@ -303,6 +303,12 @@ class Day(object):
         self.datetime = datetime
         self.contents = []
 
+    def __str__(self):
+        return self.datetime.strftime('%A, %B %d, %Y')
+
+    def __repr__(self):
+        return 'Day <{}>'.format(str(self))
+
     @classmethod
     def fromstring(cls, day_string):
         """
@@ -335,9 +341,6 @@ class Day(object):
             An instance of either `Session` or `SessionGroup`.
         """
         self.contents.append(session_or_session_group)
-
-    def __repr__(self):
-        return 'Day <' + self.datetime.strftime('%A, %B %d, %Y') + '>'
 
 
 class SessionGroup(object):
