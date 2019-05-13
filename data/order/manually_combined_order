@@ -225,7 +225,7 @@
 555 17:18--17:36    # 
 2208 17:36--17:54    # 
 2314 17:54--18:12    # 
-2484 18:12--18:30    # 
+2484-tacl 18:12--18:30    # 
 
 = Session 3F: Applications, Social Media, Biomedical NLP \& Clinical Text Processing (Posters) # %room Hyatt Exhibit Hall
 @ Applications
@@ -318,7 +318,7 @@
 1615    # 
 1634    # 
 2180    # 
-2483    # 
+2483-tacl    # 
 
 @ Information Retrieval
 1272    # 
@@ -482,7 +482,7 @@
 973    # 
 997    # 
 1193    # 
-2485    # 
+2485-tacl    # 
 49-srw  # 
 60-srw #
 
@@ -526,14 +526,14 @@
 1626 10:48--11:06    # 
 1770 11:06--11:24    # 
 2300 11:24--11:42    # 
-2480 11:42--12:00    # 
+2480-tacl 11:42--12:00    # 
 
 = Session 7B: Ethics, Bias \& Fairness # %room Nicollet A %chair1 Emily Prud'hommeaux
-2479 10:30--10:48 #
+2479-tacl 10:30--10:48 #
 2087 10:48--11:06 #
 2238 11:06--11:24 #
 1396 11:24--11:42 #
-2482 11:42--12:00 #
+2482-tacl 11:42--12:00 #
 
 = Session 7C: Information Extraction # %room Nicollet D %chair1 Heng Ji
 147 10:30--10:48    # 
@@ -575,9 +575,9 @@
 1932    # 
 1942    # 
 2020    # 
-2478    # 
-2481    # 
-2486    # 
+2478-tacl    # 
+2481-tacl    # 
+2486-tacl    # 
 1851    # 
 34-srw  # 
  
