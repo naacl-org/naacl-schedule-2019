@@ -507,7 +507,9 @@ class Session(object):
         elif session_string.startswith('='):
             # paper session
             if session_string.startswith('= Session'):
-                (id_, title, metadata) = cls._paper_regexp.match(session_string).groups()
+                (id_,
+                 title,
+                 metadata) = cls._paper_regexp.match(session_string).groups()
                 metadata_dict = parse_metadata_into_dict(metadata) if metadata else {}
                 session_type = 'poster' if re.search('posters', title.lower()) else 'paper'
                 return cls(session_id=id_.strip(),
@@ -517,7 +519,8 @@ class Session(object):
                            chair=metadata_dict.get('chair1', '').strip())
             else:
                 # either tutorial or best paper
-                (title, metadata) = cls._non_paper_regexp.match(session_string).groups()
+                (title,
+                 metadata) = cls._non_paper_regexp.match(session_string).groups()
                 metadata_dict = parse_metadata_into_dict(metadata) if metadata else {}
                 session_type = 'tutorial' if re.search('tutorial', title.lower()) else 'best_paper'
                 return cls(title=title.strip(),
@@ -604,7 +607,8 @@ class Item(object):
                        title='',
                        track='main',
                        authors='')
-        elif containing_session_type == 'paper' or containing_session_type == 'best_paper':
+        elif (containing_session_type == 'paper' or
+                containing_session_type == 'best_paper'):
             if '-' in item_id:
                 real_id, id_type = item_id.split('-')
                 item_id = real_id
