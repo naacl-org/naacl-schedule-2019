@@ -259,7 +259,8 @@
 317    # 
 384    # 
 1938    # 
-2435    # 
+2435    #
+53-srw #
 
 @Demos
 10-demos   # 
@@ -381,7 +382,9 @@
 465 11:00--11:15    # 
 1399 11:15--11:30    # 
 1456 11:30--11:45    # 
-1951 11:45--12:00    # 
+1951 11:45--12:00    #
+41-srw 12:00--12:15 #
+47-srw 12:15--12:30 #
 
 = Session 5F: Information Retrieval, Generation, Question Answering \& Syntax (Posters\& Demos) # %room Hyatt Exhibit Hall
 @ Information Retrieval
@@ -480,15 +483,14 @@
 997    # 
 1193    # 
 2485    # 
-34-srw  # 
-17-srw  # 
+49-srw  # 
+60-srw #
 
 @ Speech
 541    # 
 1783    # 
 1848    # 
 2263    # 
-49-srw  # 
 35-srw  # 
 59-srw  # 
 
@@ -577,6 +579,7 @@
 2481    # 
 2486    # 
 1851    # 
+34-srw  # 
  
 @ Tagging, Chunking, Syntax  \& Parsing
 443    # 
@@ -585,7 +588,8 @@
 863    # 
 943    # 
 1107    # 
-1281    # 
+1281    #
+17-srw  # 
  
 
 
