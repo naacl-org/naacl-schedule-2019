@@ -2,3 +2,4 @@ python=3.6
 ipython
 ipdb
 beautifulsoup4
+lxml
