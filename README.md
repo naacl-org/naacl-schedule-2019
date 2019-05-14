@@ -134,3 +134,42 @@ For more details on how this module works, run `import orderfile; help(orderfile
 in the source code. One important thing to note is that since the order file
 is already in chronological order, we don't really need to do much sorting
 in the code. We can simply iterate over `Agenda.days` and then iterate over `Day.contents` since things will already in chronological order. Even the session groups contain the parallel tracks in the right order. 
+
+### Obtaining Metadata
+
+The order files (including the manually combined one) are not supposed to contain paper titles, authors, abstracts, and anthology URLs which is metadata
+that we need for the website and the app. Therefore, to get this metadata,
+we usually rely on the anthology XML files extracted above: (`N19.xml` for the main conference, `W19.xml` for the workshops and `S19.xml` for the co-located \*SEM conference). 
+
+However, these anthology files use entirely different IDs
+that have nothing to do with the IDs that are in the order files (which come from START). Therefore, we need to use the mapping files extracted above (`*_id_map.txt`) and particularly the manually combined ID mapping file to create a bridge between the order file IDs and the anthology metadata.
+
+It may not always be the case that the anthology contains all of the metadata we need. See the section on "Non-anthology Metadata File" above. Therefore, we need to be able to use both the XML files and this non-anthology TSV file.
+
+The module `code/metadata.py` can be used to obtain the metadata needed
+for order file entries. This module takes XML files, mapping files, as well
+as non-anthology metadata TSV files as input and returns an instance of a
+`ScheduleMetadata` object which can then be used to look up metadata for any
+given paper either through its order file ID or even through its anthology
+ID. A Python session illustrating the use of this module is shown below:
+
+```python
+from metadata import ScheduleMetadata
+
+# create a ScheduleMetadata object
+sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml'], mappings=['../data/mapping/manually_combined_id_map.txt'], non_anthology_tsv='../data/non-anthology-metadata.tsv')
+
+# look up metadata via order file ID
+sm['7-tutorial']
+
+# look up metadat via anthology ID
+sm['N19-5002']
+```
+
+The above session returns the following output:
+
+```                  
+MetadataTuple(title='Deep Learning for Natural Language Inference', authors='Samuel Bowman and Xiaodan Zhu', abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', anthology_url='http://www.aclweb.org/anthology/N19-5002')
+
+MetadataTuple(title='Deep Learning for Natural Language Inference', authors='Samuel Bowman and Xiaodan Zhu', abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', anthology_url='http://www.aclweb.org/anthology/N19-5002')
+```
