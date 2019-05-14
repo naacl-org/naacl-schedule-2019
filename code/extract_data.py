@@ -16,6 +16,8 @@ output directory:
 
 - `mapping/*_id_map.txt` files for the tracks, workshops and co-located events.
 
+Author: Nitin Madnani (nmadnani@ets.org)
+Date: May, 2019
 """
 
 import argparse
