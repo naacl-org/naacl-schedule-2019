@@ -560,9 +560,8 @@ class Item(object):
             self.__setattr__(key, value)
 
     def __repr__(self):
-        out = '{} <id={}, track={}'.format(self.type.title(),
-                                           self.id_,
-                                           self.track)
+        out = '{} <id={}'.format(self.type.title(),
+                                 self.id_)
         if self.type == 'poster' and self.topic:
             out += ', topic={}>'.format(self.topic)
         else:
@@ -609,38 +608,24 @@ class Item(object):
          end_time,
          metadata_string) = item_regex_match_object.groups()
         if containing_session_type == 'poster':
-            if '-' in item_id:
-                real_id, id_type = item_id.split('-')
-                item_id = real_id
-            else:
-                id_type = 'main'
             return cls(item_id,
                        'poster',
                        topic='',
                        title='',
-                       track=id_type,
                        authors='')
         elif (containing_session_type == 'paper' or
                 containing_session_type == 'best_paper'):
-            if '-' in item_id:
-                real_id, id_type = item_id.split('-')
-                item_id = real_id
-            else:
-                id_type = 'main'
             return cls(item_id,
                        'paper',
                        title='',
                        authors='',
-                       track=id_type,
                        start=start_time,
                        end=end_time)
         elif containing_session_type == 'tutorial':
-            real_id, id_type = item_id.split('-')
             metadata_dict = parse_order_file_metadata(metadata_string)
-            assert id_type == 'tutorial'
-            return cls(real_id,
+            assert item_id.endswith('-tutorial')
+            return cls(item_id,
                        'tutorial',
-                       track='main',
                        title='',
                        authors='',
                        location=metadata_dict.get('room', '').strip(),
