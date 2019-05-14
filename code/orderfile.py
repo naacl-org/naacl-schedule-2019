@@ -5,7 +5,7 @@ from datetime import datetime
 _METADATA_REGEXP = re.compile(r'%([^\s]+)\s+([^%]+)')
 
 
-def parse_metadata_into_dict(metadata_string):
+def parse_order_file_metadata(metadata_string):
     """
     A function to parse any additional metadata
     provided as part of a session or item in the
@@ -493,7 +493,7 @@ class Session(object):
              end,
              title,
              metadata) = cls._plenary_regexp.match(session_string).groups()
-            metadata_dict = parse_metadata_into_dict(metadata) if metadata else {}
+            metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
 
             session_type = 'break' if re.search(r'break|lunch|coffee', title.lower()) else 'plenary'
 
@@ -510,7 +510,7 @@ class Session(object):
                 (id_,
                  title,
                  metadata) = cls._paper_regexp.match(session_string).groups()
-                metadata_dict = parse_metadata_into_dict(metadata) if metadata else {}
+                metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
                 session_type = 'poster' if re.search('posters', title.lower()) else 'paper'
                 return cls(session_id=id_.strip(),
                            title=title.strip(),
@@ -521,7 +521,7 @@ class Session(object):
                 # either tutorial or best paper
                 (title,
                  metadata) = cls._non_paper_regexp.match(session_string).groups()
-                metadata_dict = parse_metadata_into_dict(metadata) if metadata else {}
+                metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
                 session_type = 'tutorial' if re.search('tutorial', title.lower()) else 'best_paper'
                 return cls(title=title.strip(),
                            type=session_type,
@@ -628,7 +628,7 @@ class Item(object):
                        end=end_time)
         elif containing_session_type == 'tutorial':
             real_id, id_type = item_id.split('-')
-            metadata_dict = parse_metadata_into_dict(metadata_string)
+            metadata_dict = parse_order_file_metadata(metadata_string)
             assert id_type == 'tutorial'
             return cls(real_id,
                        'tutorial',
