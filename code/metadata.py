@@ -256,8 +256,6 @@ class ScheduleMetadata(object):
         # next handle the non-anthology metadata TSV file
         # if one has been provided and update the
         # bridged dictionary
-        import ipdb
-        ipdb.set_trace()
         if non_anthology_tsv:
             order_id_to_metadata_dict.update(cls._parse_non_anthology_file(non_anthology_tsv))
 
