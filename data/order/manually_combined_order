@@ -28,7 +28,7 @@
 ! 10:30--11:00 Coffee Break
 
 + 11:00--12:30 Oral Sessions (long papers) and Posters (long and short papers)
-= Session 1A: Psycholinguistics \& Cognitive Modelling # %room Nicollet B+C %chair1 Serguei Pakhomov
+= Session 1A: Cognitive # %room Nicollet B+C %chair1 Serguei Pakhomov
 179 11:00--11:18    # 
 1465 11:18--11:36    # 
 1495 11:36--11:54    # 
@@ -49,14 +49,14 @@
 1182 11:54--12:12 #
 296 12:12--12:30 #
 
-= Session 1D: Tagging, Chunking, Syntax \& Parsing # %room Greenway %chair1 Roi Reichart
+= Session 1D: Syntax # %room Greenway %chair1 Roi Reichart
 333 11:00--11:18    # 
 370 11:18--11:36    # 
 699 11:36--11:54    # 
 1005 11:54--12:12    # 
 2066 12:12--12:30    # 
 
-= Session 1E: Theory \& Formalisms # %room Nicollet D %chair1 Ryan Cotterell
+= Session 1E: Theory # %room Nicollet D %chair1 Ryan Cotterell
 1478 11:00--11:18    # 
 1683 11:18--11:36    # 
 1730 11:36--11:54    # 
@@ -129,7 +129,7 @@
 334 16:00--16:15 #
 22-srw 16:15--16:30  # 
 
-= Session 2D: Summarization \& Information Retrieval # %room Nicollet A %chair1 Michael J. Paul
+= Session 2D: Summarization \& IR # %room Nicollet A %chair1 Michael J. Paul
 790 15:00--15:15    # 
 1346 15:15--15:30    # 
 1638 15:30--15:45    # 
@@ -137,7 +137,7 @@
 2310 16:00--16:15    # 
 14-srw 16:15--16:30  # 
 
-= Session 2E: Tagging, Chunking, Syntax \& Parsing # %room Greenway %chair1 Joel Tetreault
+= Session 2E: Syntax # %room Greenway %chair1 Joel Tetreault
 110 15:00--15:15    # 
 704 15:15--15:30    # 
 1081 15:30--15:45    # 
@@ -192,7 +192,7 @@
 ! 16:30--17:00 Coffee Break
 + 17:00--18:30 Oral sessions (long papers), Posters (long and short papers) \& Demos
 
-= Session 3A: Information Extraction  \& Retrieval # %room Nicollet A %chair1 Gerard de Melo
+= Session 3A: IE \& IR # %room Nicollet A %chair1 Gerard de Melo
 676 17:00--17:18    # 
 961 17:18--17:36    # 
 1282 17:36--17:54    # 
@@ -206,7 +206,7 @@
 1868 17:54--18:12    # 
 2049 18:12--18:30    # 
 
-= Session 3C: Parsing  \& Modelling # %room Greenway %chair1 Kai-Wei Chang
+= Session 3C: Parsing # %room Greenway %chair1 Kai-Wei Chang
 239 17:00--17:18    # 
 503 17:18--17:36    # 
 729 17:36--17:54    # 
@@ -301,7 +301,7 @@
 1923 9:54--10:12    # 
 2045 10:12--10:30    # 
 
-= Session 4E: Industry Session: Real World Challenges # %room Greenway %chair1 Nizar Habash
+= Session 4E: Industry: Real World Challenges # %room Greenway %chair1 Nizar Habash
 4036-industry 09:00--09:18  # 
 4075-industry 09:18--09:36  # 
 4055-industry 09:36--09:54  # 
@@ -452,7 +452,7 @@
 1829 16:24--16:42    # 
 1914 16:42--17:00    # 
 
-= Session 6C: Vision  \& Robotics  # %room Nicollet A %chair1 William Yang Wang
+= Session 6C: Vision  # %room Nicollet A %chair1 William Yang Wang
 1058 15:30--15:48    # 
 1302 15:48--16:06    # 
 1632 16:06--16:24    # 
@@ -625,7 +625,7 @@
 1946 14:24--14:42    # 
 1086 14:42--15:00    # 
 
-= Session 8E: Biomedical NLP \& Clinical Text Processing  # %room Nicollet D %chair1 Timothy Miller
+= Session 8E: Bio \& Clinical  # %room Nicollet D %chair1 Timothy Miller
 725 13:30--13:48    # 
 797 13:48--14:06    # 
 1244 14:06--14:24    # 
@@ -687,7 +687,7 @@
 1991 16:00--16:15    # 
 2131 16:15--16:30    # 
 
-= Session 9D: Cognitive Modeling  \& Psycholinguistics # %room Nicollet D %chair1 Bridget McInnes
+= Session 9D: Cognitive  \& Psycholinguistics # %room Nicollet D %chair1 Bridget McInnes
 45-srw 15:30--15:45 # 
 1479 15:45--16:00    # 
 1716 16:00--16:15    # 
@@ -699,7 +699,7 @@
 1307 16:00--16:15    # 
 2342 16:15--16:30    # 
 
-= Session 9F: Industry Session (posters) # %room Hyatt Exhibit Hall
+= Session 9F: Industry (posters) # %room Hyatt Exhibit Hall
 4109-industry  # 
 4010-industry  # 
 4090-industry  # 
