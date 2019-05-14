@@ -156,6 +156,58 @@ class ScheduleMetadata(object):
         return anthology_dict
 
     @classmethod
+    def _parse_non_anthology_file(cls, non_anthology_tsv):
+        """
+        A private class method used to parse the
+        non-anthology metadata TSV file containing
+        the titles and authors for order file IDs.
+
+        Parameters
+        ----------
+        non_anthology_tsv : str
+            Path to non-anthology metadata TSV file.
+
+        Returns
+        -------
+        non_anthology_dict : dict
+            A dictionary with the order file IDs
+            in the TSV file as the key and `MetadataTuple`
+            instances as values, with only the `title`
+            and `author` fields populated.
+
+        Raises
+        ------
+        FileNotFoundError
+            If the non-anthology TSV file does not exist.
+        """
+        # initialize the return dictionary
+        non_anthology_dict = {}
+
+        # make sure the file actually exists
+        non_anthology_tsv = Path(non_anthology_tsv)
+        if not non_anthology_tsv.exists():
+            raise FileNotFoundError('File {} does not exist'.format(non_anthology_tsv))
+
+        # iterate over each TSV row and create a new
+        # MetadataTuple instance and add to dictionary
+        with open(non_anthology_tsv, 'r') as nonanthfh:
+            reader = csv.DictReader(nonanthfh,
+                                    fieldnames=['paper_id',
+                                                'title',
+                                                'authors'],
+                                    dialect=csv.excel_tab)
+            for row in reader:
+                value = MetadataTuple(title=row['title'],
+                                      authors=row['authors'],
+                                      abstract='',
+                                      anthology_url='')
+                key = row['paper_id']
+                non_anthology_dict[key] = value
+
+        # return the dictionary
+        return non_anthology_dict
+
+    @classmethod
     def fromfiles(cls,
                   xmls=[],
                   mappings=[],
@@ -203,28 +255,10 @@ class ScheduleMetadata(object):
             order_id_to_metadata_dict[order_id] = anthology_metadata_dict[anthology_id]
 
         # next handle the non-anthology metadata TSV file
-        # if one has been provided; directly update the
+        # if one has been provided and update the
         # bridged dictionary
         if non_anthology_tsv:
-            with open(non_anthology_tsv, 'r') as nonanthfh:
-
-                # create a TSV reader
-                reader = csv.DictReader(nonanthfh,
-                                        fieldnames=['paper_id',
-                                                    'title',
-                                                    'authors'],
-                                        dialect=csv.excel_tab)
-
-                # iterate over each TSV row and create a new
-                # MetadataTuple instance and add to the bridge
-                # dictionary directly
-                for row in reader:
-                    value = MetadataTuple(title=row['title'],
-                                          authors=row['authors'],
-                                          abstract='',
-                                          anthology_url='')
-                    key = row['paper_id']
-                    order_id_to_metadata_dict[key] = value
+            order_id_to_metadata_dict.update(cls._parse_non_anthology_file(non_anthology_tsv))
 
         # finally return an instance of ScheduleMetadata
         # with the dictionaries populated
