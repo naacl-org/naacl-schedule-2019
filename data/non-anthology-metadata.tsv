@@ -1,13 +1,14 @@
-2483-tacl	Planning, Inference, and Pragmatics in Sequential Language Games	Fereshte Khani, Noah D. Goodman, Percy Liang
+paper_id	title	authors
+2483-tacl	Planning, Inference, and Pragmatics in Sequential Language Games	Fereshte Khani, Noah D. Goodman and Percy Liang
 2485-tacl	Grammar Error Correction in Morphologically-Rich Languages: The Case of Russian	Alla Rozovskaya and Dan Roth
 2482-tacl	Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science	Emily M. Bender and Batya Friedman
-2481-tacl	Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms	Wenpeng Yin, Hinrich Schütze
-2479-tacl	Mind the GAP: A Balanced Corpus of Gendered Ambiguous Pronouns	Kellie Webster, Marta Recasens, Vera Axelrod, Jason Baldridge
-2486-tacl	Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications	Rumen Dangovski, Li Jing, Preslav Nakov, Mićo Tatalović, Marin Soljačić
-2478-tacl	Analysis Methods in Neural Language Processing: A Survey	Yonatan Belinkov, James Glass
-2487-tacl	Complex Program Induction for Querying Knowledge Bases in the Absence of Gold Programs	Amrita Saha, Ghulam Ahmed Ansari, Abhishek Laddha, Karthik Sankaranarayanan, Soumen Chakrabarti
-2484-tacl	DREAM: A Challenge Dataset and Models for Dialogue-Based Reading Comprehension	Kai Sun, Dian Yu, Jianshu Chen, Dong Yu, Yejin Choi, Claire Cardie
-2480-tacl	CoQA: A Conversational Question Answering Challenge	Siva Reddy, Danqi Chen, Christopher D. Manning
+2481-tacl	Attentive Convolution: Equipping CNNs with RNN-style Attention Mechanisms	Wenpeng Yin and Hinrich Schütze
+2479-tacl	Mind the GAP: A Balanced Corpus of Gendered Ambiguous Pronouns	Kellie Webster, Marta Recasens, Vera Axelrod and Jason Baldridge
+2486-tacl	Rotational Unit of Memory: A Novel Representation Unit for RNNs with Scalable Applications	Rumen Dangovski, Li Jing, Preslav Nakov, Mićo Tatalović and Marin Soljačić
+2478-tacl	Analysis Methods in Neural Language Processing: A Survey	Yonatan Belinkov and James Glass
+2487-tacl	Complex Program Induction for Querying Knowledge Bases in the Absence of Gold Programs	Amrita Saha, Ghulam Ahmed Ansari, Abhishek Laddha, Karthik Sankaranarayanan and Soumen Chakrabarti
+2484-tacl	DREAM: A Challenge Dataset and Models for Dialogue-Based Reading Comprehension	Kai Sun, Dian Yu, Jianshu Chen, Dong Yu, Yejin Choi and Claire Cardie
+2480-tacl	CoQA: A Conversational Question Answering Challenge	Siva Reddy, Danqi Chen and Christopher D. Manning
 53-srw	Kickstarting NLP for the Whole-person Function Domain with Representation Learning and Data Analysis	Denis Newman-Griffis
 41-srw	Word Polysemy Aware Document Vector Estimation	Vivek Gupta, Ankit Saw, Harshit Gupta, Pegah Nokhiz and Partha Talukdar
 47-srw 	EQUATE : A Benchmark Evaluation Framework for Quantitative Reasoning in Natural Language Inference	Abhilasha Ravichander, Aakanksha Naik, Carolyn Rose and Eduard Hovy
