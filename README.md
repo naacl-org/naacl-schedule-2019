@@ -54,7 +54,7 @@ It is simpler to have a single order file representing the entirety of the main 
 
 - Take the order file provided by the program chairs. Technically, we should be using the extracted file `data/order/papers_order`. However, this file does not contain the themes for the poster sessions. Therefore, we need to start with the order file provided by the PCs which does contain this information. Let's denote this file as M.
 
-- For each of the extracted files `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`, manually take each paper entry in that order file and add it to M in the right time slot. Since the START IDs for the various components of the main conference are usuall independent, add a suffix, e.g. `-demos`, `-srw`, `industry`, `-tutorial` etc., after the paper ID to prevent any accidental overlaps.
+- For each of the extracted files `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`, manually take each paper entry in that order file and add it to M in the right time slot. Since the START IDs for the various components of the main conference are usuall independent, add a suffix, e.g. `-demos`, `-srw`, `industry`, `-tutorial`, etc., after the paper ID to prevent any accidental overlaps. Note that TACL paper IDs should have a `-tacl` suffix. 
 
 This combined order file was then saved as `data/order/manually_combined_order`. This file now supersedes `data/order/papers_order`, `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`. Any changes needed subsequent to this should be made directly to this file.
 
@@ -62,6 +62,14 @@ This combined order file was then saved as `data/order/manually_combined_order`.
 #### 2. Combined Mapping File
 
 It's also equally convenient to have a single `id_map.txt` file for the entire main conference event. To do this, we start with `data/mapping/papers_id_map.txt` and the manually add in the entries from `data/mapping/industry_id_map.txt`, `data/mapping/demos_id_map.txt`, `data/mapping/tutorials2019_id_map.txt`, and `data/mapping/srw_id_map.txt`. You will need to modify the START IDs from each mapping file to have the same suffixes as in the previous section (e.g., `-demos` for the demo IDs, etc.) so as to make lookup easier.
+
+#### 3. Non-anthology Metadata File
+
+For most of the items in the schedule, the titles and authors are supposed to be provided by the `N19.XML` file which is the file used by the ACL anthology. However, there are instances when the anthology does not contain all of the items in the schedule. One example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may not show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for the student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-arhival. 
+
+To handle such cases where the anthology XML file may not have the metadata we need, we need to manually create a file that does. This file should be created by the program chairs and should be a tab-separated file with the following fields: paper IDs, titles, and authors. The IDs should be the same as they are in the manually combined order file above, i.e., TACL paper IDs should have the `-tacl` suffix, SRW ones should have the `-srw` suffix, etc.
+
+For NAACL 2019, this file is located at `data/non-anthology-metadata.tsv`. Any changes to the titles and authors for these papers should be made directly to this file.
 
 ### Parsing the Order File
 
