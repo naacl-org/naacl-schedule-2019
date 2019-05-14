@@ -1,3 +1,11 @@
+"""
+A Python module to parse *ACL style conference
+order files in an object-oriented manner.
+
+Author: Nitin Madnani (nmadnani@ets.org)
+Date: May, 2019
+"""
+
 import re
 
 from datetime import datetime
