@@ -615,13 +615,16 @@ class Item(object):
                        'poster',
                        topic='',
                        title='',
-                       authors='')
+                       authors='',
+                       paper_url='')
         elif (containing_session_type == 'paper' or
                 containing_session_type == 'best_paper'):
             return cls(item_id,
                        'paper',
                        title='',
                        authors='',
+                       paper_url='',
+                       video_url='',
                        start=start_time,
                        end=end_time)
         elif containing_session_type == 'tutorial':
