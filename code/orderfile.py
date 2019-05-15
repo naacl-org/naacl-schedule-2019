@@ -391,7 +391,9 @@ class SessionGroup(object):
         (session_group_start,
          session_group_end,
          session_group_title) = cls._regexp.match(real_session_group_string).groups()
-        return cls(title=session_group_title.strip(),
+
+        # replace any "\&"s with "&"s
+        return cls(title=session_group_title.strip().replace('\&', '&'),
                    start_time=session_group_start.strip(),
                    end_time=session_group_end.strip())
 
@@ -505,7 +507,8 @@ class Session(object):
 
             session_type = 'break' if re.search(r'break|lunch|coffee', title.lower()) else 'plenary'
 
-            return cls(title=title.strip(),
+            # replace any "\&"s with "&"s
+            return cls(title=title.strip().replace('\&', '&'),
                        type=session_type,
                        location=metadata_dict.get('room', '').strip(),
                        chair=metadata_dict.get('chair1', '').strip(),
