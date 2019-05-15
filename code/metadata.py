@@ -12,6 +12,7 @@ Date: May, 2019
 """
 
 import csv
+import html
 
 from collections import namedtuple
 from pathlib import Path
@@ -128,6 +129,12 @@ class ScheduleMetadata(object):
 
                 # get the paper title
                 title = paper.title.text
+
+                # sometimes there are angle brackets
+                # in the title which can cause problems
+                # unless we escape them
+                if '<' in title:
+                    title = html.escape(title)
 
                 # get the abstract which may not exist for all papers
                 abstract = '' if not paper.abstract else paper.abstract.text
