@@ -393,7 +393,7 @@ class SessionGroup(object):
          session_group_title) = cls._regexp.match(real_session_group_string).groups()
 
         # replace any "\&"s with "&"s
-        return cls(title=session_group_title.strip().replace('\&', '&'),
+        return cls(title=session_group_title.strip().replace('\\&', '&'),
                    start_time=session_group_start.strip(),
                    end_time=session_group_end.strip())
 
@@ -524,7 +524,7 @@ class Session(object):
                 metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
                 session_type = 'poster' if re.search('posters', title.lower()) else 'paper'
                 return cls(session_id=id_.strip(),
-                           title=title.strip(),
+                           title=title.strip().replace('\&', '&'),
                            type=session_type,
                            location=metadata_dict.get('room', '').strip(),
                            chair=metadata_dict.get('chair1', '').strip())
@@ -534,7 +534,7 @@ class Session(object):
                  metadata) = cls._non_paper_regexp.match(session_string).groups()
                 metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
                 session_type = 'tutorial' if re.search('tutorial', title.lower()) else 'best_paper'
-                return cls(title=title.strip(),
+                return cls(title=title.strip().replace('\&', '&'),
                            type=session_type,
                            location=metadata_dict.get('room', '').strip())
 
