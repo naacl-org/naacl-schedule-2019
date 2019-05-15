@@ -246,7 +246,7 @@ class Agenda(object):
                     # save the topic to greedily attach to
                     # the next poster we see, which should
                     # be the next line
-                    current_poster_topic = line.lstrip('@ ').rstrip()
+                    current_poster_topic = line.lstrip('@ ').rstrip().replace('\&', '&')
                     current_item = None
 
                 # if we encounter a presentation item
