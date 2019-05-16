@@ -21,14 +21,14 @@
 ! 18:00--20:00 Welcome Reception # %room Nicollet Ballroom
 
 * Monday, June 3, 2019
-! 9:00--9:30 Land Acknowledgment, Opening Remarks and Janyce Weibe and Richard Kittredge Remembrances # %room Nicollet Grand Ballroom
+! 9:00--9:30 Land Acknowledgment, Opening Remarks and Janyce Weibe and Richard Kittredge Remembrances # %room Nicollet Ballroom
 
-! 9:30--10:30 Keynote 1: "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning" # %room Nicollet Grand Ballroom
+! 9:30--10:30 Keynote 1: "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning" # %room Nicollet Ballroom
   
 ! 10:30--11:00 Coffee Break
 
 + 11:00--12:30 Long Orals / Long \& Short Posters
-= Session 1A: Cognitive # %room Nicollet B+C %chair1 Serguei Pakhomov
+= Session 1A: Cognitive # %room Nicollet B/C %chair1 Serguei Pakhomov
 179 11:00--11:18    # 
 1465 11:18--11:36    # 
 1495 11:36--11:54    # 
@@ -102,7 +102,7 @@
 1896    #
 
 ! 12:30--13:00 Grab your lunch break
-! 13:00--14:30 Careers in NLP Panel # %room Nicollet Grand Ballroom %chair1 Philip Resnik
+! 13:00--14:30 Careers in NLP Panel # %room Nicollet Ballroom %chair1 Philip Resnik
 ! 14:30--15:00 Coffee Break
 + 15:00--16:30 Short Orals / Long \& Short Posters / Demos
 = Session 2A: Dialogue \& Discourse # %room Northstar A %chair1 Ellen Riloff
@@ -113,7 +113,7 @@
 2085 16:00--16:15    # 
 2308 16:15--16:30    # 
 
-= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B+C %chair1 Preslav Nakov
+= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B/C %chair1 Preslav Nakov
 640 15:00--15:15    # 
 1172 15:15--15:30    # 
 1450 15:30--15:45    # 
@@ -213,7 +213,7 @@
 862 17:54--18:12    # 
 1623 18:12--18:30    # 
 
-= Session 3D: Machine Translation # %room Nicollet B+C %chair1 Marine Carpuat
+= Session 3D: Machine Translation # %room Nicollet B/C %chair1 Marine Carpuat
 247 17:00--17:18 #
 2062 17:18--17:36 #
 1655 17:36--17:54 #
@@ -287,7 +287,7 @@
 1933 9:54--10:12    # 
 2113 10:12--10:30    # 
 
-= Session 4C: Social Media # %room Nicollet B+C %chair1 Xiaodan Zhu
+= Session 4C: Social Media # %room Nicollet B/C %chair1 Xiaodan Zhu
 321 9:00--9:18    # 
 449 9:18--9:36    # 
 1200 9:36--9:54    # 
@@ -354,7 +354,7 @@
 1520 12:00--12:15    # 
 1668 12:15--12:30    # 
 
-= Session 5B: Machine Translation # %room Nicollet B+C %chair1 Daisuke Kawahara
+= Session 5B: Machine Translation # %room Nicollet B/C %chair1 Daisuke Kawahara
 325 11:00--11:15    # 
 1534 11:15--11:30    # 
 1614 11:30--11:45    # 
@@ -433,7 +433,7 @@
 
 ! 12:30--14:00 Lunch Break
 
-! 14:00--15:00 Keynote 2: "When the Computers Spot the Lie (and People Don’t)" # %room Nicollet Grand Ballroom
+! 14:00--15:00 Keynote 2: "When the Computers Spot the Lie (and People Don’t)" # %room Nicollet Ballroom
 ! 15:00--15:30 Coffee Break
 
 + 15:30--17:00 Long Orals / Long \& Short Posters / Demos
@@ -459,7 +459,7 @@
 1636 16:24--16:42    # 
 1995 16:42--17:00    # 
 
-= Session 6D: Question Answering # %room Nicollet B+C %chair1 Eduardo Blanco
+= Session 6D: Question Answering # %room Nicollet B/C %chair1 Eduardo Blanco
 103 15:30--15:48    # 
 772 15:48--16:06    # 
 1001 16:06--16:24    # 
@@ -519,7 +519,7 @@
 ! 19:00--22:00 Social Event # %room Minneapolis Institute of Art (external)
 
 * Wednesday, June 5, 2019
-! 9:00--10:00  Keynote 3: "Leaving the Lab: Building NLP Applications that Real People can Use" # %room Nicollet Grand Ballroom
+! 9:00--10:00  Keynote 3: "Leaving the Lab: Building NLP Applications that Real People can Use" # %room Nicollet Ballroom
 ! 10:00--10:30 Coffee Break
 + 10:30--12:00 Long Orals / Long \& Short Posters
 
@@ -550,7 +550,7 @@
 2018 11:24--11:42    # 
 2242 11:42--12:00    # 
 
-= Session 7E: Text Analysis # %room Nicollet B+C %chair1 Steven Bethard
+= Session 7E: Text Analysis # %room Nicollet B/C %chair1 Steven Bethard
 2159 10:30--10:48    # 
 1455 10:48--11:06    # 
 1533 11:06--11:24    # 
@@ -597,7 +597,7 @@
 
 ! 12:00--12:30 Grab your lunch break
 
-! 12:30--13:30   NAACL Business Meeting # %room Nicollet B+C 
+! 12:30--13:30   NAACL Business Meeting # %room Nicollet B/C 
 + 13:30--15:00 Long Orals / Long \& Short Posters
 = Session 8A: Discourse  # %room Northstar A %chair1 Vincent Ng
 145 13:30--13:48    # 
@@ -606,7 +606,7 @@
 935 14:24--14:42    # 
 2327 14:42--15:00    # 
 
-= Session 8B: Machine Learning # %room Nicollet B+C %chair1 Anna Rumshisky
+= Session 8B: Machine Learning # %room Nicollet B/C %chair1 Anna Rumshisky
 238 13:30--13:48    # 
 931 13:48--14:06    # 
 1059 14:06--14:24    # 
@@ -695,7 +695,7 @@
 1716 16:00--16:15    # 
 379 16:15--16:30    # 
 
-= Session 9E: Machine Learning # %room Nicollet B+C %chair1 Byron C. Wallace
+= Session 9E: Machine Learning # %room Nicollet B/C %chair1 Byron C. Wallace
 737 15:30--15:45    # 
 1051 15:45--16:00    # 
 1307 16:00--16:15    # 
@@ -723,11 +723,11 @@
 
 ! 16:30--16:45  Short Break
 
-= Best Paper Session # %room Nicollet Grand Ballroom
+= Best Paper Session # %room Nicollet Ballroom
 440 16:45--17:03    #   
 610 17:03--17:21    #   
 1458 17:21--17:39    #   
 1584 17:39--17:57    #   
 2035 17:57--18:15    # 
 
-! 18:15--18:30 Closing Remarks # %room Nicollet Grand Ballroom
+! 18:15--18:30 Closing Remarks # %room Nicollet Ballroom
