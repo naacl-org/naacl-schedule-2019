@@ -229,7 +229,7 @@ class Agenda(object):
                     current_session = Session.fromstring(line)
 
                 # if we encounter a poster group topic ...
-                elif line.startswith('@ '):
+                elif line.startswith('@'):
 
                     # update the states for pending items
                     # but do not yet save the day, the session
