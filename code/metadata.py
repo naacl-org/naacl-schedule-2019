@@ -143,15 +143,17 @@ class ScheduleMetadata(object):
                 anthology_url = paper.url.text
 
                 # get the authors which also may not exist for all papers
+                authors = ''
                 if paper.find_all('author'):
                     authortags = paper.find_all('author')
                     authorlist = ['{} {}'.format(author.first.text, author.last.text) for author in authortags]
 
                     # reformat author string:  "X, Y, Z" -> "X, Y and Z"
                     # for readability
-                    authors = '{} and {}'.format(', '.join(authorlist[:-1]), authorlist[-1])
-                else:
-                    authors = ''
+                    if len(authorlist) > 1:
+                        authors = '{} and {}'.format(', '.join(authorlist[:-1]), authorlist[-1])
+                    else:
+                        authors = authorlist[0]
 
                 # create the named tuple and save it in the dictionary
                 anthology_dict[id_] = MetadataTuple(title=title,
