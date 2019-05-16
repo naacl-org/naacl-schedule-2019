@@ -71,9 +71,11 @@ To handle such cases where the anthology XML file may not have the metadata we n
 
 For NAACL 2019, this file is located at `data/non-anthology-metadata.tsv`. Any changes to the titles and authors for these papers should be made directly to this file.
 
-#### 4. Abstracts/Blurbs for Plenary Sessions
+#### 4. Info for Plenary Sessions
 
-We may also want to display a blurb/abstract for plenary sessions on the website and in the app, e.g., keynote sessions, panels, business meetings etc. For this, we create another TSV file with two fields: "session" and "abstract". This session field contains a part of the name of the session – enough to locate it programmatically – and the abstract contains the blurb. We do not use this file in any code in this repository but simply provide it to the app and website repositories that will use this repository as a submodule. This file is located at `data/plenary-abstracts.tsv`
+We may also want to display a blurb/abstract and other info for plenary sessions on the website and in the app, e.g., keynote sessions, panels, business meetings etc. For this, we create another TSV file with four fields: "session", "abstract", "people", and "people_url". The `session` field contains a part of the name of the session (enough to locate it programmatically), the `abstract` field contains the blurb, the `person` field contains the name of the person associated with the plenary session, if any and the `person_url` contains the URL to that person's website, if any. The `person` and `person_url` fields are mainly for keynotes. 
+
+We do not use this file in any code in this repository but simply provide it to the app and website repositories that will use this repository as a submodule. This file is located at `data/plenary-info.tsv`.
 
 ### Parsing the Order File
 
