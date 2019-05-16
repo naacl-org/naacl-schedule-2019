@@ -58,6 +58,8 @@ It is simpler to have a single order file representing the entirety of the main 
 
 This combined order file was then saved as `data/order/manually_combined_order`. This file now supersedes `data/order/papers_order`, `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`. Any changes needed subsequent to this should be made directly to this file.
 
+Other changes might include adding the social event as a plenary session, removing the names of keynote speakers from the session titles (see section below for additional plenary session data), etc.
+
 
 #### 2. Combined Mapping File
 
