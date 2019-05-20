@@ -428,8 +428,8 @@ class Session(object):
     """
 
     _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
-    _paper_regexp = re.compile(r'= Session ([^:]+): ([^#]+)#?([^#]+)?$')
-    _non_paper_regexp = re.compile(r'= ([^#]+)#?([^#]+)?$')
+    _presentation_session_regexp = re.compile(r'=\s*([^:#]+:?[^#]+)?#?([^#]+)?$')
+    _session_id_regexp = re.compile('Session ([0-9A-Za-z]+)')
 
     def __init__(self,
                  session_id='',
@@ -519,27 +519,34 @@ class Session(object):
                        end_time=end.strip())
 
         elif session_string.startswith('='):
-            # paper session
-            if session_string.startswith('= Session'):
-                (id_,
-                 title,
-                 metadata) = cls._paper_regexp.match(session_string).groups()
-                metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
-                session_type = 'poster' if re.search('posters', title.lower()) else 'paper'
-                return cls(session_id=id_.strip(),
-                           title=title.strip().replace('\&', '&'),
-                           type=session_type,
-                           location=metadata_dict.get('room', '').strip(),
-                           chair=metadata_dict.get('chair1', '').strip())
+            # presentation session
+            (title,
+             metadata) = cls._presentation_session_regexp.match(session_string).groups()
+            metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
+
+            # we assume a paper session by default
+            # and override based on the title
+            if re.search('poster', title, re.I):
+                session_type = 'poster'
+                if 'Session' in title:
+                    id_ = cls._session_id_regexp.search(title).group(1)
+                    title = re.sub(cls._session_id_regexp, '', title)
+            elif re.search('tutorial', title, re.I):
+                session_type = 'tutorial'
+                id_ = ''
+            elif re.search('best paper', title, re.I):
+                session_type = 'best_paper'
+                id_ = ''
             else:
-                # either tutorial or best paper
-                (title,
-                 metadata) = cls._non_paper_regexp.match(session_string).groups()
-                metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
-                session_type = 'tutorial' if re.search('tutorial', title.lower()) else 'best_paper'
-                return cls(title=title.strip().replace('\&', '&'),
-                           type=session_type,
-                           location=metadata_dict.get('room', '').strip())
+                session_type = 'paper'
+                if 'Session' in title:
+                    id_ = cls._session_id_regexp.search(title).group(1)
+                    title = re.sub(cls._session_id_regexp, '', title)
+            return cls(session_id=id_.strip(),
+                       title=title.strip().replace('\&', '&'),
+                       type=session_type,
+                       location=metadata_dict.get('room', '').strip(),
+                       chair=metadata_dict.get('chair1', '').strip())
 
 
 class Item(object):
