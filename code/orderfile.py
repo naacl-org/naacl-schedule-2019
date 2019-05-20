@@ -149,6 +149,7 @@ class Agenda(object):
         current_day = None
         current_session_group = None
         current_session = None
+        current_poster_topic = None
         current_item = None
         with open(filepath, 'r') as orderfh:
             for line in orderfh:
