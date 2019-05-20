@@ -258,9 +258,11 @@ class Agenda(object):
                     # we have an active poster topic, attach
                     # that topic to this poster to indicate
                     # that this is where the topic starts
-                    # and then remove the active topics since
+                    # and then remove the active topic since
                     # we are done with it
-                    if current_item and current_item.type == 'poster':
+                    if (current_item and
+                            current_item.type == 'poster' and
+                            current_poster_topic):
                         current_item.topic = current_poster_topic
                         current_poster_topic = None
 
