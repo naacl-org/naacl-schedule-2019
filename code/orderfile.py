@@ -299,6 +299,35 @@ class Agenda(object):
             current_session = None
             current_item = None
 
+    def __repr__(self):
+        # initialize the output variable
+        out = []
+
+        # iterate over each day ...
+        for day in self.days:
+            out.append(str(day))
+
+            # over each session or session group
+            for content in day.contents:
+                out.append(str(content))
+
+                # over each session in each session group
+                if isinstance(content, SessionGroup):
+                    for session in content.sessions:
+                        out.append(str(session))
+
+                        # over each item in each parallel session
+                        for item in session.items:
+                            out.append(str(item))
+
+                else:
+                    # over each item in non-parallel session
+                    for item in content.items:
+                        out.append(str(item))
+
+        # return the list as a string
+        return '\n'.join(out)
+
 
 class Day(object):
     """
