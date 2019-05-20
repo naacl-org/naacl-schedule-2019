@@ -1,33 +1,33 @@
 * Monday, June 3, 2019
-+ 11:00--12:30 Session 1F: Question Answering, Sentiment, Machine Translation, Resources and Evaluation (Posters)
-54   # Is It Dish Washer Safe? Automatically Answering ``Yes/No'' Questions Using Customer Reviews
-+ 15:00--16:30 Session 2B: Ethics, Bias and Fairness
-65   # Identifying and Reducing Gender Bias in Word-Level Language Models
-+ 15:00--16:30 Session 2C: Style and Sentiment
-22   # Emotion Impacts Speech Recognition Performance
-+ 15:00--16:30 Session 2D: Summarization and Information Retrieval
-14   # The Strength of the Weakest Supervision: Topic Classification Using Class Labels
-+ 15:00--16:30 Session 2E: Tagging, Chunking, Syntax and Parsing
-44   # Handling Noisy Labels for Robustly Learning from Self-Training Data for Low-Resource Sequence Labeling
-+ 15:00--16:30 Session 2F: Information Extraction, Generation and Semantics (Posters)
+= Session 1F: Question Answering, Sentiment, Machine Translation, Resources and Evaluation (Posters)
+54  # Is It Dish Washer Safe? Automatically Answering ``Yes/No'' Questions Using Customer Reviews
+= Session 2B: Ethics, Bias and Fairness
+65 16:15--16:30  # Identifying and Reducing Gender Bias in Word-Level Language Models
+= Session 2C: Style and Sentiment
+22 16:15--16:30  # Emotion Impacts Speech Recognition Performance
+= Session 2D: Summarization and Information Retrieval
+14 16:15--16:30  # The Strength of the Weakest Supervision: Topic Classification Using Class Labels
+= Session 2E: Tagging, Chunking, Syntax and Parsing
+44 16:15--16:30  # Handling Noisy Labels for Robustly Learning from Self-Training Data for Low-Resource Sequence Labeling
+= Session 2F: Information Extraction, Generation and Semantics (Posters)
 30   # Opinion Mining with Deep Contextualized Embeddings
 4   # A Bag-of-concepts Model Improves Relation Extraction in a Narrow Knowledge Domain with Limited Data
 19   # Generating Text through Adversarial Training Using Skip-Thought Vectors
 38   # A Partially Rule-Based Approach to AMR Generation
 58   # Computational Investigations of Pragmatic Effects in Natural Language
-+ 17:00--18:30 Session 3F: Applications, Social Media, Biomedical NLP and Clinical Text Processing (Posters)
+= Session 3F: Applications, Social Media, Biomedical NLP and Clinical Text Processing (Posters)
 20   # SEDTWik: Segmentation-based Event Detection from Tweets Using Wikipedia
 * Tuesday, June 4, 2019
-+ 11:00--12:30 Session 5B: Machine Translation
-32   # Multimodal Machine Translation with Embedding Prediction
-+ 15:30--17:00 Session 6F: Phonology, Speech and Text Mining (Posters)
+= Session 5B: Machine Translation
+32 12:15--12:30  # Multimodal Machine Translation with Embedding Prediction
+= Session 6F: Phonology, Speech and Text Mining (Posters)
 49   # Deep Learning and Sociophonetics: Automatic Coding of Rhoticity Using Neural Networks
 35   # Data Augmentation by Data Noising for Open-vocabulary Slots in Spoken Language Understanding
 59   # Expectation and Locality Effects in the Prediction of Disfluent Fillers and Repairs in English Speech
 34   # Gating Mechanisms for Combining Character and Word-level Word Representations: an Empirical Study
 17   # A Pregroup Representation of Word Order Alternation Using Hindi Syntax
 * Wednesday, June 5, 2019
-+ 15:30--16:30 Session 9B: Applications
-43   # Speak up, Fight Back! Detection of Social Media Disclosures of Sexual Harassment
-+ 15:30--16:30 Session 9D: Cognitive Modeling and Psycholinguistics
-45   # SNAP-BATNET: Cascading Author Profiling and Social Network Graphs for Suicide Ideation Detection on Social Media
+= Session 9B: Applications
+43 16:15--16:30  # Speak up, Fight Back! Detection of Social Media Disclosures of Sexual Harassment
+= Session 9D: Cognitive Modeling and Psycholinguistics
+45 15:30--15:45  # SNAP-BATNET: Cascading Author Profiling and Social Network Graphs for Suicide Ideation Detection on Social Media

@@ -1,6 +1,17 @@
-1   # Evaluation of named entity coreference
-2   # Neural Coreference Resolution with Limited Lexical Context and Explicit Mention Detection for Oral French
-9   # Entity Decisions in Neural Language Modelling: Approaches and Problems
-3   # Cross-lingual NIL Entity Clustering for Low-resource Languages
-4   # Cross-lingual Incongruences in the Annotation of Coreference
-7   # Deep Cross-Lingual Coreference Resolution for Less-Resourced Languages: The Case of Basque
+* Friday, June 7, 2019
++ 09:00--10:30 Session 1: Welcome and Invited Talk
+! 09:00--09:15 Introduction %by Vincent Ng and Sameer Pradhan
+! 09:15--10:30 Invited talk: Coreference and Coherence Revisited %by Amir Zeldes
++ 10:30--11:00 Mid-Morning Break
++ 11:00--12:30 Session 2
+1 11:00--11:30  # Evaluation of named entity coreference
+2 11:30--12:00  # Neural Coreference Resolution with Limited Lexical Context and Explicit Mention Detection for Oral French
+9 12:00--12:30  # Entity Decisions in Neural Language Modelling: Approaches and Problems
++ 12:30--14:00 Lunch Break
++ 14:00--15:30 Session 3
+3 14:00--14:30  # Cross-lingual NIL Entity Clustering for Low-resource Languages
+4 14:30--15:00  # Cross-lingual Incongruences in the Annotation of Coreference
+7 15:00--15:30  # Deep Cross-Lingual Coreference Resolution for Less-Resourced Languages: The Case of Basque
++ 15:30--16:00 Mid-Afternoon Break
++ 16:00--17:00 Session 4
+! 16:00--17:00 Informal Discussion and Closing Remarks %by Sameer Pradhan
