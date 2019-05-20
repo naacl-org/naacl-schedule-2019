@@ -458,7 +458,7 @@ class Session(object):
 
     _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
     _presentation_session_regexp = re.compile(r'=\s*([^:#]+:?[^#]+)?#?([^#]+)?$')
-    _session_id_regexp = re.compile('Session ([0-9A-Za-z]+)')
+    _session_id_regexp = re.compile('Session ([0-9A-Za-z]+)\s*:')
 
     def __init__(self,
                  session_id='',
