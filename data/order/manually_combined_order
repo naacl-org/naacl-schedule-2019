@@ -7,7 +7,7 @@
 7-tutorial 9:00--12:30  # %room Greenway BC/HI
 5-tutorial 9:00--12:30  # %room Greenway J
 
-! 10:30--11:00 Morning Break # %room NIC Promenade
+! 10:30--11:00 Morning Break # %room Nicollet Promenade
 
 ! 12:30--14:00 Lunch Break
 
@@ -16,16 +16,18 @@
 39-tutorial 14:00--17:30 # %room Greenway BC/HI
 15-tutorial 14:00--17:30 # %room Greenway J
 
-! 15:30--16:00 Afternoon Break # %room NIC Promenade
+! 15:30--16:00 Afternoon Break # %room Nicollet Promenade
 
 ! 18:00--20:00 Welcome Reception # %room Nicollet Ballroom
 
 * Monday, June 3, 2019
+! 7:30--9:00 Breakfast # %room Hyatt Exhibit Hall
+
 ! 9:00--9:30 Land Acknowledgment, Opening Remarks and Janyce Wiebe and Richard Kittredge Remembrances # %room Nicollet Ballroom
 
 ! 9:30--10:30 Keynote 1: "Data as a Mirror of Society: Lessons from the Emerging Science of Fairness in Machine Learning" # %room Nicollet Ballroom
   
-! 10:30--11:00 Coffee Break
+! 10:30--11:00 Coffee Break # %room Hyatt Exhibit Hall
 
 + 11:00--12:30 Long Orals / Long \& Short Posters
 = Session 1A: Cognitive # %room Nicollet B/C %chair1 Serguei Pakhomov
@@ -103,7 +105,7 @@
 
 ! 12:30--13:00 Grab your lunch break
 ! 13:00--14:30 Careers in NLP Panel # %room Nicollet Ballroom %chair1 Philip Resnik
-! 14:30--15:00 Coffee Break
+! 14:30--15:00 Coffee Break # %room Hyatt Exhibit Hall
 + 15:00--16:30 Short Orals / Long \& Short Posters / Demos
 = Session 2A: Dialogue \& Discourse # %room Northstar A %chair1 Ellen Riloff
 1589 15:00--15:15    # 
@@ -189,7 +191,7 @@
 59-demos   # 
 18-demos   # 
 
-! 16:30--17:00 Coffee Break
+! 16:30--17:00 Coffee Break # %room Hyatt Exhibit Hall
 + 17:00--18:30 Long Orals / Long \& Short Posters / Demos
 
 = Session 3A: IE \& IR # %room Nicollet A %chair1 Gerard de Melo
@@ -272,6 +274,8 @@
 
 * Tuesday, June 4, 2019
 
+! 7:30--9:00 Breakfast # %room Hyatt Exhibit Hall
+
 + 9:00--10:30 Long Orals / Long \& Short Posters
 = Session 4A: Phonology  \& Morphology # %room Nicollet A %chair1 Greg Kondrak
 303 9:00--9:18    # 
@@ -344,7 +348,7 @@
 1467    # 
 2216    # 
 
-! 10:30--11:00 Coffee Break
+! 10:30--11:00 Coffee Break # %room Hyatt Exhibit Hall
 + 11:00--12:30 Short Orals / Long \& Short Posters / Demos
 = Session 5A: Multilingual NLP # %room Nicollet D %chair1 Valia Kordoni
 495 11:00--11:15    # 
@@ -434,7 +438,8 @@
 ! 12:30--14:00 Lunch Break
 
 ! 14:00--15:00 Keynote 2: "When the Computers Spot the Lie (and People Don’t)" # %room Nicollet Ballroom
-! 15:00--15:30 Coffee Break
+
+! 15:00--15:30 Coffee Break # %room Hyatt Exhibit Hall
 
 + 15:30--17:00 Long Orals / Long \& Short Posters / Demos
 
@@ -519,8 +524,10 @@
 ! 19:00--22:00 Social Event # %room Minneapolis Institute of Art (external)
 
 * Wednesday, June 5, 2019
+! 7:30--9:00 Breakfast # %room Hyatt Exhibit Hall
+
 ! 9:00--10:00  Keynote 3: "Leaving the Lab: Building NLP Applications that Real People can Use" # %room Nicollet Ballroom
-! 10:00--10:30 Coffee Break
+! 10:00--10:30 Coffee Break # %room Hyatt Exhibit Hall
 + 10:30--12:00 Long Orals / Long \& Short Posters
 
 = Session 7A: Question Answering # %room Greenway %chair1 Alessandro Moschitti
@@ -669,7 +676,7 @@
 2197    # 
 2199    # 
 
-! 15:00--15:30  Coffee Break
+! 15:00--15:30  Coffee Break # %room Hyatt Exhibit Hall
 + 15:30--16:30 Short Orals / Industry Posters
 = Session 9A: Question Answering # %room Greenway %chair1 Mo Yu
 713 15:30--15:45    # 
