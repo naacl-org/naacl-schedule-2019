@@ -462,8 +462,9 @@ class Session(object):
     and a session chair (if any).
     """
 
-    _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
-    _presentation_session_regexp = re.compile(r'=\s*([^:#]+:?[^#]+)?#?([^#]+)?$')
+    # _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
+    # _presentation_session_regexp = re.compile(r'=\s*(([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2}))?\s*([^:#]+)?#?([^#]+)?$')
+    _any_session_regexp = re.compile(r'^([!=])\s*(([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2}))?\s*([^#]+)?#?([^#]+)?$')
     _session_id_regexp = re.compile('Session ([0-9A-Za-z]+)\s*:')
 
     def __init__(self,
@@ -536,36 +537,40 @@ class Session(object):
             An instance of `Session`.
         """
         # plenary session or break
-        if session_string.startswith('!'):
-            (start,
-             end,
-             title,
-             metadata) = cls._plenary_regexp.match(session_string).groups()
-            metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
 
+        # use the generic session regular expression; it must match
+        # or else there is a problem
+        m = cls._any_session_regexp.match(session_string)
+        assert m is not None
+
+        (starting_char,
+         _,
+         start_time,
+         end_time,
+         title,
+         metadata) = m.groups()
+
+        # make sure we have the starthing character we expect
+        assert starting_char in ['!', '=']
+
+        # if the string starts with '!', it's either a plenary session
+        # or a break session
+        if starting_char == '!':
             session_type = 'break' if re.search(r'break|lunch|coffee', title.lower()) else 'plenary'
-
-            # replace any "\&"s with "&"s
-            return cls(title=title.strip().replace('\&', '&'),
-                       type=session_type,
-                       location=metadata_dict.get('room', '').strip(),
-                       chair=metadata_dict.get('chair1', '').strip(),
-                       start_time=start.strip(),
-                       end_time=end.strip())
-
-        elif session_string.startswith('='):
-            # presentation session
-            (title,
-             metadata) = cls._presentation_session_regexp.match(session_string).groups()
-            metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
-
+            id_ = ''
+        # if the starting character is '=', it's a presentation
+        # session with actual presentation items (paper/poster/tutorial)
+        elif starting_char == '=':
             # we assume a paper session by default
             # and override based on the title
             if re.search('poster', title, re.I):
                 session_type = 'poster'
-                if 'Session' in title:
-                    id_ = cls._session_id_regexp.search(title).group(1)
+                m = cls._session_id_regexp.search(title)
+                if m:
+                    id_ = m.group(1)
                     title = re.sub(cls._session_id_regexp, '', title)
+                else:
+                    id_ = ''
             elif re.search('tutorial', title, re.I):
                 session_type = 'tutorial'
                 id_ = ''
@@ -574,14 +579,24 @@ class Session(object):
                 id_ = ''
             else:
                 session_type = 'paper'
-                if 'Session' in title:
-                    id_ = cls._session_id_regexp.search(title).group(1)
+                m = cls._session_id_regexp.search(title)
+                if m:
+                    id_ = m.group(1)
                     title = re.sub(cls._session_id_regexp, '', title)
-            return cls(session_id=id_.strip(),
-                       title=title.strip().replace('\&', '&'),
-                       type=session_type,
-                       location=metadata_dict.get('room', '').strip(),
-                       chair=metadata_dict.get('chair1', '').strip())
+                else:
+                    id_ = ''
+
+        # parse any metadata we are given in the string
+        metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
+
+        # replace any "\&"s with "&"s in the title
+        return cls(session_id=id_,
+                   title=title.strip().replace('\&', '&'),
+                   type=session_type,
+                   location=metadata_dict.get('room', '').strip(),
+                   chair=metadata_dict.get('chair1', '').strip(),
+                   start_time=start_time.strip() if start_time else '',
+                   end_time=end_time.strip() if end_time else '')
 
 
 class Item(object):
