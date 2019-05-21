@@ -146,10 +146,17 @@ class Agenda(object):
             The path to the order file that we want
             to convert to an `Agenda` object.
         """
+
+        # re-initialize all variables to get rid
+        # of any old content
         current_day = None
         current_session_group = None
         current_session = None
+        current_poster_topic = None
         current_item = None
+        self.days = []
+
+        # iterate over each line in the order file
         with open(filepath, 'r') as orderfh:
             for line in orderfh:
                 line = line.strip()
@@ -257,9 +264,11 @@ class Agenda(object):
                     # we have an active poster topic, attach
                     # that topic to this poster to indicate
                     # that this is where the topic starts
-                    # and then remove the active topics since
+                    # and then remove the active topic since
                     # we are done with it
-                    if current_item and current_item.type == 'poster':
+                    if (current_item and
+                            current_item.type == 'poster' and
+                            current_poster_topic):
                         current_item.topic = current_poster_topic
                         current_poster_topic = None
 
@@ -295,6 +304,35 @@ class Agenda(object):
             current_session_group = None
             current_session = None
             current_item = None
+
+    def __repr__(self):
+        # initialize the output variable
+        out = []
+
+        # iterate over each day ...
+        for day in self.days:
+            out.append(str(day))
+
+            # over each session or session group
+            for content in day.contents:
+                out.append(str(content))
+
+                # over each session in each session group
+                if isinstance(content, SessionGroup):
+                    for session in content.sessions:
+                        out.append(str(session))
+
+                        # over each item in each parallel session
+                        for item in session.items:
+                            out.append(str(item))
+
+                else:
+                    # over each item in non-parallel session
+                    for item in content.items:
+                        out.append(str(item))
+
+        # return the list as a string
+        return '\n'.join(out)
 
 
 class Day(object):
@@ -424,9 +462,10 @@ class Session(object):
     and a session chair (if any).
     """
 
-    _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
-    _paper_regexp = re.compile(r'= Session ([^:]+): ([^#]+)#?([^#]+)?$')
-    _non_paper_regexp = re.compile(r'= ([^#]+)#?([^#]+)?$')
+    # _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
+    # _presentation_session_regexp = re.compile(r'=\s*(([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2}))?\s*([^:#]+)?#?([^#]+)?$')
+    _any_session_regexp = re.compile(r'^([!=])\s*(([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2}))?\s*([^#]+)?#?([^#]+)?$')
+    _session_id_regexp = re.compile('Session ([0-9A-Za-z]+)\s*:')
 
     def __init__(self,
                  session_id='',
@@ -498,45 +537,66 @@ class Session(object):
             An instance of `Session`.
         """
         # plenary session or break
-        if session_string.startswith('!'):
-            (start,
-             end,
-             title,
-             metadata) = cls._plenary_regexp.match(session_string).groups()
-            metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
 
+        # use the generic session regular expression; it must match
+        # or else there is a problem
+        m = cls._any_session_regexp.match(session_string)
+        assert m is not None
+
+        (starting_char,
+         _,
+         start_time,
+         end_time,
+         title,
+         metadata) = m.groups()
+
+        # make sure we have the starthing character we expect
+        assert starting_char in ['!', '=']
+
+        # if the string starts with '!', it's either a plenary session
+        # or a break session
+        if starting_char == '!':
             session_type = 'break' if re.search(r'break|lunch|coffee', title.lower()) else 'plenary'
-
-            # replace any "\&"s with "&"s
-            return cls(title=title.strip().replace('\&', '&'),
-                       type=session_type,
-                       location=metadata_dict.get('room', '').strip(),
-                       chair=metadata_dict.get('chair1', '').strip(),
-                       start_time=start.strip(),
-                       end_time=end.strip())
-
-        elif session_string.startswith('='):
-            # paper session
-            if session_string.startswith('= Session'):
-                (id_,
-                 title,
-                 metadata) = cls._paper_regexp.match(session_string).groups()
-                metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
-                session_type = 'poster' if re.search('posters', title.lower()) else 'paper'
-                return cls(session_id=id_.strip(),
-                           title=title.strip().replace('\&', '&'),
-                           type=session_type,
-                           location=metadata_dict.get('room', '').strip(),
-                           chair=metadata_dict.get('chair1', '').strip())
+            id_ = ''
+        # if the starting character is '=', it's a presentation
+        # session with actual presentation items (paper/poster/tutorial)
+        elif starting_char == '=':
+            # we assume a paper session by default
+            # and override based on the title
+            if re.search('poster', title, re.I):
+                session_type = 'poster'
+                m = cls._session_id_regexp.search(title)
+                if m:
+                    id_ = m.group(1)
+                    title = re.sub(cls._session_id_regexp, '', title)
+                else:
+                    id_ = ''
+            elif re.search('tutorial', title, re.I):
+                session_type = 'tutorial'
+                id_ = ''
+            elif re.search('best paper', title, re.I):
+                session_type = 'best_paper'
+                id_ = ''
             else:
-                # either tutorial or best paper
-                (title,
-                 metadata) = cls._non_paper_regexp.match(session_string).groups()
-                metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
-                session_type = 'tutorial' if re.search('tutorial', title.lower()) else 'best_paper'
-                return cls(title=title.strip().replace('\&', '&'),
-                           type=session_type,
-                           location=metadata_dict.get('room', '').strip())
+                session_type = 'paper'
+                m = cls._session_id_regexp.search(title)
+                if m:
+                    id_ = m.group(1)
+                    title = re.sub(cls._session_id_regexp, '', title)
+                else:
+                    id_ = ''
+
+        # parse any metadata we are given in the string
+        metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
+
+        # replace any "\&"s with "&"s in the title
+        return cls(session_id=id_,
+                   title=title.strip().replace('\&', '&'),
+                   type=session_type,
+                   location=metadata_dict.get('room', '').strip(),
+                   chair=metadata_dict.get('chair1', '').strip(),
+                   start_time=start_time.strip() if start_time else '',
+                   end_time=end_time.strip() if end_time else '')
 
 
 class Item(object):

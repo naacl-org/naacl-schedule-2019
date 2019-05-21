@@ -1,23 +1,19 @@
-# Edit this file: 
-# reorder the lines that correspond to papers 
-#   and modify time slot, e.g. 9:00--9:30 
-# add lines for 
-#   start of new day, format: * DAY
-#   session headline, format: = HEADLINE 
-#   additional items, format: + TIME DESCRIPTION
 * Friday, June 7, 2019
-+ 9:15--9:30 Opening
+! 9:15--9:30 Opening
+= Oral Session 1
 32 9:30--10:00 # Zampieri: A Report on the Third VarDial ...
 27 10:00--10:30 # Bernier-Colborne: Improving Cuneiform Language I...
-+ 10:30--11:00 Coffee break
+! 10:30--11:00 Coffee break
+= Oral Session 2
 15 11:00--11:30 # Riyadh: Joint Approach to Deromanizati...
 2 11:30--12:00 # Chernyak: Char-RNN for Word Stress Detec...
 1 12:00--12:30 #
-+ 12:30--14:00 Lunch
-+ 14:00--15:00 Invited talk --- David Yarowsky (Johns Hopkins University): Massively Multilingual Translingual Knowledge Transfer
+! 12:30--14:00 Lunch
+! 14:00--15:00 Invited talk by David Yarowsky (Johns Hopkins University): "Massively Multilingual Translingual Knowledge Transfer"
+= Oral Session 3
 29 15:00--15:30 # Wu: Language Discrimination and Tr...
-+ 15:30--16:00 Coffee break
-+ 16:00--17:00 Poster Session
+! 15:30--16:00 Coffee break
+= 16:00--17:00 Poster Session
 5 # Ortmann: Variation between Different Di...
 6 # Myint Oo: Neural Machine Translation bet...
 9 # Jauhiainen: Language and Dialect Identific...
@@ -37,4 +33,4 @@
 31 # Paetzold: Experiments in Cuneiform Langu...
 16 17:00--17:30 # Shapiro: Comparing Pipelined and Integr...
 4 17:30--18:00 # Huck: Cross-lingual Annotation Proje...
-+ 18:00--18:15 Closing Remarks
+! 18:00--18:15 Closing Remarks

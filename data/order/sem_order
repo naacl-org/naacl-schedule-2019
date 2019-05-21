@@ -1,21 +1,19 @@
 * Thursday, June 6, 2019
-+ 09:00--10:30 Session 1
-+ 09:15--09:30 Opening remarks
-+ 09:30--10:30 Invited Talk by Sam Bowman (New York University): “Task-Independent Sentence Understanding”
-+ 10:30--11:00 Coffee break
-+ 11:00--12:30 Session 2: Lexical Semantics
+! 09:15--09:30 Opening remarks
+! 09:30--10:30 Invited Talk by Sam Bowman (New York University): "Task-Independent Sentence Understanding"
+! 10:30--11:00 Coffee break
+= Session 2: Lexical Semantics
 41 11:00--11:30  # SURel: A Gold Standard for Incorporating Meaning Shifts into Term Extraction
 69 11:30--12:00  # Word Usage Similarity Estimation with Sentence Representations and Automatic Substitutes
 72 12:00--12:30  # Beyond Context: A New Perspective for Word Embeddings
-+ 12:30--14:00 Lunch break
-+ 14:00--15:30 Session 3: Sentence Representations
+! 12:30--14:00 Lunch break
+= Session 3: Sentence Representations
 6 14:00--14:30  # Composition of Embeddings : Lessons from Statistical Relational Learning
 96 14:30--15:00  # Multi-Label Transfer Learning for Multi-Relational Semantic Similarity
 97 15:00--15:30  # Scalable Cross-Lingual Transfer of Neural Sentence Embeddings
-+ 15:30--16:00 Coffee break
-+ 16:00--18:00 Poster session
-+ 16:00--16:50 Poster booster
-+ 16:50--18:00 Poster session
+! 15:30--16:00 Coffee break
+! 16:00--16:50 Poster booster
+= 16:50--18:00 Session 4: Poster session
 11   # Second-order contexts from lexical substitutes for few-shot learning of word representations
 24   # Pre-trained Contextualized Character Embeddings Lead to Major Improvements in Time Normalization: a Detailed Analysis
 27   # Bot2Vec: Learning Representations of Chatbots
@@ -33,21 +31,21 @@
 83   # Improving Generalization in Coreference Resolution via Adversarial Training
 99   # Improving Human Needs Categorization of Events with Semantic Classification
 * Friday, June 7, 2019
-+ 09:00--10:30 Session 1
-+ 09:00--10:00 Invited talk by Ellen Riloff (University of Utah): “Identifying Affective Events and the Reasons for their Polarity”
+! 09:00--10:00 Invited talk by Ellen Riloff (University of Utah): "Identifying Affective Events and the Reasons for their Polarity"
+= Session 1: 
 36 10:00--10:30  # Word Embeddings (Also) Encode Human Personality Stereotypes
-+ 10:30--11:00 Coffee break
-+ 11:00--12:30 Session 2: Semantics and Syntax
+! 10:30--11:00 Coffee break
+= Session 2: Semantics and Syntax
 12 11:00--11:30  # Automatic Accuracy Prediction for AMR Parsing
 15 11:30--12:00  # An Argument-Marker Model for Syntax-Agnostic Proto-Role Labeling
 84 12:00--12:30  # Probing What Different NLP Tasks Teach Machines about Function Word Comprehension
-+ 12:30--14:00 Lunch break
-+ 14:00--15:30 Session 3: Inference
+! 12:30--14:00 Lunch break
+= Session 3: Inference
 10 14:00--14:30  # HELP: A Dataset for Identifying Shortcomings of Neural Models in Monotonicity Reasoning
 34 14:30--15:00  # On Adversarial Removal of Hypothesis-only Bias in Natural Language Inference
 53 15:00--15:30  # Bayesian Inference Semantics: A Modelling System and A Test Suite
-+ 15:30--16:00 Coffee break
-+ 16:00--17:30 Session 4: Applications
+! 15:30--16:00 Coffee break
+= Session 4: Applications
 102 16:00--16:30  # Target Based Speech Act Classification in Political Campaign Text
 62 16:30--17:00  # Incivility Detection in Online Comments
 22 17:00--17:30  # Generating Animations from Screenplays

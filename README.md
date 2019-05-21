@@ -26,7 +26,7 @@ conda activate naacl2019
 
 Although most of the process for producing the data files needed for the schedule is automated, there is a manual part as well.
 
-### Automated Extraction
+### First Time Automated Extraction
 
 The automated extraction uses `code/extract_data.py`. This script extracts the relevant files from the data files that are provided by the NAACL 2019 pub chairs. The pub chairs provided a directory on Google Drive containing the following files:
 
@@ -43,6 +43,8 @@ This will create a `data` directory at the same level as the `code` directory. T
 - `xml` : `{N19,W19,S19}.xml`, the XML files containing the author metadata, abstract, and anthology links for all papers being presented at the conference, workshops, and other co-located events. 
 - `order` : `<session>_order`, where `<session>` is the name of the various tracks, workshops, and co-located events. For example, `papers_order` is the order file for the main track papers, `industry_order` is the order file for the industry track papers, `cmcl_order` is the order file for the CMCL workshop, etc. 
 - `mapping` : `<session>_id_map.txt`, where `<session>` is the name of the various tracks, workshops, and co-located events. Each such file contains the mapping between the ACL Anthology IDs and the START IDs for the papers. This mapping is necessary to be able to make a bridge between the paper times (contained in the order files) and the paper metadata (contained in the XML files above).
+
+**Note**: This script is only meant to be run _one time_; after the first run manual changes may be made to the order and XML files which will get overwritten if this script is run again.
 
 ### Manual Steps
 
@@ -87,9 +89,24 @@ Only the `session` and `abstract` fields are required. The `person` and `person_
 
 We do not use this file in any code in this repository but simply provide it to the app and website repositories that will use this repository as a submodule. This file is located at `data/plenary-info.tsv`.
 
+#### 5. Modified Workshop Order Files
+
+The order files produced by workshop chairs (`data/order/X_order`, for all `X` except `papers`, `demos`, `tutorials`, `srw`, since those are handled in the manually combined order file above) will likely need manual modification. These files are usually generated using START are usually not compatible with the order-file semantics expected by this parser (see next section). Therefore, manual changes may need to be made to the workshop order files to conform to these semantics.
+
 ### Parsing the Order File
 
 **IMPORTANT**: Every single item in the order file being parsed must be in chronological order for the parsing below to work. This should not be an issue since the name "order file" indicates that this assumption is already being met.
+
+#### Semantics
+This parser assumes the following semantics for the order file:
+
+- Lines denoting presentation sessions (sessions that contain items to be presented e.g., posters, papers, tutorials) should begin with a `=`. This also applies to plenary presentation sessions.
+- Lines denoting non-presentation plenary sessions (breaks, keynotes, panel discussions, etc.) should begin with a `!`.
+- Lines denoting session groups, i.e., groups of parallel sessions should begin with a `+`. Note that `+` _cannot_ be used for any other sessions, only session groups. For example, the session group `Session 1: Long Orals / Long & Short Posters` contains sessions 1A, 1B, 1C, 1D, 1E, and 1F in `data/order/manually_combined_order`.
+- Lines denoting actual presentation items (papers, posters, tutorials) should begin with either just a number or a number with a hyphenated suffix, e.g., `23-tacl`. The suffix usually indicates the type of paper/poster (demo, tutorial, TACL, etc.).
+- Lines denoting poster topics/themes should begin with an `@` and only within poster sessions. These are optional. For examples, see `data/order/manually_combined_order`.
+
+#### Code
 
 The module `code/orderfile.py` is an object-oriented parser for \*ACL-style conference order files. It parses the order file to create an `Agenda` object which is a collection of `Day` objects which in turn contain either `Session` or `SessionGroup` objects. `Session` objects are used to represent conference session where as `SessionGroup` objects are used for a group of parallel track sessions. Therefore, a `SessionGroup` object also contains `Session` objects. Each `Session` object also contains `Item` objects which refer to presentation items (papers/posters/tutorials). 
 
