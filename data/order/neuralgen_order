@@ -1,14 +1,14 @@
 * Thursday, June 6, 2019
-+ 9:00--9:10 Opening Remarks
-+ 9:10--9:45 Invited Talk: Kyunghyun Cho
-+ 9:45--10:20 Invited Talk: He He
-+ 10:20--10:35 Coffee Break
-+ 10:35--11:10 Invited Talk: Graham Neubig
-+ 11:10--11:45 Invited Talk: Yejin Choi
-+ 11:45--13:15 Lunch
-+ 13:15--13:50 Invited Talk: Alexander Rush
-+ 13:50--14:15 Spotlight Talks
-+ 14:15--15:45 Poster Session
+! 9:00--9:10 Opening Remarks
+! 9:10--9:45 Invited Talk: Kyunghyun Cho
+! 9:45--10:20 Invited Talk: He He
+! 10:20--10:35 Coffee Break
+! 10:35--11:10 Invited Talk: Graham Neubig
+! 11:10--11:45 Invited Talk: Yejin Choi
+! 11:45--13:15 Lunch
+! 13:15--13:50 Invited Talk: Alexander Rush
+! 13:50--14:15 Spotlight Talks
+= 14:15--15:45 Poster Session
 6   # An Adversarial Learning Framework For A Persona-Based Multi-Turn Dialogue Model
 7   # DAL: Dual Adversarial Learning for Dialogue Generation
 10   # Towards Coherent and Engaging Spoken Dialog Response Generation Using Automatic Conversation Evaluators
@@ -26,7 +26,7 @@
 38   # Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings
 40   # Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations
 42   # Jointly Measuring Diversity and Quality in Text Generation Models
-+ 15:45--16:20 Invited Talk: Tatsunori Hashimoto
-+ 16:20--16:55 Invited Talk: Hal Daumé III
-+ 16:55--17:55 Panel
-+ 17:55--18:00 Closing Remarks
+! 15:45--16:20 Invited Talk: Tatsunori Hashimoto
+! 16:20--16:55 Invited Talk: Hal Daumé III
+! 16:55--17:55 Panel
+! 17:55--18:00 Closing Remarks
