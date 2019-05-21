@@ -146,11 +146,17 @@ class Agenda(object):
             The path to the order file that we want
             to convert to an `Agenda` object.
         """
+
+        # re-initialize all variables to get rid
+        # of any old content
         current_day = None
         current_session_group = None
         current_session = None
         current_poster_topic = None
         current_item = None
+        self.days = []
+
+        # iterate over each line in the order file
         with open(filepath, 'r') as orderfh:
             for line in orderfh:
                 line = line.strip()
