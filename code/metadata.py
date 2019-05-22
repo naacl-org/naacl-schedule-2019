@@ -203,7 +203,7 @@ class ScheduleMetadata(object):
                                     dialect=csv.excel_tab)
             for row in reader:
                 title = row['title'].strip()
-                authors = authors_string_to_list(row['authors'].strip())
+                authors = ScheduleMetadata.authors_string_to_list(row['authors'].strip())
                 value = MetadataTuple(title=title,
                                       authors=authors,
                                       abstract='',
