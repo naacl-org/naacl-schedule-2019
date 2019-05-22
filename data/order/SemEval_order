@@ -1,5 +1,6 @@
 * Thursday, June 6, 2019
 ! 09:00--09:15 Welcome / Opening Remarks
+! 09:15--09:30 *SEM Opening Remarks
 ! 09:30--10:30 Invited Talk by Sam Bowman: "Task-Independent Sentence Understanding"
 ! 10:30--11:00 Coffee
 = 11:00--12:30 Tasks 1, 2 and 3
@@ -88,6 +89,7 @@
 146   # ltl.uni-due at SemEval-2019 Task 5: Simple but Effective Lexico-Semantic Features for Detecting Hate Speech in Twitter
 221   # MineriaUNAM at SemEval-2019 Task 5: Detecting Hate Speech in Twitter using Multiple Features in a Combinatorial Framework
 226   # MITRE at SemEval-2019 Task 5: Transfer Learning for Multilingual Hate Speech Detection
+260 # Multilingual Detection of Hate Speech Against Immigrants and Women in Twitter at SemEval-2019 Task 5: Frequency Analysis Interpolation for Hate in Speech Detection
 204   # Multilingual Hate Speech Detection on Twitter with MUSE and ELMo Embeddings
 94   # Saagie at Semeval-2019 Task 5: From Universal Text Embeddings and Classical Features to Domain-specific Text Classification
 60   # SINAI at SemEval-2019 Task 5: Ensemble learning to detect hate speech against inmigrants and women in English and Spanish tweets
