@@ -45,7 +45,7 @@ class ScheduleMetadata(object):
 
     @staticmethod
     def authors_string_to_list(authorstr):
-        liststr = re.sub(',|and', '|', authorstr)
+        liststr = re.sub(r',|\band ', '|', authorstr)
         return [author.strip() for author in liststr.split('|') if author.strip()]
 
     @classmethod
