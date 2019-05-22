@@ -3,3 +3,6 @@ ipython
 ipdb
 beautifulsoup4
 lxml
+openpyxl
+pandas
+xlrd
