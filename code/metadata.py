@@ -13,6 +13,7 @@ Date: May, 2019
 
 import csv
 import html
+import re
 
 from collections import namedtuple
 from pathlib import Path
@@ -41,6 +42,11 @@ class ScheduleMetadata(object):
         self._order_id_to_metadata_dict = metadata_dict
         self._order_id_to_anthology_id_dict = mapping_dict
         self._anthology_id_to_order_id_dict = {v: k for k, v in mapping_dict.items()}
+
+    @staticmethod
+    def authors_string_to_list(authorstr):
+        liststr = re.sub(',|and', '|', authorstr)
+        return [author.strip() for author in liststr.split('|') if author.strip()]
 
     @classmethod
     def _parse_id_mapping_file(cls, mapping_file):
@@ -197,7 +203,7 @@ class ScheduleMetadata(object):
                                     dialect=csv.excel_tab)
             for row in reader:
                 title = row['title'].strip()
-                authors = row['authors'].strip()
+                authors = authors_string_to_list(row['authors'].strip())
                 value = MetadataTuple(title=title,
                                       authors=authors,
                                       abstract='',
