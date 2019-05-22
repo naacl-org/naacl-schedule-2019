@@ -1,9 +1,8 @@
 * Friday, June 7, 2019
 ! 09:00--09:15 Opening remarks
 ! 09:15--10:30 Invited speaker: Heng Ji
-! 10:30--11:00 Coffee break
-= 11:00--12:30 Oral session 1
-1 11:00--11:20  # A Joint Named-Entity Recognizer for Heterogeneous Tag-sets Using a Tag Hierarchy
+! 10:30--11:20 Coffee break
+= 11:20--12:30 Oral session 1
 5 11:20--11:40  # Effective Feature Representation for Clinical Text Concept Extraction
 16 11:40--11:55  # An Analysis of Attention over Clinical Notes for Predictive Tasks
 17 11:55--12:10  # Extracting Adverse Drug Event Information with Minimal Engineering
