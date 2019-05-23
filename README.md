@@ -81,11 +81,12 @@ We may also want to display a blurb/abstract and other info for plenary sessions
 - `session` : contains a part of the name of the plenary session (enough to locate it programmatically)
 - `abstract` : contains the blurb for the plenary session
 - `person` : contains an optional person for the plenary session
-- `person_url` : contains an optional person URL for the plenary session
+- `person_affiliation` : contains the optional affiliation for the person associated with the plenary session
+- `person_url` : contains the optional URL for person associated with the plenary session
 - `pdf_url` : contains an optional PDF URL for the plenary session
 - `video_url` : contains an optional video URL for the plenary session
 
-Only the `session` and `abstract` fields are required. The `person` and `person_url` fields are mainly to be used for keynotes. 
+Only the `session` and `abstract` fields are required. The `person`, `person_affiliation`, and `person_url` fields are mainly to be used for keynotes. 
 
 We do not use this file in any code in this repository but simply provide it to the app and website repositories that will use this repository as a submodule. This file is located at `data/plenary-info.tsv`.
 
