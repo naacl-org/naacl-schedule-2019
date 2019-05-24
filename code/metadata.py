@@ -187,6 +187,9 @@ class ScheduleMetadata(object):
         non-anthology metadata TSV file containing
         the titles and authors for order file IDs.
 
+        Note that this file is _only_ used for the
+        main conference event.
+
         Parameters
         ----------
         non_anthology_tsv : str
@@ -215,6 +218,9 @@ class ScheduleMetadata(object):
 
         # iterate over each TSV row and create a new
         # MetadataTuple instance and add to dictionary
+        # to the `main` event space since this file is
+        # assumed to be just necessary for the main
+        # conference and no other events.
         with open(non_anthology_tsv, 'r') as nonanthfh:
             reader = csv.DictReader(nonanthfh,
                                     dialect=csv.excel_tab)
@@ -227,7 +233,7 @@ class ScheduleMetadata(object):
                                       abstract=abstract,
                                       pdf_url='',
                                       video_url='')
-                key = row['paper_id'].strip()
+                key = '{}#main'.fomat(row['paper_id'].strip())
                 non_anthology_dict[key] = value
 
         # return the dictionary
