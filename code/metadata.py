@@ -53,7 +53,7 @@ class ScheduleMetadata(object):
         return [author.strip() for author in liststr.split('|') if author.strip()]
 
     @classmethod
-    def _parse_id_mapping_file(cls, mapping_file):
+    def _parse_id_mapping_file(cls, mapping_file, event='main'):
         """
         A private class method used to parse files
         mapping anthology IDs to IDs in the order files.
@@ -63,12 +63,20 @@ class ScheduleMetadata(object):
         ----------
         mapping_file : str
             The path to the mapping file.
+        event : str, optional
+            The name of the event corresponding
+            to the mapping file. The event name will
+            be used as a prefix for the actual
+            order ID and the combination used
+            as the key. Defaults to `main`, which
+            denotes the main conference event.
 
         Returns
         -------
         mapping_dict : dict
-            A dictionary with order file IDs as the keys
-            and anthology file IDs as the values.
+            A dictionary with event-suffixed order file
+            IDs as the keys and anthology file IDs as the
+            values.
 
         Raises
         ------
@@ -89,7 +97,7 @@ class ScheduleMetadata(object):
         with open(mapping_file, 'r') as mappingfh:
             for line in mappingfh:
                 anthology_id, order_id = line.strip().split(' ')
-                mapping_dict[order_id] = anthology_id
+                mapping_dict['{}#{}'.format(order_id, event)] = anthology_id
 
         return mapping_dict
 
@@ -228,7 +236,7 @@ class ScheduleMetadata(object):
     @classmethod
     def fromfiles(cls,
                   xmls=[],
-                  mappings=[],
+                  mappings={},
                   non_anthology_tsv=None):
         """
         Class method to create an instance of
@@ -239,8 +247,10 @@ class ScheduleMetadata(object):
         ----------
         xmls : list, optional
             List of anthology XML files.
-        mappings : list, optional
-            List of ID mapping (`id_map.txt`) files.
+        mappings : dict, optional
+            Dictionary of event names as keys
+            and paths to ID mapping (`id_map.txt`) files
+            as values.
         non_anthology_tsv : None, optional
             A TSV file containing author and title
             metdata for the order file IDs that are
@@ -258,8 +268,8 @@ class ScheduleMetadata(object):
 
         # parse the ID mapping files first and update the
         # relevant dictionary with the results
-        for mapping in mappings:
-            order_id_to_anthology_id_dict.update(cls._parse_id_mapping_file(mapping))
+        for event, mapping in mappings.items():
+            order_id_to_anthology_id_dict.update(cls._parse_id_mapping_file(mapping, event=event))
 
         # next parse all of the anthology XML files and update
         # the relevant dictionary with the results
@@ -283,9 +293,13 @@ class ScheduleMetadata(object):
         return cls(metadata_dict=order_id_to_metadata_dict,
                    mapping_dict=order_id_to_anthology_id_dict)
 
-    def __getitem__(self, id_):
+    def lookup(self, id_, event='main'):
         """
-        Look up metadata for an order file ID or an anthology ID.
+        Look up metadata for an order file ID from a particular event
+        or an anthology ID. For order file IDs, the default event is
+        `main` which refers to the main conference. The event names
+        would have been provided when this dictionary was populated.
+
         We infer whether the given ID is an anthology ID if it
         start with 'N', 'W', or 'S', since order file IDs
         always start with a number.
@@ -294,15 +308,35 @@ class ScheduleMetadata(object):
         ----------
         id_ : str
             Order file ID or anthology ID.
+        event : str, optional
+            The name of the event to which the order
+            file ID belongs. This is necessary since
+            order file IDs are not globally unique
+            across the main confernece and the
+            various workshops. Defaults to `main`
+            which denotes IDs from the main conference.
 
         Returns
         -------
         metadata_tuple : MetadataTuple
             An instance of `MetadataTuple` containing
             the metdata for the given ID.
+
+        Raises
+        ------
+        KeyError
+            If no metadata could be found for the given
+            ID.
         """
         if id_[0] in ['N', 'W', 'S']:
             order_id = self._anthology_id_to_order_id_dict[id_]
         else:
-            order_id = id_
-        return self._order_id_to_metadata_dict[order_id]
+            order_id = '{}#{}'.format(id_, event)
+
+        try:
+            value = self._order_id_to_metadata_dict[order_id]
+        except KeyError:
+            raise KeyError('Could not find metadata for ID '
+                           '{} within event "{}"'.format(id_, event))
+        else:
+            return value
