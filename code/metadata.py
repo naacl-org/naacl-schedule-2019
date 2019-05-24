@@ -22,7 +22,11 @@ from bs4 import BeautifulSoup
 
 # define a named tuple that will contain the metadata for each item
 MetadataTuple = namedtuple('MetadataTuple',
-                           ['title', 'authors', 'abstract', 'anthology_url'])
+                           ['title',
+                            'authors',
+                            'abstract',
+                            'pdf_url',
+                            'video_url'])
 
 
 class ScheduleMetadata(object):
@@ -148,6 +152,10 @@ class ScheduleMetadata(object):
                 # get the paper's anthology URL
                 anthology_url = paper.url.text
 
+                # TODO: get the video URL from the anthology
+                # XML file if it has it or from somewhere else
+                video_url = ''
+
                 # get the authors which also may not exist for all papers
                 authorlist = []
                 if paper.find_all('author'):
@@ -158,7 +166,8 @@ class ScheduleMetadata(object):
                 anthology_dict[id_] = MetadataTuple(title=title,
                                                     authors=authorlist,
                                                     abstract=abstract,
-                                                    anthology_url=anthology_url)
+                                                    pdf_url=anthology_url,
+                                                    video_url=video_url)
 
         # return the output dictionary
         return anthology_dict
@@ -208,7 +217,8 @@ class ScheduleMetadata(object):
                 value = MetadataTuple(title=title,
                                       authors=authors,
                                       abstract=abstract,
-                                      anthology_url='')
+                                      pdf_url='',
+                                      video_url='')
                 key = row['paper_id'].strip()
                 non_anthology_dict[key] = value
 
