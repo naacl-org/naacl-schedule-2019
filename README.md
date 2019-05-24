@@ -178,32 +178,41 @@ we usually rely on the anthology XML files extracted above: (`N19.xml` for the m
 However, these anthology files use entirely different IDs
 that have nothing to do with the IDs that are in the order files (which come from START). Therefore, we need to use the mapping files extracted above (`*_id_map.txt`) and particularly the manually combined ID mapping file to create a bridge between the order file IDs and the anthology metadata.
 
-It may not always be the case that the anthology contains all of the metadata we need. See the section on "Non-anthology Metadata File" above. Therefore, we need to be able to use both the XML files and this non-anthology TSV file.
+It may not always be the case that the anthology for the main conference contains all of the metadata we need. See the section on "Non-anthology Metadata File" above. Therefore, we need to be able to use both the `N19.xml`file and this non-anthology TSV file. Note that it is assumed that that such 
+a file is not needed for workshops and other co-located events, i.e., _all_ of the metadata for those events will be in either `W19.xml` or `S19.xml`.
 
 The module `code/metadata.py` can be used to obtain the metadata needed
 for order file entries. This module takes XML files, mapping files, as well
-as non-anthology metadata TSV files as input and returns an instance of a
-`ScheduleMetadata` object which can then be used to look up metadata for any
-given paper either through its order file ID or even through its anthology
-ID. A Python session illustrating the use of this module is shown below:
+as the main-conference non-anthology metadata TSV file as input and returns an instance of a `ScheduleMetadata` object which can then be used to look up metadata for any given paper either through its order file ID or even through its anthology ID. A Python session illustrating the use of this module is shown below:
 
 ```python
 from metadata import ScheduleMetadata
 
 # create a ScheduleMetadata object
-sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml'], mappings=['../data/mapping/manually_combined_id_map.txt'], non_anthology_tsv='../data/non-anthology-metadata.tsv')
+sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml', '../data/xml/S19.xml'], mappings={'main': '../data/mapping/manually_combined_id_map.txt', '*SEM': '../data/mapping/sem_id_map.txt'}, non_anthology_tsv='../data/non-anthology-metadata.tsv')
 
-# look up metadata via order file ID
-sm['7-tutorial']
+# look up metadata via order file ID for the
+# default event (main conference)
+sm.lookup('7-tutorial')
 
-# look up metadat via anthology ID
-sm['N19-5002']
+# look up the metadata via order file ID for
+# another event
+sm.lookup('97', event='*SEM')
+
+# look up metadata via anthology ID (no need to specify an
+# event since anthology IDs are globally unique across events)
+sm.lookup('N19-5002')
+sm.lookup('S19-1011')
 ```
 
 The above session returns the following output:
 
 ```                  
-MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', anthology_url='http://www.aclweb.org/anthology/N19-5002')
+MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', pdf_url='http://www.aclweb.org/anthology/N19-5002', video_url=''
 
-MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', anthology_url='http://www.aclweb.org/anthology/N19-5002')
+MetadataTuple(title='Scalable Cross-Lingual Transfer of Neural Sentence Embeddings', authors=['Hanan Aldarmaki', 'Mona Diab'], abstract='We develop and investigate several cross-lingual alignment approaches for neural sentence embedding models, such as the supervised inference classifier, InferSent, and sequential encoder-decoder models. We evaluate three alignment frameworks applied to these models: joint modeling, representation transfer learning, and sentence mapping, using parallel text to guide the alignment. Our results support representation transfer as a scalable approach for modular cross-lingual alignment of neural sentence embeddings, where we observe better performance compared to joint models in intrinsic and extrinsic evaluations, particularly with smaller sets of parallel data.', pdf_url='http://www.aclweb.org/anthology/S19-1006', video_url='')
+
+MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', pdf_url='http://www.aclweb.org/anthology/N19-5002', video_url='')
+
+MetadataTuple(title='A Semantic Cover Approach for Topic Modeling', authors=['Rajagopal Venkatesaramani', 'Doug Downey', 'Bradley Malin', 'Yevgeniy Vorobeychik'], abstract='We introduce a novel topic modeling approach based on constructing a semantic set cover for clusters of similar documents. Specifically, our approach first clusters documents using their Tf-Idf representation, and then covers each cluster with a set of topic words based on semantic similarity, defined in terms of a word embedding. Computing a topic cover amounts to solving a minimum set cover problem. Our evaluation compares our topic modeling approach to Latent Dirichlet Allocation (LDA) on three metrics: 1) qualitative topic match, measured using evaluations by Amazon Mechanical Turk (MTurk) workers, 2) performance on classification tasks using each topic model as a sparse feature representation, and 3) topic coherence. We find that qualitative judgments significantly favor our approach, the method outperforms LDA on topic coherence, and is comparable to LDA on document classification tasks.', pdf_url='http://www.aclweb.org/anthology/S19-1011', video_url='')
 ```
