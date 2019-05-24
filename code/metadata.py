@@ -204,9 +204,10 @@ class ScheduleMetadata(object):
             for row in reader:
                 title = row['title'].strip()
                 authors = ScheduleMetadata.authors_string_to_list(row['authors'].strip())
+                abstract = row['abstract'].strip()
                 value = MetadataTuple(title=title,
                                       authors=authors,
-                                      abstract='',
+                                      abstract=abstract,
                                       anthology_url='')
                 key = row['paper_id'].strip()
                 non_anthology_dict[key] = value
