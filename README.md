@@ -67,13 +67,15 @@ Other changes might include adding the social event as a plenary session, removi
 
 It's also equally convenient to have a single `id_map.txt` file for the entire main conference event. To do this, we start with `data/mapping/papers_id_map.txt` and the manually add in the entries from `data/mapping/industry_id_map.txt`, `data/mapping/demos_id_map.txt`, `data/mapping/tutorials2019_id_map.txt`, and `data/mapping/srw_id_map.txt`. You will need to modify the START IDs from each mapping file to have the same suffixes as in the previous section (e.g., `-demos` for the demo IDs, etc.) so as to make lookup easier.
 
-#### 3. Non-anthology Metadata File
+#### 3. Non-anthology Metadata Files
 
-For most of the items in the schedule, the titles and authors are supposed to be provided by the `N19.XML` file which is the file used by the ACL anthology. However, there are instances when the anthology does not contain all of the items in the schedule. One example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may not show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for the student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-arhival. 
+For most of the items in any event schedule, the titles, authors, and abstracts are supposed to be provided by the ACL anthology XML files (e.g., `N19.xml`, `W19.xml`, et cetera). However, there are instances when the anthology does not contain all of the items in the event schedule. For the main conference, an example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may  show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for various student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-arhival. 
 
-To handle such cases where the anthology XML file may not have the metadata we need, we need to manually create a file that does. This file should be created by the program chairs and should be a tab-separated file with the following fields: paper IDs, titles, and authors. The IDs should be the same as they are in the manually combined order file above, i.e., TACL paper IDs should have the `-tacl` suffix, SRW ones should have the `-srw` suffix, etc.
+Similarly, other workshops also might have such non-archival papers in their programs. Therefore, such files might be needed for them as well.
 
-For NAACL 2019, this file is located at `data/non-anthology-metadata.tsv`. Any changes to the titles and authors for these papers should be made directly to this file.
+Such files should be created by the program chairs/publication chairs and are tab-separated files with the following fields: paper IDs, titles, authors, and abstracts. The IDs should be the same as they are in the corresponding order files (for the main conference, this will be the manually combined order file above and TACL paper IDs should have the `-tacl` suffix, SRW ones should have the `-srw` suffix, etc.).
+
+For NAACL 2019, these files are located under `data/extra-metadata/*.tsv`. The file for the main conference is `data/extra-metadata/main.tsv`. For workshops, they are `data/extra-metadata/<name>.tsv` where `<name>` refers to the name of the workshop and is the same name used for the corresponding order file. Any changes for these papers should be made directly to these files.
 
 #### 4. Info for Plenary Sessions
 
