@@ -185,13 +185,13 @@ a file is not needed for workshops and other co-located events, i.e., _all_ of t
 
 The module `code/metadata.py` can be used to obtain the metadata needed
 for order file entries. This module takes XML files, mapping files, as well
-as the main-conference non-anthology metadata TSV file as input and returns an instance of a `ScheduleMetadata` object which can then be used to look up metadata for any given paper either through its order file ID or even through its anthology ID. A Python session illustrating the use of this module is shown below:
+as non-anthology metadata TSV files as input and returns an instance of a `ScheduleMetadata` object which can then be used to look up metadata for any given paper either through its order file ID or even through its anthology ID. A Python session illustrating the use of this module is shown below:
 
 ```python
 from metadata import ScheduleMetadata
 
 # create a ScheduleMetadata object
-sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml', '../data/xml/S19.xml'], mappings={'main': '../data/mapping/manually_combined_id_map.txt', '*SEM': '../data/mapping/sem_id_map.txt'}, non_anthology_tsv='../data/non-anthology-metadata.tsv')
+sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml', '../data/xml/S19.xml', '../data/xml/W19.xml'], mappings={'main': '../data/mapping/manually_combined_id_map.txt', '*SEM': '../data/mapping/sem_id_map.txt', 'NeuralGen': '../data/mapping/neuralgen_id_map.txt'}, extra_metadata_files={'main': '../data/extra-metadata/main.tsv', 'NeuralGen': '../data/extra-metadata/neuralgen.tsv'})
 
 # look up metadata via order file ID for the
 # default event (main conference)
@@ -205,6 +205,9 @@ sm.lookup('97', event='*SEM')
 # event since anthology IDs are globally unique across events)
 sm.lookup('N19-5002')
 sm.lookup('S19-1011')
+
+# look up non-anthology metadata for a workshop
+sm.lookup('36', event='NeuralGen')
 ```
 
 The above session returns the following output:
@@ -217,4 +220,6 @@ MetadataTuple(title='Scalable Cross-Lingual Transfer of Neural Sentence Embeddin
 MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', pdf_url='http://www.aclweb.org/anthology/N19-5002', video_url='')
 
 MetadataTuple(title='A Semantic Cover Approach for Topic Modeling', authors=['Rajagopal Venkatesaramani', 'Doug Downey', 'Bradley Malin', 'Yevgeniy Vorobeychik'], abstract='We introduce a novel topic modeling approach based on constructing a semantic set cover for clusters of similar documents. Specifically, our approach first clusters documents using their Tf-Idf representation, and then covers each cluster with a set of topic words based on semantic similarity, defined in terms of a word embedding. Computing a topic cover amounts to solving a minimum set cover problem. Our evaluation compares our topic modeling approach to Latent Dirichlet Allocation (LDA) on three metrics: 1) qualitative topic match, measured using evaluations by Amazon Mechanical Turk (MTurk) workers, 2) performance on classification tasks using each topic model as a sparse feature representation, and 3) topic coherence. We find that qualitative judgments significantly favor our approach, the method outperforms LDA on topic coherence, and is comparable to LDA on document classification tasks.', pdf_url='http://www.aclweb.org/anthology/S19-1011', video_url='')
+
+ MetadataTuple(title='Generating Diverse Story Continuations with Controllable Semantics', authors=['Lifu Tu', 'Xiaoan Ding', 'Dong Yu', 'Kevin Gimpel'], abstract='We propose a simple and effective modeling framework for controlled generation of multiple, diverse outputs. We focus on the setting of generating the next sentence of a story given its context. As controllable dimensions, we consider several sentence attributes, including sentiment, length, predicates,  frame semantic representations, and automatically-induced clusters. Our empirical results demonstrate: (1)our framework is accurate in terms of generating outputs that match the target control values; (2) our model yields increased maximum metric scores compared to standard n-best list generation via beam search; (3) controlling generation with semantic frames leads to a stronger combination of diversity and quality than other control variables as measured by automatic metrics. We also conduct a human evaluation to assess the utility of providing multiple suggestions for creative writing, demonstrating promising results for the potential of controllable, diverse generation in a collaborative writing system.', pdf_url='', video_url='')
 ```

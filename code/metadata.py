@@ -181,17 +181,17 @@ class ScheduleMetadata(object):
         return anthology_dict
 
     @classmethod
-    def _parse_non_anthology_file(cls, non_anthology_tsv):
+    def _parse_non_anthology_file(cls, event, non_anthology_tsv):
         """
         A private class method used to parse the
-        non-anthology metadata TSV file containing
-        the titles and authors for order file IDs.
-
-        Note that this file is _only_ used for the
-        main conference event.
+        non-anthology metadata TSV file for a given
+        event containing the titles, authors, and abstracts
+        for order file IDs.
 
         Parameters
         ----------
+        event : str
+            The event to which this file applies.
         non_anthology_tsv : str
             Path to non-anthology metadata TSV file.
 
@@ -233,7 +233,7 @@ class ScheduleMetadata(object):
                                       abstract=abstract,
                                       pdf_url='',
                                       video_url='')
-                key = '{}#main'.format(row['paper_id'].strip())
+                key = '{}#{}'.format(row['paper_id'].strip(), event)
                 non_anthology_dict[key] = value
 
         # return the dictionary
@@ -243,7 +243,7 @@ class ScheduleMetadata(object):
     def fromfiles(cls,
                   xmls=[],
                   mappings={},
-                  non_anthology_tsv=None):
+                  extra_metadata_files={}):
         """
         Class method to create an instance of
         `ScheduleMetadata` from the set of
@@ -257,10 +257,13 @@ class ScheduleMetadata(object):
             Dictionary of event names as keys
             and paths to ID mapping (`id_map.txt`) files
             as values.
-        non_anthology_tsv : None, optional
-            A TSV file containing author and title
-            metdata for the order file IDs that are
-            _not_ in the anthology XML files.
+        extra_metadata_files : dict, optional
+            Dictionary of event names as keys and
+            paths to non-anthology metadata files
+            as values. These are TSV files containing
+            title, authors, and abstract metdata for the
+            order file IDs that are _not_ in the anthology
+            XML files.
 
         Returns
         -------
@@ -291,8 +294,9 @@ class ScheduleMetadata(object):
         # next handle the non-anthology metadata TSV file
         # if one has been provided and update the
         # bridged dictionary
-        if non_anthology_tsv:
-            order_id_to_metadata_dict.update(cls._parse_non_anthology_file(non_anthology_tsv))
+        if extra_metadata_files:
+            for event, extra_metadata_file in extra_metadata_files.items():
+                order_id_to_metadata_dict.update(cls._parse_non_anthology_file(event, extra_metadata_file))
 
         # finally return an instance of ScheduleMetadata
         # with the dictionaries populated
