@@ -4,19 +4,19 @@
 ! 09:30--10:30 Invited Talk by Sam Bowman: "Task-Independent Sentence Understanding"
 ! 10:30--11:00 Coffee
 = 11:00--12:30 Tasks 1, 2 and 3
-30   # SemEval 2019 Task 1: Cross-lingual Semantic Parsing with UCCA
-249   # HLT@SUDA at SemEval 2019 Task 1: UCCA Graph Parsing as Constituent Tree Parsing
-269   # SemEval-2019 Task 2: Unsupervised Lexical Frame Induction
-207   # Neural GRANNy at SemEval 2019 Task 2: A combined approach for better modeling of semantic relationships in semantic frame induction
-272   # SemEval-2019 Task 3: EmoContext Contextual Emotion Detection in Text
-215   # ANA at SemEval-2019 Task 3: Contextual Emotion detection in Conversations through hierarchical LSTMs and BERT
+30 11:00--11:15 # SemEval 2019 Task 1: Cross-lingual Semantic Parsing with UCCA
+249 11:15--11:30  # HLT@SUDA at SemEval 2019 Task 1: UCCA Graph Parsing as Constituent Tree Parsing
+269 11:30--11:45  # SemEval-2019 Task 2: Unsupervised Lexical Frame Induction
+207 11:45--12:00  # Neural GRANNy at SemEval 2019 Task 2: A combined approach for better modeling of semantic relationships in semantic frame induction
+272 12:00--12:15  # SemEval-2019 Task 3: EmoContext Contextual Emotion Detection in Text
+215 12:15--12:30  # ANA at SemEval-2019 Task 3: Contextual Emotion detection in Conversations through hierarchical LSTMs and BERT
 ! 12:30--14:00 Lunch
 = 14:00--15:30 Tasks 5 and 6
-271   # SemEval-2019 Task 5: Multilingual Detection of Hate Speech Against Immigrants and Women in Twitter
-229   # Atalaya at SemEval 2019 Task 5: Robust Embeddings for Tweet Classification
-253   # FERMI at SemEval-2019 Task 5: Using Sentence embeddings to Identify Hate Speech Against Immigrants and Women in Twitter
-275   # SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval)
-185   # NULI at SemEval-2019 Task 6: Transfer Learning for Offensive Language Detection using Bidirectional Transformers
+271 14:00--14:18  # SemEval-2019 Task 5: Multilingual Detection of Hate Speech Against Immigrants and Women in Twitter
+229 14:18--14:36  # Atalaya at SemEval 2019 Task 5: Robust Embeddings for Tweet Classification
+253 14:36--14:54  # FERMI at SemEval-2019 Task 5: Using Sentence embeddings to Identify Hate Speech Against Immigrants and Women in Twitter
+275 14:54--15:12  # SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval)
+185 15:12--15:30  # NULI at SemEval-2019 Task 6: Transfer Learning for Offensive Language Detection using Bidirectional Transformers
 ! 15:30--16:00 Coffee
 ! 16:00--16:30 Discussion
 = 16:30--17:30 Poster Session
@@ -158,20 +158,20 @@
 ! 09:30--10:30 State of SemEval Discussion
 ! 10:30--11:00 Coffee
 = 11:00--12:30 Tasks 4, 7 and 8
-270   # SemEval-2019 Task 4: Hyperpartisan News Detection
-130   # Team Bertha von Suttner at SemEval-2019 Task 4: Hyperpartisan News Detection using ELMo Sentence Representation Convolutional Network
-273   # SemEval-2019 Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours
-239   # eventAI at SemEval-2019 Task 7: Rumor Detection on Social Media by Exploiting Content, User Credibility and Propagation Information
-268   # SemEval-2019 Task 8: Fact Checking in Community Question Answering Forums
-177   # AUTOHOME-ORCA at SemEval-2019 Task 8: Application of BERT for Fact-Checking in Community Forums
+270 11:00--11:15  # SemEval-2019 Task 4: Hyperpartisan News Detection
+130 11:15--11:30  # Team Bertha von Suttner at SemEval-2019 Task 4: Hyperpartisan News Detection using ELMo Sentence Representation Convolutional Network
+273 11:30--11:45  # SemEval-2019 Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours
+239 11:45--12:00 # eventAI at SemEval-2019 Task 7: Rumor Detection on Social Media by Exploiting Content, User Credibility and Propagation Information
+268 12:00--12:15  # SemEval-2019 Task 8: Fact Checking in Community Question Answering Forums
+177 12:15--12:30  # AUTOHOME-ORCA at SemEval-2019 Task 8: Application of BERT for Fact-Checking in Community Forums
 ! 12:30--14:00 Lunch
 = 14:00--15:30 Tasks 9, 10 and 12
-276   # SemEval-2019 Task 9: Suggestion Mining from Online Reviews and Forums
-69   # m_y at SemEval2019 Task 9: Exploring BERT for Suggestion Mining
-266   # SemEval-2019 Task 10: Math Question Answering
-68   # AiFu at SemEval-2019 Task 10: A Symbolic and Sub-symbolic Integrated System for SAT Math Question Answering
-274   # SemEval-2019 Task 12: Toponym Resolution in Scientific Papers
-254   # DM_NLP at SemEval-2018 Task 12: A Pipeline System for Toponym Resolution
+276 14:00--14:15  # SemEval-2019 Task 9: Suggestion Mining from Online Reviews and Forums
+69 14:15--14:30  # m_y at SemEval2019 Task 9: Exploring BERT for Suggestion Mining
+266 14:30--14:45  # SemEval-2019 Task 10: Math Question Answering
+68 14:45--15:00  # AiFu at SemEval-2019 Task 10: A Symbolic and Sub-symbolic Integrated System for SAT Math Question Answering
+274 15:00--15:15 # SemEval-2019 Task 12: Toponym Resolution in Scientific Papers
+254 15:15--15:30 # DM_NLP at SemEval-2018 Task 12: A Pipeline System for Toponym Resolution
 ! 15:30--16:00 Coffee
 ! 16:00--16:30 Discussion
 = 16:30--17:30 Poster Session
