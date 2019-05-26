@@ -46,11 +46,13 @@ def parse_order_file_metadata(metadata_string):
 
 class Agenda(object):
     """
-    Class encapsulating an Agenda object which is defined
-    as a collection of `Day` objects.
+    Class encapsulating an Agenda object for a
+    given event which is defined as a collection
+    of `Day` objects.
     """
-    def __init__(self):
+    def __init__(self, event):
         super(Agenda, self).__init__()
+        self.event = event
         self.days = []
 
     def save_states(self,
@@ -307,7 +309,7 @@ class Agenda(object):
 
     def __repr__(self):
         # initialize the output variable
-        out = []
+        out = ['Agenda for event "{}":'.format(self.event)]
 
         # iterate over each day ...
         for day in self.days:

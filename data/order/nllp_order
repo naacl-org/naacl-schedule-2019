@@ -1,7 +1,6 @@
 * Friday, June 7, 2019
 ! 9:00--9:10 Workshop Opening
-! 9:10--10:10 Invited Speaker
-! 9:10--10:10 Law as Data: The Promise and Challenges of Natural Language Processing for Legal Research %by Arthur Dyevre
+! 9:10--10:10 Invited Talkby Arthur Dyevre: "Law as Data: The Promise and Challenges of Natural Language Processing for Legal Research"
 = 10:10--10:30 Bias
 2 10:10--10:30  # Implicit Bias in the Judiciary
 ! 10:30--11:00 Coffee
@@ -11,8 +10,7 @@
 5 11:40--12:00  # Scalable Methods for Annotating Legal-Decision Corpora
 12 12:00--12:20  # The Extent of Repetition in Contract Language
 ! 12:20--14:00 Lunch
-! 14:00--15:00 Invited Speaker
-! 14:00--15:00 NLP \& Law \{Past, Present + Future\} by Daniel Katz
+! 14:00--15:00 Invited Talk by Daniel Katz: "NLP & Law {Past, Present + Future}"
 = 15:00--15:30 Short Papers
 8 15:00--15:15  # Sentence Boundary Detection in Legal Text
 15 15:15--15:30  # Legal Linking: Citation Resolution and Suggestion in Constitutional Law

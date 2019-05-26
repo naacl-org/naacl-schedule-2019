@@ -67,13 +67,15 @@ Other changes might include adding the social event as a plenary session, removi
 
 It's also equally convenient to have a single `id_map.txt` file for the entire main conference event. To do this, we start with `data/mapping/papers_id_map.txt` and the manually add in the entries from `data/mapping/industry_id_map.txt`, `data/mapping/demos_id_map.txt`, `data/mapping/tutorials2019_id_map.txt`, and `data/mapping/srw_id_map.txt`. You will need to modify the START IDs from each mapping file to have the same suffixes as in the previous section (e.g., `-demos` for the demo IDs, etc.) so as to make lookup easier.
 
-#### 3. Non-anthology Metadata File
+#### 3. Non-anthology Metadata Files
 
-For most of the items in the schedule, the titles and authors are supposed to be provided by the `N19.XML` file which is the file used by the ACL anthology. However, there are instances when the anthology does not contain all of the items in the schedule. One example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may not show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for the student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-arhival. 
+For most of the items in any event schedule, the titles, authors, and abstracts are supposed to be provided by the ACL anthology XML files (e.g., `N19.xml`, `W19.xml`, et cetera). However, there are instances when the anthology does not contain all of the items in the event schedule. For the main conference, an example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may  show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for various student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-arhival. 
 
-To handle such cases where the anthology XML file may not have the metadata we need, we need to manually create a file that does. This file should be created by the program chairs and should be a tab-separated file with the following fields: paper IDs, titles, and authors. The IDs should be the same as they are in the manually combined order file above, i.e., TACL paper IDs should have the `-tacl` suffix, SRW ones should have the `-srw` suffix, etc.
+Similarly, other workshops also might have such non-archival papers in their programs. Therefore, such files might be needed for them as well.
 
-For NAACL 2019, this file is located at `data/non-anthology-metadata.tsv`. Any changes to the titles and authors for these papers should be made directly to this file.
+Such files should be created by the program chairs/publication chairs and are tab-separated files with the following fields: paper IDs, titles, authors, and abstracts. The IDs should be the same as they are in the corresponding order files (for the main conference, this will be the manually combined order file above and TACL paper IDs should have the `-tacl` suffix, SRW ones should have the `-srw` suffix, etc.).
+
+For NAACL 2019, these files are located under `data/extra-metadata/*.tsv`. The file for the main conference is `data/extra-metadata/main.tsv`. For workshops, they are `data/extra-metadata/<name>.tsv` where `<name>` refers to the name of the workshop and is the same name used for the corresponding order file. Any changes for these papers should be made directly to these files.
 
 #### 4. Info for Plenary Sessions
 
@@ -81,11 +83,12 @@ We may also want to display a blurb/abstract and other info for plenary sessions
 - `session` : contains a part of the name of the plenary session (enough to locate it programmatically)
 - `abstract` : contains the blurb for the plenary session
 - `person` : contains an optional person for the plenary session
-- `person_url` : contains an optional person URL for the plenary session
+- `person_affiliation` : contains the optional affiliation for the person associated with the plenary session
+- `person_url` : contains the optional URL for person associated with the plenary session
 - `pdf_url` : contains an optional PDF URL for the plenary session
 - `video_url` : contains an optional video URL for the plenary session
 
-Only the `session` and `abstract` fields are required. The `person` and `person_url` fields are mainly to be used for keynotes. 
+Only the `session` and `abstract` fields are required. The `person`, `person_affiliation`, and `person_url` fields are mainly to be used for keynotes. 
 
 We do not use this file in any code in this repository but simply provide it to the app and website repositories that will use this repository as a submodule. This file is located at `data/plenary-info.tsv`.
 
@@ -177,32 +180,41 @@ we usually rely on the anthology XML files extracted above: (`N19.xml` for the m
 However, these anthology files use entirely different IDs
 that have nothing to do with the IDs that are in the order files (which come from START). Therefore, we need to use the mapping files extracted above (`*_id_map.txt`) and particularly the manually combined ID mapping file to create a bridge between the order file IDs and the anthology metadata.
 
-It may not always be the case that the anthology contains all of the metadata we need. See the section on "Non-anthology Metadata File" above. Therefore, we need to be able to use both the XML files and this non-anthology TSV file.
+It may not always be the case that the anthology for the main conference contains all of the metadata we need. See the section on "Non-anthology Metadata File" above. Therefore, we need to be able to use both the `N19.xml`file and this non-anthology TSV file. Note that it is assumed that that such 
+a file is not needed for workshops and other co-located events, i.e., _all_ of the metadata for those events will be in either `W19.xml` or `S19.xml`.
 
 The module `code/metadata.py` can be used to obtain the metadata needed
 for order file entries. This module takes XML files, mapping files, as well
-as non-anthology metadata TSV files as input and returns an instance of a
-`ScheduleMetadata` object which can then be used to look up metadata for any
-given paper either through its order file ID or even through its anthology
-ID. A Python session illustrating the use of this module is shown below:
+as the main-conference non-anthology metadata TSV file as input and returns an instance of a `ScheduleMetadata` object which can then be used to look up metadata for any given paper either through its order file ID or even through its anthology ID. A Python session illustrating the use of this module is shown below:
 
 ```python
 from metadata import ScheduleMetadata
 
 # create a ScheduleMetadata object
-sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml'], mappings=['../data/mapping/manually_combined_id_map.txt'], non_anthology_tsv='../data/non-anthology-metadata.tsv')
+sm = ScheduleMetadata.fromfiles(xmls=['../data/xml/N19.xml', '../data/xml/S19.xml'], mappings={'main': '../data/mapping/manually_combined_id_map.txt', '*SEM': '../data/mapping/sem_id_map.txt'}, non_anthology_tsv='../data/non-anthology-metadata.tsv')
 
-# look up metadata via order file ID
-sm['7-tutorial']
+# look up metadata via order file ID for the
+# default event (main conference)
+sm.lookup('7-tutorial')
 
-# look up metadat via anthology ID
-sm['N19-5002']
+# look up the metadata via order file ID for
+# another event
+sm.lookup('97', event='*SEM')
+
+# look up metadata via anthology ID (no need to specify an
+# event since anthology IDs are globally unique across events)
+sm.lookup('N19-5002')
+sm.lookup('S19-1011')
 ```
 
 The above session returns the following output:
 
 ```                  
-MetadataTuple(title='Deep Learning for Natural Language Inference', authors='Samuel Bowman and Xiaodan Zhu', abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', anthology_url='http://www.aclweb.org/anthology/N19-5002')
+MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', pdf_url='http://www.aclweb.org/anthology/N19-5002', video_url=''
 
-MetadataTuple(title='Deep Learning for Natural Language Inference', authors='Samuel Bowman and Xiaodan Zhu', abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', anthology_url='http://www.aclweb.org/anthology/N19-5002')
+MetadataTuple(title='Scalable Cross-Lingual Transfer of Neural Sentence Embeddings', authors=['Hanan Aldarmaki', 'Mona Diab'], abstract='We develop and investigate several cross-lingual alignment approaches for neural sentence embedding models, such as the supervised inference classifier, InferSent, and sequential encoder-decoder models. We evaluate three alignment frameworks applied to these models: joint modeling, representation transfer learning, and sentence mapping, using parallel text to guide the alignment. Our results support representation transfer as a scalable approach for modular cross-lingual alignment of neural sentence embeddings, where we observe better performance compared to joint models in intrinsic and extrinsic evaluations, particularly with smaller sets of parallel data.', pdf_url='http://www.aclweb.org/anthology/S19-1006', video_url='')
+
+MetadataTuple(title='Deep Learning for Natural Language Inference', authors=['Samuel Bowman', 'Xiaodan Zhu'], abstract='This tutorial discusses cutting-edge research on NLI, including recent advance on dataset development, cutting-edge deep learning models, and highlights from recent research on using NLI to understand capabilities and limits of deep learning models for language understanding and reasoning.', pdf_url='http://www.aclweb.org/anthology/N19-5002', video_url='')
+
+MetadataTuple(title='A Semantic Cover Approach for Topic Modeling', authors=['Rajagopal Venkatesaramani', 'Doug Downey', 'Bradley Malin', 'Yevgeniy Vorobeychik'], abstract='We introduce a novel topic modeling approach based on constructing a semantic set cover for clusters of similar documents. Specifically, our approach first clusters documents using their Tf-Idf representation, and then covers each cluster with a set of topic words based on semantic similarity, defined in terms of a word embedding. Computing a topic cover amounts to solving a minimum set cover problem. Our evaluation compares our topic modeling approach to Latent Dirichlet Allocation (LDA) on three metrics: 1) qualitative topic match, measured using evaluations by Amazon Mechanical Turk (MTurk) workers, 2) performance on classification tasks using each topic model as a sparse feature representation, and 3) topic coherence. We find that qualitative judgments significantly favor our approach, the method outperforms LDA on topic coherence, and is comparable to LDA on document classification tasks.', pdf_url='http://www.aclweb.org/anthology/S19-1011', video_url='')
 ```
