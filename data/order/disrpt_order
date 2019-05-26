@@ -1,31 +1,31 @@
 * Thursday, June 6, 2019
-! 09:00--09:15 Opening remarks by Amir Zeldes, Debopam Das, Erick Galani Maziero, Juliano Antonio Desiderato, Mikel Iruskieta
-! 09:15--10:15 Invited Talk by Bonnie Webber: "Discourse (2009--2019): Recent successes, future challenges"
-! 10:15--10:30 Coffee break
-= Session S1
+! 09:00--09:15 Opening remarks by Amir Zeldes, Debopam Das, Erick Galani Maziero, Juliano Antonio Desiderato, Mikel Iruskieta # %room Nicollet D3
+! 09:15--10:15 Invited Talk by Bonnie Webber: "Discourse (2009--2019): Recent successes, future challenges" # %room Nicollet D3
+! 10:15--10:30 Coffee break # %room Hyatt Exhibit Hall
+= Session S1 # %room Nicollet D3
 6 10:30--11:00  # Toward Cross-theory Discourse Relation Annotation
 8 11:00--11:30  # Acquiring Annotated Data with Cross-lingual Explicitation for Implicit Discourse Relation Classification
 20 11:30--12:00  # From News to Medical: Cross-domain Discourse Segmentation
 ! 12:00--13:30 Lunch break
-= 13:30--15:00 Session S2
+= 13:30--15:00 Session S2 # %room Nicollet D3
 7 13:30--14:00  # Nuclearity in RST and signals of coherence relations
 5 14:00--14:30  # The Rhetorical Structure of Attribution
 10 14:30--15:00  # Annotating Shallow Discourse Relations in Twitter Conversations
-= 15:00--16:00 Session P1: Regular posters
+= 15:00--16:00 Session P1: Regular posters # %room Hyatt Exhibit Hall
 17   # A Discourse Signal Annotation System for RST Trees
 15   # EusDisParser: improving an under-resourced discourse parser with cross-lingual data
 22   # Beyond The Wall Street Journal: Anchoring and Comparing Discourse Signals across Genres
 14   # Towards the Data-driven System for Rhetorical Parsing of Russian Texts
 11   # RST-Tace A tool for automatic comparison and evaluation of RST trees
-= 15:00--16:00 Session P2: Shared task posters
+= 15:00--16:00 Session P2: Shared task posters # %room Hyatt Exhibit Hall
 23   # The DISRPT 2019 Shared Task on Elementary Discourse Unit Segmentation and Connective Detection
 4   # Multi-lingual and Cross-genre Discourse Unit Segmentation
 21   # ToNy: Contextual embeddings for accurate multilingual discourse segmentation of full documents
 18   # Multilingual segmentation based on neural networks and pre-trained word embeddings
 16   # GumDrop at the DISRPT2019 Shared Task: A Model Stacking Approach to Discourse Unit Segmentation and Connective Detection
-= 16:00--18:15 Session S3
+= 16:00--18:15 Session S3 # %room Nicollet D3
 13 16:00--16:30  # Towards discourse annotation and sentiment analysis of the Basque Opinion Corpus
 9 16:30--17:00  # Using Rhetorical Structure Theory to Assess Discourse Coherence for Non-native Spontaneous Speech
 19 17:00--17:30  # Applying Rhetorical Structure Theory to Student Essays for Providing Automated Writing Feedback
-! 17:30--18:00 Open meeting
-! 18:00--18:15 Closing remarks by Amir Zeldes, Debopam Das, Erick Galani Maziero, Juliano Antonio Desiderato, Mikel Iruskieta
+! 17:30--18:00 Open meeting # %room Nicollet D3
+! 18:00--18:15 Closing remarks by Amir Zeldes, Debopam Das, Erick Galani Maziero, Juliano Antonio Desiderato, Mikel Iruskieta # %room Nicollet D3

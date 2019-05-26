@@ -1,9 +1,9 @@
 * Thursday, June 6, 2019
-! 09:00--09:15 Welcome / Opening Remarks
-! 09:15--09:30 *SEM Opening Remarks
-! 09:30--10:30 Invited Talk by Sam Bowman: "Task-Independent Sentence Understanding"
-! 10:30--11:00 Coffee
-= 11:00--12:30 Tasks 1, 2 and 3
+! 09:00--09:15 Welcome / Opening Remarks # %room Great Lakes B
+! 09:15--09:30 *SEM Opening Remarks %room Great Lakes B
+! 09:30--10:30 Invited Talk by Sam Bowman: "Task-Independent Sentence Understanding"  %room Great Lakes B
+! 10:30--11:00 Coffee # %room Hyatt Exhibit Hall
+= 11:00--12:30 Tasks 1, 2 and 3  %room Great Lakes B
 30 11:00--11:15 # SemEval 2019 Task 1: Cross-lingual Semantic Parsing with UCCA
 249 11:15--11:30  # HLT@SUDA at SemEval 2019 Task 1: UCCA Graph Parsing as Constituent Tree Parsing
 269 11:30--11:45  # SemEval-2019 Task 2: Unsupervised Lexical Frame Induction
@@ -11,15 +11,15 @@
 272 12:00--12:15  # SemEval-2019 Task 3: EmoContext Contextual Emotion Detection in Text
 215 12:15--12:30  # ANA at SemEval-2019 Task 3: Contextual Emotion detection in Conversations through hierarchical LSTMs and BERT
 ! 12:30--14:00 Lunch
-= 14:00--15:30 Tasks 5 and 6
+= 14:00--15:30 Tasks 5 and 6 # %room Great Lakes B
 271 14:00--14:18  # SemEval-2019 Task 5: Multilingual Detection of Hate Speech Against Immigrants and Women in Twitter
 229 14:18--14:36  # Atalaya at SemEval 2019 Task 5: Robust Embeddings for Tweet Classification
 253 14:36--14:54  # FERMI at SemEval-2019 Task 5: Using Sentence embeddings to Identify Hate Speech Against Immigrants and Women in Twitter
 275 14:54--15:12  # SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval)
 185 15:12--15:30  # NULI at SemEval-2019 Task 6: Transfer Learning for Offensive Language Detection using Bidirectional Transformers
-! 15:30--16:00 Coffee
-! 16:00--16:30 Discussion
-= 16:30--17:30 Poster Session
+! 15:30--16:00 Coffee # %room Hyatt Exhibit Hall
+! 16:00--16:30 Discussion # %room Great Lakes B
+= 16:30--17:30 Poster Session # %room Great Lakes C
 243   # CUNY-PKU Parser at SemEval-2019 Task 1: Cross-Lingual Semantic Parsing with UCCA
 175   # DANGNT@UIT.VNU-HCM at SemEval 2019 Task 1: Graph Transformation System from Stanford Basic Dependencies to Universal Conceptual Cognitive Annotation (UCCA)
 196   # GCN-Sem at SemEval-2019 Task 1: Semantic Parsing using Graph Convolutional and Recurrent Neural Networks
@@ -154,10 +154,10 @@
 79   # YNUWB at SemEval-2019 Task 6: K-max pooling CNN with average meta-embedding for identifying offensive language
 103   # Zeyad at SemEval-2019 Task 6: That___s Offensive! An All-Out Search For An Ensemble To Identify And Categorize Offense in Tweets.
 * Friday, June 7, 2019
-! 09:00--09:30 SemEval 2020 Tasks
-! 09:30--10:30 State of SemEval Discussion
-! 10:30--11:00 Coffee
-= 11:00--12:30 Tasks 4, 7 and 8
+! 09:00--09:30 SemEval 2020 Tasks # %room Great Lakes B
+! 09:30--10:30 State of SemEval Discussion # %room Great Lakes B
+! 10:30--11:00 Coffee # %room Hyatt Exhibit Hall
+= 11:00--12:30 Tasks 4, 7 and 8 # %room Great Lakes B
 270 11:00--11:15  # SemEval-2019 Task 4: Hyperpartisan News Detection
 130 11:15--11:30  # Team Bertha von Suttner at SemEval-2019 Task 4: Hyperpartisan News Detection using ELMo Sentence Representation Convolutional Network
 273 11:30--11:45  # SemEval-2019 Task 7: RumourEval, Determining Rumour Veracity and Support for Rumours
@@ -165,16 +165,16 @@
 268 12:00--12:15  # SemEval-2019 Task 8: Fact Checking in Community Question Answering Forums
 177 12:15--12:30  # AUTOHOME-ORCA at SemEval-2019 Task 8: Application of BERT for Fact-Checking in Community Forums
 ! 12:30--14:00 Lunch
-= 14:00--15:30 Tasks 9, 10 and 12
+= 14:00--15:30 Tasks 9, 10 and 12 # %room Great Lakes B
 276 14:00--14:15  # SemEval-2019 Task 9: Suggestion Mining from Online Reviews and Forums
 69 14:15--14:30  # m_y at SemEval2019 Task 9: Exploring BERT for Suggestion Mining
 266 14:30--14:45  # SemEval-2019 Task 10: Math Question Answering
 68 14:45--15:00  # AiFu at SemEval-2019 Task 10: A Symbolic and Sub-symbolic Integrated System for SAT Math Question Answering
 274 15:00--15:15 # SemEval-2019 Task 12: Toponym Resolution in Scientific Papers
 254 15:15--15:30 # DM_NLP at SemEval-2018 Task 12: A Pipeline System for Toponym Resolution
-! 15:30--16:00 Coffee
-! 16:00--16:30 Discussion
-= 16:30--17:30 Poster Session
+! 15:30--16:00 Coffee # %room Hyatt Exhibit Hall
+! 16:00--16:30 Discussion # %room Great Lakes B
+= 16:30--17:30 Poster Session # %room Great Lakes C
 111   # Brenda Starr at SemEval-2019 Task 4: Hyperpartisan News Detection
 113   # Cardiff University at SemEval-2019 Task 4: Linguistic Features for Hyperpartisan News Detection
 123   # Clark Kent at SemEval-2019 Task 4: Stylometric Insights into Hyperpartisan News Detection

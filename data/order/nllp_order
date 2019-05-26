@@ -1,26 +1,26 @@
 * Friday, June 7, 2019
-! 9:00--9:10 Workshop Opening
-! 9:10--10:10 Invited Talkby Arthur Dyevre: "Law as Data: The Promise and Challenges of Natural Language Processing for Legal Research"
-= 10:10--10:30 Bias
+! 9:00--9:10 Workshop Opening # %room Lakeshore A
+! 9:10--10:10 Invited Talkby Arthur Dyevre: "Law as Data: The Promise and Challenges of Natural Language Processing for Legal Research" # %room Lakeshore A
+= 10:10--10:30 Bias # %room Lakeshore A
 2 10:10--10:30  # Implicit Bias in the Judiciary
-! 10:30--11:00 Coffee
-= 11:00--12:20 NLP Applications
+! 10:30--11:00 Coffee %room Hyatt Exhibit Hall
+= 11:00--12:20 NLP Applications # %room Lakeshore A
 4 11:00--11:20  # Plain English Summarization of Contracts
 13 11:20--11:40  # Question Answering for Privacy Policies: Combining Computational and Legal Perspectives
 5 11:40--12:00  # Scalable Methods for Annotating Legal-Decision Corpora
 12 12:00--12:20  # The Extent of Repetition in Contract Language
 ! 12:20--14:00 Lunch
-! 14:00--15:00 Invited Talk by Daniel Katz: "NLP & Law {Past, Present + Future}"
-= 15:00--15:30 Short Papers
+! 14:00--15:00 Invited Talk by Daniel Katz: "NLP & Law {Past, Present + Future}" # %room Lakeshore A
+= 15:00--15:30 Short Papers # %room Lakeshore A
 8 15:00--15:15  # Sentence Boundary Detection in Legal Text
 15 15:15--15:30  # Legal Linking: Citation Resolution and Suggestion in Constitutional Law
-! 15:30--16:00 Coffee
-= 16:00--17:00 Demos
+! 15:30--16:00 Coffee %room Hyatt Exhibit Hall
+= 16:00--17:00 Demos # %room Hyatt Exhibit Hall
 16 16:00--16:20  # Litigation Analytics: Case Outcomes Extracted from US Federal Court Dockets
 6 16:20--16:40  # Developing and Orchestrating a Portfolio of Natural Legal Language Processing and Document Curation Services
 17 16:40--17:00  # Transparent Linguistic Models for Contract Understanding and Comparison
 ! 17:00--17:10 Break
-= 17:10--17:50 Prediction
+= 17:10--17:50 Prediction # %room Lakeshore A
 19 17:10--17:30  # Legal Area Classification: A Comparative Study of Text Classifiers on Singapore Supreme Court Judgments
 10 17:30--17:50  # Extreme Multi-Label Legal Text Classification: A Case Study in EU Legislation
-! 17:50--18:00 Workshop Closing
+! 17:50--18:00 Workshop Closing # %room Lakeshore A

@@ -1,13 +1,13 @@
 * Friday, June 7, 2019
-! 9:00--9:10 Welcome
-! 9:10--9:50 Invited talk by Richard So: "Computational Narratology and Critical Race Theory"
-! 9:50--10:30 Invited talk by Nanyun Peng
-! 10:30--11:00 Coffee break
-= 11:00--12:15 Talks by authors of selected papers
+! 9:00--9:10 Welcome # %room Nicollet D3
+! 9:10--9:50 Invited talk by Richard So: "Computational Narratology and Critical Race Theory" # %room Nicollet D3
+! 9:50--10:30 Invited talk by Nanyun Peng # %room Nicollet D3
+! 10:30--11:00 Coffee break # %room Hyatt Exhibit Hall
+= 11:00--12:15 Talks by authors of selected papers # %room Nicollet D3
 3 11:00--11:25  # Towards Coherent and Cohesive Long-form Text Generation
 4 11:25--11:50  # Character Identification Refined: A Proposal
 8 11:50--12:15  # Diverging Paths in Birth Stories: A Medical Dataset for Narrative Analysis
-= 12:15--12:31 Two-minute madness
+= 12:15--12:31 Two-minute madness # %room Nicollet D3
 5 12:15--12:17  # Casting Light on Invisible Cities: Computationally Engaging with Literary Criticism
 6 12:17--12:19  # Deep Natural Language Understanding of News Text
 9 12:19--12:21  # Contextualized Word Embeddings Enhanced Event Temporal Relation Extraction for Story Understanding
@@ -17,7 +17,7 @@
 14 12:27--12:29  # Identifying Sensible Lexical Relations in Generated Stories
 16 12:29--12:31  # Automatic Story Generation With Human-in-the-Loop
 ! 12:31--14:00 Lunch
-! 14:00--15:30 Poster session
-! 15:30--16:00 Coffee break
-! 16:00--16:40 Invited talk by Mark Riedl: "Computational Narrative Intelligence and the Quest for the Great Automatic Grammatizator"
-! 16:40--17:00 Wrap up / closing remarks
+! 14:00--15:30 Poster session # %room Hyatt Exhibit Hall
+! 15:30--16:00 Coffee break # %room Hyatt Exhibit Hall
+! 16:00--16:40 Invited talk by Mark Riedl: "Computational Narrative Intelligence and the Quest for the Great Automatic Grammatizator" # %room Nicollet D3
+! 16:40--17:00 Wrap up / closing remarks # %room Nicollet D3

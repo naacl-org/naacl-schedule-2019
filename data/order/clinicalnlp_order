@@ -1,21 +1,21 @@
 * Friday, June 7, 2019
-! 09:00--09:15 Opening remarks
-! 09:15--10:30 Invited speaker: Heng Ji
-! 10:30--11:20 Coffee break
-= 11:20--12:30 Oral session 1
+! 09:00--09:15 Opening remarks # %room Nicollet D1
+! 09:15--10:30 Invited speaker: Heng Ji # %room Nicollet D1
+! 10:30--11:20 Coffee break # %room Hyatt Exhibit Hall
+= 11:20--12:30 Oral session 1 # %room Nicollet D1
 5 11:20--11:40  # Effective Feature Representation for Clinical Text Concept Extraction
 16 11:40--11:55  # An Analysis of Attention over Clinical Notes for Predictive Tasks
 17 11:55--12:10  # Extracting Adverse Drug Event Information with Minimal Engineering
 19 12:10--12:25  # Hierarchical Nested Named Entity Recognition
 ! 12:30--14:00 Lunch
-= 14:00--15:30 Oral session 2
+= 14:00--15:30 Oral session 2 # %room Nicollet D1
 11 14:00--14:20  # Towards Automatic Generation of Shareable Synthetic Clinical Notes Using Neural Language Models
 24 14:20--14:40  # A Novel System for Extractive Clinical Note Summarization using EHR Data
 9 14:40--14:55  # Study of lexical aspect in the French medical language. Development of a lexical resource
 13 14:55--15:10  # A BERT-based Universal Model for Both Within- and Cross-sentence Clinical Temporal Relation Extraction
 28 15:10--15:25  # Publicly Available Clinical BERT Embeddings
-! 15:30--16:00 Coffee break
-= 16:00--16:45 Poster session
+! 15:30--16:00 Coffee break # %room Hyatt Exhibit Hall
+= 16:00--16:45 Poster session # %room Hyatt Exhibit Hall
 2 # A General-Purpose Annotation Model for Knowledge Discovery: Case Study in Spanish Clinical Text
 6 # Predicting ICU transfers using text messages between nurses and doctors
 7 # Medical Entity Linking using Triplet Network
@@ -26,5 +26,5 @@
 22 # Attention Neural Model for Temporal Relation Extraction
 23 # Automatically Generating Psychiatric Case Notes From Digital Transcripts of Doctor-Patient Conversations
 25 # Clinical Data Classification using Conditional Random Fields and Neural Parsing for Morphologically Rich Languages
-! 16:45--17:30 Panel discussion: NLP vs. structured data in the clinical domain (with panelists: Hongfang Liu, Piet de Groen, Elmer Bernstam)
-! 17:30--17:45 Closing remarks
+! 16:45--17:30 Panel discussion: NLP vs. structured data in the clinical domain (with panelists: Hongfang Liu, Piet de Groen, Elmer Bernstam) # %room Nicollet D1
+! 17:30--17:45 Closing remarks # %room Nicollet D1
