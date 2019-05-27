@@ -7,14 +7,12 @@
 16 11:40--11:55  # An Analysis of Attention over Clinical Notes for Predictive Tasks
 17 11:55--12:10  # Extracting Adverse Drug Event Information with Minimal Engineering
 19 12:10--12:25  # Hierarchical Nested Named Entity Recognition
-! 12:30--14:00 Lunch
 = 14:00--15:30 Oral session 2 # %room Nicollet D1
 11 14:00--14:20  # Towards Automatic Generation of Shareable Synthetic Clinical Notes Using Neural Language Models
 24 14:20--14:40  # A Novel System for Extractive Clinical Note Summarization using EHR Data
 9 14:40--14:55  # Study of lexical aspect in the French medical language. Development of a lexical resource
 13 14:55--15:10  # A BERT-based Universal Model for Both Within- and Cross-sentence Clinical Temporal Relation Extraction
 28 15:10--15:25  # Publicly Available Clinical BERT Embeddings
-! 15:30--16:00 Coffee break # %room Hyatt Exhibit Hall
 = 16:00--16:45 Poster session # %room Hyatt Exhibit Hall
 2 # A General-Purpose Annotation Model for Knowledge Discovery: Case Study in Spanish Clinical Text
 6 # Predicting ICU transfers using text messages between nurses and doctors

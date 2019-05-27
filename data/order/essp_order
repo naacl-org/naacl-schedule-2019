@@ -3,12 +3,10 @@
 ! 9:15--10:10 Invited Talk by Hoifung Poon: "Machine Reading for Precision Medicine" # %room Nicollet D2
 = Session 1 # %room Nicollet D2
 4 10:10--10:30  # Distantly Supervised Biomedical Knowledge Acquisition via Knowledge Graph Based Attention
-! 10:30--11:00 Coffee break # %room Hyatt Exhibit Hall
 ! 11:00--11:50 Invited Talk by Michael Cafarella: "Extraction-Intensive Systems for the Social Sciences" # %room Nicollet D2
 = 11:50--12:30 Session 2 # %room Nicollet D2
 11 11:50--12:10  # Scalable, Semi-Supervised Extraction of Structured Information from Scientific Literature
 8 12:10--12:30  # Understanding the Polarity of Events in the Biomedical Literature: Deep Learning vs. Linguistically-informed Methods
-! 12:30--14:00 Lunch break
 ! 14:00--14:50 Invited Talk by Dina Demner-Fushman: "Extracting Structured Knowledge from Biomedical Publications" # %room Nicollet D2
 = 14:50--15:15 Session 3: 5 Minute Presentations for Posters & Demos # %room Nicollet D2
 7 14:50--14:55  # Dataset Mentions Extraction and Classification
