@@ -56,7 +56,7 @@ It is simpler to have a single order file representing the entirety of the main 
 
 - Take the order file provided by the program chairs. Technically, we should be using the extracted file `data/order/papers_order`. However, this file does not contain the themes for the poster sessions. Therefore, we need to start with the order file provided by the PCs which does contain this information. Let's denote this file as M.
 
-- For each of the extracted files `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`, manually take each paper entry in that order file and add it to M in the right time slot. Since the START IDs for the various components of the main conference are usuall independent, add a suffix, e.g. `-demos`, `-srw`, `industry`, `-tutorial`, etc., after the paper ID to prevent any accidental overlaps. Note that TACL paper IDs should have a `-tacl` suffix. 
+- For each of the extracted files `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`, manually take each paper entry in that order file and add it to M in the right time slot. Since the START IDs for the various components of the main conference are usually independent, add a suffix, e.g. `-demos`, `-srw`, `industry`, `-tutorial`, etc., after the paper ID to prevent any accidental overlaps. Note that TACL paper IDs should have a `-tacl` suffix. 
 
 This combined order file was then saved as `data/order/manually_combined_order`. This file now supersedes `data/order/papers_order`, `data/order/industry_order`, `data/order/demos_order`, `data/order/tutorials2019_order`, and `data/order/srw_order`. Any changes needed subsequent to this should be made directly to this file.
 
@@ -69,7 +69,7 @@ It's also equally convenient to have a single `id_map.txt` file for the entire m
 
 #### 3. Non-anthology Metadata Files
 
-For most of the items in any event schedule, the titles, authors, and abstracts are supposed to be provided by the ACL anthology XML files (e.g., `N19.xml`, `W19.xml`, et cetera). However, there are instances when the anthology does not contain all of the items in the event schedule. For the main conference, an example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may  show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for various student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-arhival. 
+For most of the items in any event schedule, the titles, authors, and abstracts are supposed to be provided by the ACL anthology XML files (e.g., `N19.xml`, `W19.xml`, et cetera). However, there are instances when the anthology does not contain all of the items in the event schedule. For the main conference, an example is TACL papers that have been chosen by their authors to be presented at the conference. Such papers may  show in the anthology on time and, therefore, their titles and authors may not be included in the XML file. Another example is non-archival papers for various student research workshop (SRW). They may be included as posters in the schedule but their metadata is, again, not included in the XML file since they are non-archival. 
 
 Similarly, other workshops also might have such non-archival papers in their programs. Therefore, such files might be needed for them as well.
 
@@ -113,7 +113,7 @@ This parser assumes the following semantics for the order file:
 
 The module `code/orderfile.py` is an object-oriented parser for \*ACL-style conference order files. It parses the order file to create an `Agenda` object which is a collection of `Day` objects which in turn contain either `Session` or `SessionGroup` objects. `Session` objects are used to represent conference session where as `SessionGroup` objects are used for a group of parallel track sessions. Therefore, a `SessionGroup` object also contains `Session` objects. Each `Session` object also contains `Item` objects which refer to presentation items (papers/posters/tutorials). 
 
-This module is meant to be used with a complete order file, e.g., the manually combined order file described abovee and contained in `data/order/manually_combined_order`. A Python session illustrating the use of this module is shown below:
+This module is meant to be used with a complete order file, e.g., the manually combined order file described above and contained in `data/order/manually_combined_order`. A Python session illustrating the use of this module is shown below:
 
 ```python
 from pprint import pprint
