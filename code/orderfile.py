@@ -476,7 +476,8 @@ class Session(object):
                  location='',
                  start_time='',
                  end_time='',
-                 chair=''):
+                 chair='',
+                 extended_metadata=None):
         super(Session, self).__init__()
         self.id_ = session_id
         self.title = title
@@ -486,6 +487,7 @@ class Session(object):
         self.start = start_time
         self.end = end_time
         self.items = []
+        self.extended_metadata = {} if not extended_metadata else extended_metadata
 
     def __repr__(self):
         out = 'Session '
@@ -500,6 +502,8 @@ class Session(object):
             attrs.append('room={}'.format(self.location))
         if self.chair:
             attrs.append('chair={}'.format(self.chair))
+        for key, value in self.extended_metadata.items():
+            attrs.append('{}={}'.format(key, value))
         out += '<' + ', '.join(attrs) + '>'
 
         return out
@@ -591,6 +595,12 @@ class Session(object):
         # parse any metadata we are given in the string
         metadata_dict = parse_order_file_metadata(metadata) if metadata else {}
 
+        # if there are metdata attributes other than 'room'
+        # and 'chair' in the metadata dictionary, save those
+        # as extended metadata
+        extra_metadata_dict = {k: v.strip() for k, v in metadata_dict.items()
+                               if k not in ['room', 'chair']}
+
         # replace any "\&"s with "&"s in the title
         return cls(session_id=id_,
                    title=title.strip().replace('\&', '&'),
@@ -598,7 +608,8 @@ class Session(object):
                    location=metadata_dict.get('room', '').strip(),
                    chair=metadata_dict.get('chair1', '').strip(),
                    start_time=start_time.strip() if start_time else '',
-                   end_time=end_time.strip() if end_time else '')
+                   end_time=end_time.strip() if end_time else '',
+                   extended_metadata=extra_metadata_dict)
 
 
 class Item(object):
@@ -625,12 +636,13 @@ class Item(object):
             self.__setattr__(key, value)
 
     def __repr__(self):
-        out = '{} <id={}'.format(self.type.title(),
-                                 self.id_)
+        out = '{} '.format(self.type.title())
+        attrs = ['id={}'.format(self.id_)]
+        for key, value in self.extended_metadata.items():
+            attrs.append('{}={}'.format(key, value))
         if self.type == 'poster' and self.topic:
-            out += ', topic={}>'.format(self.topic)
-        else:
-            out += '>'
+            attrs.append('topic={}'.format(self.topic))
+        out += '<' + ', '.join(attrs) + '>'
 
         return out
 
@@ -672,13 +684,23 @@ class Item(object):
          start_time,
          end_time,
          metadata_string) = item_regex_match_object.groups()
+
+        # parse the metadata string for the item, if any
+        metadata_dict = parse_order_file_metadata(metadata_string)
+
+        # if there are metdata attributes other than 'room'
+        # in the metadata dictionary, save those as extended metadata
+        extra_metadata_dict = {k: v.strip() for k, v in metadata_dict.items()
+                               if k != 'room'}
+
         if containing_session_type == 'poster':
             return cls(item_id,
                        'poster',
                        topic='',
                        title='',
                        authors='',
-                       paper_url='')
+                       paper_url='',
+                       extended_metadata=extra_metadata_dict)
         elif (containing_session_type == 'paper' or
                 containing_session_type == 'best_paper'):
             return cls(item_id,
@@ -688,9 +710,9 @@ class Item(object):
                        paper_url='',
                        video_url='',
                        start=start_time,
-                       end=end_time)
+                       end=end_time,
+                       extended_metadata=extra_metadata_dict)
         elif containing_session_type == 'tutorial':
-            metadata_dict = parse_order_file_metadata(metadata_string)
             assert item_id.endswith('-tutorial')
             return cls(item_id,
                        'tutorial',
@@ -698,4 +720,5 @@ class Item(object):
                        authors='',
                        location=metadata_dict.get('room', '').strip(),
                        start=start_time,
-                       end=end_time)
+                       end=end_time,
+                       extended_metadata=extra_metadata_dict)
