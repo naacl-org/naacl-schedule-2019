@@ -30,21 +30,21 @@
 ! 10:30--11:00 Coffee Break # %room Hyatt Exhibit Hall
 
 + 11:00--12:30 Long Orals / Long \& Short Posters
-= Session 1A: Cognitive # %room Nicollet B/C %chair1 Serguei Pakhomov
+= Session 1A: Cognitive # %room Nicollet B/C %chair1 Serguei Pakhomov %tweeter Sudipta Kar %tweeterid cryptexcode
 179 11:00--11:18    # 
 1465 11:18--11:36    # 
 1495 11:36--11:54    # 
 1768 11:54--12:12    # 
 2241 12:12--12:30    # 
 
-= Session 1B: Speech # %room Nicollet A %chair1 Yang Liu
+= Session 1B: Speech # %room Nicollet A %chair1 Yang Liu %tweeter Nishant Prateek %tweeterid nisprateek
 202 11:00--11:18    # 
 1507 11:18--11:36    # 
 1870 11:36--11:54    # 
 1998 11:54--12:12    # 
 2189 12:12--12:30    # 
 
-= Session 1C: Generation # %room Northstar A %chair1 Wei Xu
+= Session 1C: Generation # %room Northstar A %chair1 Wei Xu %tweeter Nazneen Rajani %tweeterid nazneenrajani
 132 11:00--11:18 #
 1498 11:18--11:36 #
 886 11:36--11:54 #
@@ -107,7 +107,7 @@
 ! 13:00--14:30 Careers in NLP Panel # %room Nicollet Ballroom %chair1 Philip Resnik
 ! 14:30--15:00 Coffee Break # %room Hyatt Exhibit Hall
 + 15:00--16:30 Short Orals / Long \& Short Posters / Demos
-= Session 2A: Dialogue \& Discourse # %room Northstar A %chair1 Ellen Riloff
+= Session 2A: Dialogue \& Discourse # %room Northstar A %chair1 Ellen Riloff %tweeter Asad Sayeed %tweeterid asayeed
 1589 15:00--15:15    # 
 1658 15:15--15:30    # 
 1734 15:30--15:45    # 
@@ -115,7 +115,7 @@
 2085 16:00--16:15    # 
 2308 16:15--16:30    # 
 
-= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B/C %chair1 Preslav Nakov
+= Session 2B: Ethics, Bias \& Fairness # %room Nicollet B/C %chair1 Preslav Nakov %tweeter Emily M. Bender %tweeterid emilymbender
 640 15:00--15:15    # 
 1172 15:15--15:30    # 
 1450 15:30--15:45    # 
@@ -215,14 +215,14 @@
 862 17:54--18:12    # 
 1623 18:12--18:30    # 
 
-= Session 3D: Machine Translation # %room Nicollet B/C %chair1 Marine Carpuat
+= Session 3D: Machine Translation # %room Nicollet B/C %chair1 Marine Carpuat %tweeter Bashar Alhafni %tweeterid BAlhafni
 247 17:00--17:18 #
 2062 17:18--17:36 #
 1655 17:36--17:54 #
 1953 17:54--18:12 #
 1006 18:12--18:30 #
 
-= Session 3E: Dialogue # %room Northstar A %chair1 Sujith Ravi
+= Session 3E: Dialogue # %room Northstar A %chair1 Sujith Ravi %tweeter Nazneen Rajani %tweeterid nazneenrajanii
 543 17:00--17:18    # 
 555 17:18--17:36    # 
 2208 17:36--17:54    # 
@@ -277,35 +277,35 @@
 ! 7:30--9:00 Breakfast # %room Hyatt Exhibit Hall
 
 + 9:00--10:30 Long Orals / Long \& Short Posters
-= Session 4A: Phonology  \& Morphology # %room Nicollet A %chair1 Greg Kondrak
+= Session 4A: Phonology  \& Morphology # %room Nicollet A %chair1 Greg Kondrak %tweeter Parminder  Bhatia %tweeterid ParryBhatia243
 303 9:00--9:18    # 
 658 9:18--9:36    # 
 805 9:36--9:54    # 
 1257 9:54--10:12    # 
 2348 10:12--10:30    # 
 
-= Session 4B: Multilingual NLP # %room Nicollet D %chair1 Ekaterina Shutova
+= Session 4B: Multilingual NLP # %room Nicollet D %chair1 Ekaterina Shutova %tweeter Hadi Amiri %tweeterid amirieb
 231 9:00--9:18    # 
 994 9:18--9:36    # 
 1044 9:36--9:54    # 
 1933 9:54--10:12    # 
 2113 10:12--10:30    # 
 
-= Session 4C: Social Media # %room Nicollet B/C %chair1 Xiaodan Zhu
+= Session 4C: Social Media # %room Nicollet B/C %chair1 Xiaodan Zhu %tweeter Yuval Pinter %tweeterid yuvalpi
 321 9:00--9:18    # 
 449 9:18--9:36    # 
 1200 9:36--9:54    # 
 1616 9:54--10:12    # 
 1962 10:12--10:30    # 
 
-= Session 4D: Generation # %room Northstar A %chair1 Ion Androutsopoulos
+= Session 4D: Generation # %room Northstar A %chair1 Ion Androutsopoulos %tweeter Sudipta Kar %tweeterid cryptexcode
 1297 9:00--9:18    # 
 1807 9:18--9:36    # 
 1909 9:36--9:54    # 
 1923 9:54--10:12    # 
 2045 10:12--10:30    # 
 
-= Session 4E: Industry: Real World Challenges # %room Greenway %chair1 Nizar Habash
+= Session 4E: Industry: Real World Challenges # %room Greenway %chair1 Nizar Habash %tweeter Nishant Prateek %tweeterid nisprateek
 4036-industry 09:00--09:18  # 
 4075-industry 09:18--09:36  # 
 4055-industry 09:36--09:54  # 
@@ -350,7 +350,7 @@
 
 ! 10:30--11:00 Coffee Break # %room Hyatt Exhibit Hall
 + 11:00--12:30 Short Orals / Long \& Short Posters / Demos
-= Session 5A: Multilingual NLP # %room Nicollet D %chair1 Valia Kordoni
+= Session 5A: Multilingual NLP # %room Nicollet D %chair1 Valia Kordoni %tweeter Stephen Mayhew %tweeterid mayhewsw
 495 11:00--11:15    # 
 1331 11:15--11:30    # 
 1338 11:30--11:45    # 
@@ -358,7 +358,7 @@
 1520 12:00--12:15    # 
 1668 12:15--12:30    # 
 
-= Session 5B: Machine Translation # %room Nicollet B/C %chair1 Daisuke Kawahara
+= Session 5B: Machine Translation # %room Nicollet B/C %chair1 Daisuke Kawahara %tweeter Mahmoud Mohammadi %tweeterid xmah_mood
 325 11:00--11:15    # 
 1534 11:15--11:30    # 
 1614 11:30--11:45    # 
@@ -366,7 +366,7 @@
 1956 12:00--12:15    # 
 32-srw 12:15--12:30  # 
 
-= Session 5C: Social Media # %room Greenway %chair1 Chenhao Tan
+= Session 5C: Social Media # %room Greenway %chair1 Chenhao Tan %tweeter Tuhin Chakrabarty %tweeterid Tuhin66978276
 1381 11:00--11:15    # 
 617 11:15--11:30    # 
 133 11:30--11:45    # 
@@ -374,7 +374,7 @@
 1815 12:00--12:15    # 
 2454 12:15--12:30    # 
 
-= Session 5D: Text Analysis  # %room Northstar A %chair1 Saif Mohammad
+= Session 5D: Text Analysis  # %room Northstar A %chair1 Saif Mohammad %tweeter Avinesh P.V.S. %tweeterid avineshpvs
 590 11:00--11:15    # 
 2379 11:15--11:30    # 
 1603 11:30--11:45    # 
@@ -382,7 +382,7 @@
 1903 12:00--12:15    # 
 1363 12:15--12:30    # 
 
-= Session 5E: Semantics # %room Nicollet A %chair1 Samuel Bowman
+= Session 5E: Semantics # %room Nicollet A %chair1 Samuel Bowman %tweeter Yuval Pinter %tweeterid yuvalpi
 465 11:00--11:15    # 
 1399 11:15--11:30    # 
 1456 11:30--11:45    # 
@@ -443,14 +443,14 @@
 
 + 15:30--17:00 Long Orals / Long \& Short Posters / Demos
 
-= Session 6A: Sentiment Analysis  # %room Northstar A %chair1 Sara Rosenthal
+= Session 6A: Sentiment Analysis  # %room Northstar A %chair1 Sara Rosenthal %tweeter Hadi Amiri %tweeterid amirieb
 234 15:30--15:48    # 
 883 15:48--16:06    # 
 1649 16:06--16:24    # 
 1979 16:24--16:42    # 
 2325 16:42--17:00    # 
 
-= Session 6B: Summarization # %room Greenway %chair1 Ani Nenkova
+= Session 6B: Summarization # %room Greenway %chair1 Ani Nenkova %tweeter Mahmoud Mohammadi %tweeterid xmah_mood
 131 15:30--15:48    # 
 767 15:48--16:06    # 
 1416 16:06--16:24    # 
@@ -537,20 +537,20 @@
 2300 11:24--11:42    # 
 2480-tacl 11:42--12:00    # 
 
-= Session 7B: Ethics, Bias \& Fairness # %room Nicollet A %chair1 Emily Prud'hommeaux
+= Session 7B: Ethics, Bias \& Fairness # %room Nicollet A %chair1 Emily Prud'hommeaux %tweeter Ian Stewart %tweeterid alethioguy
 2479-tacl 10:30--10:48 #
 2087 10:48--11:06 #
 2238 11:06--11:24 #
 1396 11:24--11:42 #
 2482-tacl 11:42--12:00 #
 
-= Session 7C: Information Extraction # %room Nicollet D %chair1 Heng Ji
+= Session 7C: Information Extraction # %room Nicollet D %chair1 Heng Ji %tweeter Stephen Mayhew %tweeterid mayhewsw
 147 10:30--10:48    # 
 439 10:48--11:06    # 
 1011 11:06--11:24    # 
 1374 11:24--11:42    # 
 1447 11:42--12:00    # 
-= Session 7D: Machine Translation # %room Northstar A %chair1 Colin Cherry
+= Session 7D: Machine Translation # %room Northstar A %chair1 Colin Cherry %tweeter Bashar Alhafni %tweeterid BAlhafn
 896 10:30--10:48    # 
 1183 10:48--11:06    # 
 1819 11:06--11:24    # 
@@ -614,21 +614,21 @@
 935 14:24--14:42    # 
 2327 14:42--15:00    # 
 
-= Session 8B: Machine Learning # %room Nicollet B/C %chair1 Anna Rumshisky
+= Session 8B: Machine Learning # %room Nicollet B/C %chair1 Anna Rumshisky %tweeter Sebastian Ruder %tweeterid seb_ruder
 238 13:30--13:48    # 
 931 13:48--14:06    # 
 1059 14:06--14:24    # 
 1506 14:24--14:42    # 
 1562 14:42--15:00    # 
 
-= Session 8C: Applications # %room Nicollet A %chair1 T. J. Hazen
+= Session 8C: Applications # %room Nicollet A %chair1 T. J. Hazen %tweeter Sarthak Anand %tweeterid isarth23
 297 13:30--13:48    # 
 724 13:48--14:06    # 
 1170 14:06--14:24    # 
 1806 14:24--14:42    # 
 2017 14:42--15:00    # 
 
-= Session 8D: Semantics # %room Greenway %chair1 Matt Gardner
+= Session 8D: Semantics # %room Greenway %chair1 Matt Gardner %tweeter Nelson Liu %tweeterid nelsonfliu
 766 13:30--13:48    # 
 1285 13:48--14:06    # 
 1779 14:06--14:24    # 
@@ -691,19 +691,19 @@
 1301 16:00--16:15    # 
 43-srw 16:15--16:30 # 
 
-= Session 9C: Generation # %room Northstar A %chair1 Fei Liu
+= Session 9C: Generation # %room Northstar A %chair1 Fei Liu %tweeter Tuhin Chakrabarty %tweeterid Tuhin66978276
 1500 15:30--15:45    # 
 1968 15:45--16:00    # 
 1991 16:00--16:15    # 
 2131 16:15--16:30    # 
 
-= Session 9D: Cognitive  \& Psycholinguistics # %room Nicollet D %chair1 Bridget McInnes
+= Session 9D: Cognitive  \& Psycholinguistics # %room Nicollet D %chair1 Bridget McInnes %tweeter Asad Sayeed %tweeterid asayeed
 45-srw 15:30--15:45 # 
 1479 15:45--16:00    # 
 1716 16:00--16:15    # 
 379 16:15--16:30    # 
 
-= Session 9E: Machine Learning # %room Nicollet B/C %chair1 Byron C. Wallace
+= Session 9E: Machine Learning # %room Nicollet B/C %chair1 Byron C. Wallace %tweeter Moin Nadeem %tweeterid moinnadeem
 737 15:30--15:45    # 
 1051 15:45--16:00    # 
 1307 16:00--16:15    # 
