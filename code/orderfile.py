@@ -9,6 +9,7 @@ Date: May, 2019
 import re
 
 from datetime import datetime
+from itertools import count
 
 _METADATA_REGEXP = re.compile(r'%([^\s]+)\s+([^%]+)')
 
@@ -54,6 +55,7 @@ class Agenda(object):
         super(Agenda, self).__init__()
         self.event = event
         self.days = []
+        self._poster_number_counter = count(1)
 
     def save_states(self,
                     current_tuple,
@@ -111,6 +113,14 @@ class Agenda(object):
         # if there is an active item ...
         if current_item:
 
+            # and it's a poster not a demo, generate a poster number
+            # and assign it as extended metadata; these numbers will
+            # allow attendees to locate them in the real world
+            if (current_item.type == 'poster' and not
+                    current_item.id_.endswith('-demos')):
+                poster_number = next(self._poster_number_counter)
+                current_item.extended_metadata['poster_number'] = poster_number
+
             # add it to the active session
             if current_session:
                 current_session.add(current_item)
@@ -128,14 +138,24 @@ class Agenda(object):
             else:
                 current_day.add(current_session)
 
+            # also reset the poster number counter
+            self._poster_number_counter = count(1)
+
         # save the currently active session group, if
         # any, to the active day
         if save_group and current_session_group:
+
             current_day.add(current_session_group)
+
+            # also reset the poster number counter
+            self._poster_number_counter = count(1)
 
         # save the active day to the agenda
         if save_day:
             self.days.append(current_day)
+
+            # also reset the poster number counter
+            self._poster_number_counter = count(1)
 
     def fromfile(self, filepath):
         """
@@ -205,6 +225,7 @@ class Agenda(object):
                 # if we encounter a new session group ...
                 elif line.startswith('+ '):
 
+                    # update the states
                     self.save_states((current_day,
                                       current_session_group,
                                       current_session,
@@ -232,6 +253,7 @@ class Agenda(object):
                                      save_day=False,
                                      save_group=False)
 
+                    # nullify any previously active item
                     current_item = None
 
                     # make this new session the active one
@@ -464,8 +486,7 @@ class Session(object):
     and a session chair (if any).
     """
 
-    # _plenary_regexp = re.compile(r'! ([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2})\s+([^#]+)#?([^#]+)?$')
-    # _presentation_session_regexp = re.compile(r'=\s*(([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2}))?\s*([^:#]+)?#?([^#]+)?$')
+    # define regular expressions to parse the session strings
     _any_session_regexp = re.compile(r'^([!=])\s*(([0-9]{1,2}:[0-9]{2})--([0-9]{1,2}:[0-9]{2}))?\s*([^#]+)?#?([^#]+)?$')
     _session_id_regexp = re.compile('Session ([0-9A-Za-z]+)\s*:')
 
