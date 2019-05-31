@@ -171,6 +171,10 @@ in the source code. One important thing to note is that since the order file
 is already in chronological order, we don't really need to do much sorting
 in the code. We can simply iterate over `Agenda.days` and then iterate over `Day.contents` since things will already in chronological order. Even the session groups contain the parallel tracks in the right order. 
 
+Note that some metadata can be expressed in the order file itself - this does _not_ include paper titles, author names, abstracts, and anthology URLs; see the next section for those. However, metadata for sessions and presentation items such as rooms, session chairs, etc. is allowed in the order file. This metadata is generally expressed after the `#` character and is formatted as follows: `# %FOO BAR BAZ`, where `FOO` is the category of the metadata and `BAR BAZ` is the value. 
+
+The script `orderfile.py` supports parsing this type of order file metadata: `%room` values are assigned to the `.location` attribute (for sessions and items) and `%chair1` values are assigned to `.chair` attribute (for sessions). Any other metadata is assigned to the `.extended_metadata` dictionary attribute (for sessions and items) as key value pairs. Examples of such extended metadata include: livetweeter names and IDs, poster numbers etc. The `.extended_metadata` attribute was conceived to accommodate future expansion of order file metadata attributes.
+
 ### Obtaining Metadata
 
 The order files (including the manually combined one) are not supposed to contain paper titles, authors, abstracts, and anthology URLs which is metadata
