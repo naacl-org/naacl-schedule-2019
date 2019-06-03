@@ -1,14 +1,16 @@
 * Thursday, June 6, 2019
-! 9:00--9:10 Opening Remarks # %room Nicollet B/C
-! 9:10--9:45 Invited Talk: Kyunghyun Cho # %room Nicollet B/C
-! 9:45--10:20 Invited Talk: He He # %room Nicollet B/C
-! 10:20--10:35 Coffee Break # %room Hyatt Exhibit Hall & Nicollet Promenade
-! 10:35--11:10 Invited Talk: Graham Neubig # %room Nicollet B/C
-! 11:10--11:45 Invited Talk: Yejin Choi # %room Nicollet B/C
-! 11:45--13:15 Lunch
-! 13:15--13:50 Invited Talk: Alexander Rush # %room Nicollet B/C
-! 13:50--14:15 Spotlight Talks # %room Nicollet B/C
-= 14:15--15:45 Poster Session # %room Hyatt Exhibit Hall
+! 9:00--9:05 Opening Remarks # %room Nicollet B/C
+! 9:05--9:45 Invited Talk: Graham Neubig # %room Nicollet B/C
+! 9:45--10:25 Invited Talk: He He # %room Nicollet B/C
+! 10:25--10:45 Coffee Break and Poster Hanging  # %room Hyatt Exhibit Hall & Nicollet Promenade
+! 10:45--11:25 Invited Talk: Tatsunori Hashimoto # %room Nicollet B/C
+! 11:25--12:05 Invited Talk: Yejin Choi # %room Nicollet B/C
+! 12:05--13:35 Lunch
+! 13:35--14:15 Invited Talk: Alexander Rush # %room Nicollet B/C
+! 14:15--14:25 Best Paper Presentation: Bilingual-GAN: A Step Towards Parallel Text Generation # %room Nicollet B/C
+! 14:25--14:35 Best Paper Presentation: Designing a Symbolic Intermediate Representation for Neural Surface Realization # %room Nicollet B/C
+! 14:35--14:45 Remote Presentation: Jointly Measuring Diversity and Quality in Text Generation Models # %room Nicollet B/C
++ 14:45--16:15 Poster Session # %room Hyatt Exhibit Hall
 6   # An Adversarial Learning Framework For A Persona-Based Multi-Turn Dialogue Model
 7   # DAL: Dual Adversarial Learning for Dialogue Generation
 10   # Towards Coherent and Engaging Spoken Dialog Response Generation Using Automatic Conversation Evaluators
@@ -26,7 +28,6 @@
 38   # Better Automatic Evaluation of Open-Domain Dialogue Systems with Contextualized Embeddings
 40   # Improved Zero-shot Neural Machine Translation via Ignoring Spurious Correlations
 42   # Jointly Measuring Diversity and Quality in Text Generation Models
-! 15:45--16:20 Invited Talk: Tatsunori Hashimoto # %room Nicollet B/C
-! 16:20--16:55 Invited Talk: Hal Daumé III # %room Nicollet B/C
+! 16:15--16:55 Invited Talk: Hal Daumé III # %room Nicollet B/C
 ! 16:55--17:55 Panel # %room Nicollet B/C
 ! 17:55--18:00 Closing Remarks # %room Nicollet B/C
