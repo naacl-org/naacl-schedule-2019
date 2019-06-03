@@ -10,7 +10,7 @@
 ! 14:15--14:25 Best Paper Presentation: Bilingual-GAN: A Step Towards Parallel Text Generation # %room Nicollet B/C
 ! 14:25--14:35 Best Paper Presentation: Designing a Symbolic Intermediate Representation for Neural Surface Realization # %room Nicollet B/C
 ! 14:35--14:45 Remote Presentation: Jointly Measuring Diversity and Quality in Text Generation Models # %room Nicollet B/C
-+ 14:45--16:15 Poster Session # %room Hyatt Exhibit Hall
+= 14:45--16:15 Poster Session # %room Hyatt Exhibit Hall
 6   # An Adversarial Learning Framework For A Persona-Based Multi-Turn Dialogue Model
 7   # DAL: Dual Adversarial Learning for Dialogue Generation
 10   # Towards Coherent and Engaging Spoken Dialog Response Generation Using Automatic Conversation Evaluators
